@@ -43,6 +43,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

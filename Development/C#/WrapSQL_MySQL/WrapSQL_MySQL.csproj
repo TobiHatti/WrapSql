@@ -5,4 +5,8 @@
     <RootNamespace>WrapSQL</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.20" />
+  </ItemGroup>
+
 </Project>
