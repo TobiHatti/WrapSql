@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.Odbc": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
