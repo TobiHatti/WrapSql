@@ -4,7 +4,7 @@ using System.Data.OleDb;
 
 namespace WrapSQL
 {
-    public class WrapOleDb
+    public class WrapOleDb : IDisposable
     {
         #region Fields and Properties
 
