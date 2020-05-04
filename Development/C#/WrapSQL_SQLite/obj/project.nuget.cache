@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "h2LhwyG8/06ELQ2lrwDlnwcH5xLYoiOqtCCeKl5hwz2aqU4VcHFKpdq4h/KzrdhCYPg9hCslNilngdvB/8OQug==",
+  "success": true,
+  "projectFilePath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_SQLite\\WrapSQL_SQLite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQL_MySQL", "WrapSQL_MySQL\WrapSQL_MySQL.csproj", "{634A7599-30D9-4FB0-AE9A-25E300ACE064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQL_ODBC", "WrapSQL_ODBC\WrapSQL_ODBC.csproj", "{42F8DDF5-0922-487E-8731-B9A86D769D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQL_SQLite", "WrapSQL_SQLite\WrapSQL_SQLite.csproj", "{24968866-BE29-4925-898A-E19F54C6F712}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{634A7599-30D9-4FB0-AE9A-25E300ACE064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{634A7599-30D9-4FB0-AE9A-25E300ACE064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{634A7599-30D9-4FB0-AE9A-25E300ACE064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{634A7599-30D9-4FB0-AE9A-25E300ACE064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F8DDF5-0922-487E-8731-B9A86D769D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F8DDF5-0922-487E-8731-B9A86D769D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F8DDF5-0922-487E-8731-B9A86D769D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F8DDF5-0922-487E-8731-B9A86D769D10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24968866-BE29-4925-898A-E19F54C6F712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24968866-BE29-4925-898A-E19F54C6F712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24968866-BE29-4925-898A-E19F54C6F712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24968866-BE29-4925-898A-E19F54C6F712}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E9A842F-8EFF-4503-B17B-48F896FC7D6D}
+	EndGlobalSection
+EndGlobal

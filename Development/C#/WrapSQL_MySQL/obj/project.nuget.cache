@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "XcqtddrDQJA4r48KMn4ySjZK+GloVXKG8XrWpmhu3b5XxJ7YwhzVNizWkOirHqvLV7iGEVm3KdEOt6JI4qJ52A==",
+  "success": true,
+  "projectFilePath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_MySQL\\WrapSQL_MySQL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

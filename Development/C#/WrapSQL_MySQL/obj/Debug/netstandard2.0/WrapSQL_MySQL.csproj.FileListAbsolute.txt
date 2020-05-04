@@ -1,0 +1,9 @@
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\bin\Debug\netstandard2.0\WrapSQL_MySQL.deps.json
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\bin\Debug\netstandard2.0\WrapSQL_MySQL.dll
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\bin\Debug\netstandard2.0\WrapSQL_MySQL.pdb
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.csprojAssemblyReference.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.csproj.CoreCompileInputs.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.AssemblyInfoInputs.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.AssemblyInfo.cs
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.dll
+H:\Git\SQLWrappers\Development\C#\WrapSQL_MySQL\obj\Debug\netstandard2.0\WrapSQL_MySQL.pdb
