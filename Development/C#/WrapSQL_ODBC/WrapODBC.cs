@@ -4,7 +4,7 @@ using System.Data.Odbc;
 
 namespace WrapSQL
 {
-    public class WrapODBC
+    public class WrapODBC : IDisposable
     {
         #region Fields and Properties
 
