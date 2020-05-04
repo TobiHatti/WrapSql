@@ -1,0 +1,5 @@
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_SQLite\bin\Debug\netstandard2.0\WrapSQL_SQLite.deps.json
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_SQLite\bin\Debug\netstandard2.0\WrapSQL_SQLite.dll
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.AssemblyInfoInputs.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.AssemblyInfo.vb
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.vbprojAssemblyReference.cache

@@ -1,0 +1,5 @@
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_OleDb\bin\Debug\netstandard2.0\WrapSQL_OleDb.deps.json
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_OleDb\bin\Debug\netstandard2.0\WrapSQL_OleDb.dll
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_OleDb\obj\Debug\netstandard2.0\WrapSQL_OleDb.vbprojAssemblyReference.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_OleDb\obj\Debug\netstandard2.0\WrapSQL_OleDb.AssemblyInfoInputs.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_OleDb\obj\Debug\netstandard2.0\WrapSQL_OleDb.AssemblyInfo.vb

@@ -7,13 +7,12 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapSQL_SQLite/1.0.0": {
+      "WrapSQL_ODBC/1.0.0": {
         "dependencies": {
-          "NETStandard.Library": "2.0.3",
-          "System.Data.SQLite.Core": "1.0.112.2"
+          "NETStandard.Library": "2.0.3"
         },
         "runtime": {
-          "WrapSQL_SQLite.dll": {}
+          "WrapSQL_ODBC.dll": {}
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -21,19 +20,11 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
-      },
-      "System.Data.SQLite.Core/1.0.112.2": {
-        "runtime": {
-          "lib/netstandard2.0/System.Data.SQLite.dll": {
-            "assemblyVersion": "1.0.112.1",
-            "fileVersion": "1.0.112.1"
-          }
-        }
       }
     }
   },
   "libraries": {
-    "WrapSQL_SQLite/1.0.0": {
+    "WrapSQL_ODBC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -51,13 +42,6 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
-    },
-    "System.Data.SQLite.Core/1.0.112.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-iYj32NThg9oSr/0IvG0HEIVi5/x5qqdqAU4wu8sSYe94e8F+QbrXmsrP/tvWTre4ugkgTgdmPsJdtxDP4TIsEg==",
-      "path": "system.data.sqlite.core/1.0.112.2",
-      "hashPath": "system.data.sqlite.core.1.0.112.2.nupkg.sha512"
     }
   }
 }

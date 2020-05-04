@@ -1,19 +1,19 @@
 Imports System.Data
-Imports System.Data.Odbc
+Imports System.Data.OleDb
 
-Public Class WrapODBC
+Public Class WrapOleDb
 #Region "Fields and Properties"
 
     Private ReadOnly connectionString As String = String.Empty
-    Private ReadOnly f_Connection As OdbcConnection = Nothing
-    Private transaction As OdbcTransaction = Nothing
+    Private ReadOnly f_Connection As OleDbConnection = Nothing
+    Private transaction As OleDbTransaction = Nothing
     Private transactionActive As Boolean = False
 
 
     ''' <summary>
     ''' SQL-Connection object.
     ''' </summary>
-    Public ReadOnly Property Connection As OdbcConnection
+    Public ReadOnly Property Connection As OleDbConnection
         Get
             Return f_Connection
         End Get
@@ -33,7 +33,7 @@ Public Class WrapODBC
         Me.connectionString = connectionString
 
         ' Create connection
-        f_Connection = New OdbcConnection(Me.connectionString)
+        f_Connection = New OleDbConnection(Me.connectionString)
     End Sub
 
 
@@ -134,7 +134,7 @@ Public Class WrapODBC
     Private Function ExecuteNonQuery(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As Integer
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
 
-        Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
+        Using command As OleDbCommand = New OleDbCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
             Dim result As Integer
 
@@ -160,8 +160,8 @@ Public Class WrapODBC
     ''' <paramname="sqlQuery">SQL-query</param>
     ''' <paramname="parameters">Query-parameters</param>
     ''' <returns>DataReader fetching the query-results</returns>
-    Public Function ExecuteQuery(ByVal sqlQuery As String, ParamArray parameters As Object()) As OdbcDataReader
-        Dim command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
+    Public Function ExecuteQuery(ByVal sqlQuery As String, ParamArray parameters As Object()) As OleDbDataReader
+        Dim command As OleDbCommand = New OleDbCommand(sqlQuery, Connection)
 
         For Each parameter As Object In parameters
             command.Parameters.AddWithValue(String.Empty, parameter)
@@ -234,7 +234,7 @@ Public Class WrapODBC
     Private Function ExecuteScalar(Of T)(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As T
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
 
-        Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
+        Using command As OleDbCommand = New OleDbCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
 
             For Each parameter As Object In parameters
@@ -260,13 +260,13 @@ Public Class WrapODBC
     ''' <paramname="parameters">Query-parameters</param>
     ''' <returns>Results of a query-statement</returns>
     Public Function FillDataTable(ByVal sqlQuery As String, ParamArray parameters As Object()) As DataTable
-        Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
+        Using command As OleDbCommand = New OleDbCommand(sqlQuery, Connection)
 
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
 
-            Using da As OdbcDataAdapter = New OdbcDataAdapter(command)
+            Using da As OleDbDataAdapter = New OleDbDataAdapter(command)
                 Dim dt As DataTable = New DataTable()
                 da.Fill(dt)
                 Return dt
@@ -281,14 +281,14 @@ Public Class WrapODBC
     ''' <paramname="sqlQuery">SQL-query</param>
     ''' <paramname="parameters">Query-parameters</param>
     ''' <returns>DataAdapter of the given query-statement</returns>
-    Public Function GetDataAdapter(ByVal sqlQuery As String, ParamArray parameters As Object()) As OdbcDataAdapter
-        Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
+    Public Function GetDataAdapter(ByVal sqlQuery As String, ParamArray parameters As Object()) As OleDbDataAdapter
+        Using command As OleDbCommand = New OleDbCommand(sqlQuery, Connection)
 
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
 
-            Return New OdbcDataAdapter(command)
+            Return New OleDbDataAdapter(command)
         End Using
     End Function
 

@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kGZBdelDUEuFjXmwBtCqW8/3cZ2NDbJkLfJAFPuRQvTu3h/Qtrf0JYj6KeF87ApKlSn5EB51UooRyWfLQSii5A==",
+  "dgSpecHash": "WFmfgdI82eqx/5wWliZlTkT8Z10Vm5RMzo7Q1n7u6cxHmXylrDrAvpMB79Nl7YWmttxZ0fijarZ2dqJGMT9l1g==",
   "success": true,
   "projectFilePath": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_SQLite\\WrapSQL_SQLite.vbproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.data.sqlite.core\\1.0.112.2\\system.data.sqlite.core.1.0.112.2.nupkg.sha512"
   ],
   "logs": []
 }

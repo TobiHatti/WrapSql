@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <RootNamespace>WrapSQL</RootNamespace>
+    <RootNamespace>WrapSQL_OleDb</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Data.Odbc" Version="4.7.0" />
+    <PackageReference Include="System.Data.OleDb" Version="4.7.0" />
   </ItemGroup>
 
 </Project>

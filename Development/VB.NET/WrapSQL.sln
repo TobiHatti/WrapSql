@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WrapSQL_MySQL", "WrapSQL_MySQL\WrapSQL_MySQL.vbproj", "{C05BBD25-3E25-4097-8A78-2DE9F592DFCE}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "WrapSQL_MySQL", "WrapSQL_MySQL\WrapSQL_MySQL.vbproj", "{C05BBD25-3E25-4097-8A78-2DE9F592DFCE}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WrapSQL_ODBC", "WrapSQL_ODBC\WrapSQL_ODBC.vbproj", "{C89E36F9-12CF-423F-AF3B-8377F46EF443}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "WrapSQL_ODBC", "WrapSQL_ODBC\WrapSQL_ODBC.vbproj", "{C89E36F9-12CF-423F-AF3B-8377F46EF443}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WrapSQL_SQLite", "WrapSQL_SQLite\WrapSQL_SQLite.vbproj", "{3E84B0EE-329C-43DB-9E01-BD0D88C249D8}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "WrapSQL_SQLite", "WrapSQL_SQLite\WrapSQL_SQLite.vbproj", "{3E84B0EE-329C-43DB-9E01-BD0D88C249D8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WrapSQL_OleDb", "WrapSQL_OleDb\WrapSQL_OleDb.vbproj", "{674FB517-C36F-4537-945F-9BB6A6875B0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3E84B0EE-329C-43DB-9E01-BD0D88C249D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E84B0EE-329C-43DB-9E01-BD0D88C249D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E84B0EE-329C-43DB-9E01-BD0D88C249D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{674FB517-C36F-4537-945F-9BB6A6875B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{674FB517-C36F-4537-945F-9BB6A6875B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{674FB517-C36F-4537-945F-9BB6A6875B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{674FB517-C36F-4537-945F-9BB6A6875B0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

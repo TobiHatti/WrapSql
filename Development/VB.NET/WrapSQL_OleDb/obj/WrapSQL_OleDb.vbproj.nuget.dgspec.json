@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_MySQL\\WrapSQL_MySQL.vbproj": {}
+    "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_OleDb\\WrapSQL_OleDb.vbproj": {}
   },
   "projects": {
-    "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_MySQL\\WrapSQL_MySQL.vbproj": {
+    "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_OleDb\\WrapSQL_OleDb.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_MySQL\\WrapSQL_MySQL.vbproj",
-        "projectName": "WrapSQL_MySQL",
-        "projectPath": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_MySQL\\WrapSQL_MySQL.vbproj",
+        "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_OleDb\\WrapSQL_OleDb.vbproj",
+        "projectName": "WrapSQL_OleDb",
+        "projectPath": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_OleDb\\WrapSQL_OleDb.vbproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_MySQL\\obj\\",
+        "outputPath": "H:\\Git\\SQLWrappers\\Development\\VB.NET\\WrapSQL_OleDb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,15 +43,15 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.20, )"
-            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
