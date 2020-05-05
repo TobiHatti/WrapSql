@@ -1,10 +1,10 @@
 # SQL-Wrapper - VB.NET Port
 
 Currently supported DB-Types:
-- MySQL
-- SQLite
-- ODBC
-- OleDb
+- MySQL (requires [this](https://www.nuget.org/packages/MySql.Data/) NuGet-Package)
+- SQLite (requires [this](https://www.nuget.org/packages/sqlite/) NuGet-Package)
+- ODBC (requires [this](https://www.nuget.org/packages/System.Data.Odbc/) NuGet-Package)
+- OleDb (requires [this](https://www.nuget.org/packages/System.Data.OleDb/) NuGet-Package)
 
 ## Method overview
 
