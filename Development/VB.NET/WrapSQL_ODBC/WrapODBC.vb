@@ -9,7 +9,6 @@ Public Class WrapODBC
     Private transaction As OdbcTransaction = Nothing
     Private transactionActive As Boolean = False
 
-
     ''' <summary>
     ''' SQL-Connection object.
     ''' </summary>
@@ -18,7 +17,6 @@ Public Class WrapODBC
             Return f_Connection
         End Get
     End Property
-
 
 #End Region
 
@@ -36,7 +34,6 @@ Public Class WrapODBC
         f_Connection = New OdbcConnection(Me.connectionString)
     End Sub
 
-
     ''' <summary>
     ''' Disposes the object.
     ''' </summary>
@@ -44,7 +41,6 @@ Public Class WrapODBC
         ' Dispose the connection object
         If f_Connection IsNot Nothing Then f_Connection.Dispose()
     End Sub
-
 
 #End Region
 
@@ -57,14 +53,12 @@ Public Class WrapODBC
         If f_Connection.State = Data.ConnectionState.Closed Then f_Connection.Open()
     End Sub
 
-
     ''' <summary>
     ''' Closes the SQL-Connection, if the connection is open.
     ''' </summary>
     Public Sub Close()
         If f_Connection.State = Data.ConnectionState.Open Then f_Connection.Close()
     End Sub
-
 
 #End Region
 
@@ -78,7 +72,6 @@ Public Class WrapODBC
         transaction = Connection.BeginTransaction()
     End Sub
 
-
     ''' <summary>
     ''' Commits a transaction.
     ''' </summary>
@@ -87,7 +80,6 @@ Public Class WrapODBC
         transactionActive = False
     End Sub
 
-
     ''' <summary>
     ''' Terminates a transaction.
     ''' </summary>
@@ -95,7 +87,6 @@ Public Class WrapODBC
         transaction.Rollback()
         transactionActive = False
     End Sub
-
 
 #End Region
 
@@ -111,7 +102,6 @@ Public Class WrapODBC
         Return ExecuteNonQuery(sqlQuery, False, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a non-query statement. 
     ''' Automatically opens and closes the connection.
@@ -123,7 +113,6 @@ Public Class WrapODBC
         Return ExecuteNonQuery(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a non-query statement. 
     ''' </summary>
@@ -133,22 +122,18 @@ Public Class WrapODBC
     ''' <returns>NonQuery result</returns>
     Private Function ExecuteNonQuery(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As Integer
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
-
         Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
             Dim result As Integer
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             If aCon Then Open()
             result = command.ExecuteNonQuery()
             If aCon Then Close()
             Return result
         End Using
     End Function
-
 
 #End Region
 
@@ -162,14 +147,11 @@ Public Class WrapODBC
     ''' <returns>DataReader fetching the query-results</returns>
     Public Function ExecuteQuery(ByVal sqlQuery As String, ParamArray parameters As Object()) As OdbcDataReader
         Dim command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
-
         For Each parameter As Object In parameters
             command.Parameters.AddWithValue(String.Empty, parameter)
         Next
-
         Return command.ExecuteReader()
     End Function
-
 
 #End Region
 
@@ -185,7 +167,6 @@ Public Class WrapODBC
         Return ExecuteScalar(Of Object)(sqlQuery, False, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement. 
     ''' Automatically opens and closes the connection.
@@ -197,7 +178,6 @@ Public Class WrapODBC
         Return ExecuteScalar(Of Object)(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement. 
     ''' </summary>
@@ -208,7 +188,6 @@ Public Class WrapODBC
     Public Function ExecuteScalar(Of T)(ByVal sqlQuery As String, ParamArray parameters As Object()) As T
         Return ExecuteScalar(Of T)(sqlQuery, False, parameters)
     End Function
-
 
     ''' <summary>
     ''' Executes a execute-scalar statement.
@@ -222,7 +201,6 @@ Public Class WrapODBC
         Return ExecuteScalar(Of T)(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement.
     ''' </summary>
@@ -233,21 +211,17 @@ Public Class WrapODBC
     ''' <returns>Result of the scalar-query</returns>
     Private Function ExecuteScalar(Of T)(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As T
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
-
         Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             If aCon Then Open()
             Dim retval As Object = command.ExecuteScalar()
             If aCon Then Close()
             Return Convert.ChangeType(retval, GetType(T))
         End Using
     End Function
-
 
 #End Region
 
@@ -261,11 +235,9 @@ Public Class WrapODBC
     ''' <returns>Results of a query-statement</returns>
     Public Function FillDataTable(ByVal sqlQuery As String, ParamArray parameters As Object()) As DataTable
         Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             Using da As OdbcDataAdapter = New OdbcDataAdapter(command)
                 Dim dt As DataTable = New DataTable()
                 da.Fill(dt)
@@ -273,7 +245,6 @@ Public Class WrapODBC
             End Using
         End Using
     End Function
-
 
     ''' <summary>
     ''' Creates a DataAdapter on the given query-statement.
@@ -283,11 +254,9 @@ Public Class WrapODBC
     ''' <returns>DataAdapter of the given query-statement</returns>
     Public Function GetDataAdapter(ByVal sqlQuery As String, ParamArray parameters As Object()) As OdbcDataAdapter
         Using command As OdbcCommand = New OdbcCommand(sqlQuery, Connection)
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             Return New OdbcDataAdapter(command)
         End Using
     End Function

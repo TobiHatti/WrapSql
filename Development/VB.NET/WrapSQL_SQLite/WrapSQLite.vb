@@ -9,7 +9,6 @@ Public Class WrapSQLite
     Private transaction As SQLiteTransaction = Nothing
     Private transactionActive As Boolean = False
 
-
     ''' <summary>
     ''' SQL-Connection object.
     ''' </summary>
@@ -18,7 +17,6 @@ Public Class WrapSQLite
             Return f_Connection
         End Get
     End Property
-
 
 #End Region
 
@@ -36,8 +34,6 @@ Public Class WrapSQLite
         f_Connection = New SQLiteConnection(Me.connectionString)
     End Sub
 
-
-
     ''' <summary>
     ''' Creates a new SQL-Wrapper object.
     ''' </summary>
@@ -51,11 +47,9 @@ Public Class WrapSQLite
             connectionString = databaseFilePath
         End If
 
-
         ' Create connection
         f_Connection = New SQLiteConnection(connectionString)
     End Sub
-
 
     ''' <summary>
     ''' Disposes the object.
@@ -64,7 +58,6 @@ Public Class WrapSQLite
         ' Dispose the connection object
         If f_Connection IsNot Nothing Then f_Connection.Dispose()
     End Sub
-
 
 #End Region
 
@@ -77,14 +70,12 @@ Public Class WrapSQLite
         If f_Connection.State = Data.ConnectionState.Closed Then f_Connection.Open()
     End Sub
 
-
     ''' <summary>
     ''' Closes the SQL-Connection, if the connection is open.
     ''' </summary>
     Public Sub Close()
         If f_Connection.State = Data.ConnectionState.Open Then f_Connection.Close()
     End Sub
-
 
 #End Region
 
@@ -98,7 +89,6 @@ Public Class WrapSQLite
         transaction = Connection.BeginTransaction()
     End Sub
 
-
     ''' <summary>
     ''' Commits a transaction.
     ''' </summary>
@@ -107,7 +97,6 @@ Public Class WrapSQLite
         transactionActive = False
     End Sub
 
-
     ''' <summary>
     ''' Terminates a transaction.
     ''' </summary>
@@ -115,7 +104,6 @@ Public Class WrapSQLite
         transaction.Rollback()
         transactionActive = False
     End Sub
-
 
 #End Region
 
@@ -131,7 +119,6 @@ Public Class WrapSQLite
         Return ExecuteNonQuery(sqlQuery, False, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a non-query statement. 
     ''' Automatically opens and closes the connection.
@@ -143,7 +130,6 @@ Public Class WrapSQLite
         Return ExecuteNonQuery(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a non-query statement. 
     ''' </summary>
@@ -153,22 +139,18 @@ Public Class WrapSQLite
     ''' <returns>NonQuery result</returns>
     Private Function ExecuteNonQuery(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As Integer
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
-
         Using command As SQLiteCommand = New SQLiteCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
             Dim result As Integer
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             If aCon Then Open()
             result = command.ExecuteNonQuery()
             If aCon Then Close()
             Return result
         End Using
     End Function
-
 
 #End Region
 
@@ -190,7 +172,6 @@ Public Class WrapSQLite
         Return command.ExecuteReader()
     End Function
 
-
 #End Region
 
 #Region "ExecuteScalar"
@@ -205,7 +186,6 @@ Public Class WrapSQLite
         Return ExecuteScalar(Of Object)(sqlQuery, False, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement. 
     ''' Automatically opens and closes the connection.
@@ -217,7 +197,6 @@ Public Class WrapSQLite
         Return ExecuteScalar(Of Object)(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement. 
     ''' </summary>
@@ -228,7 +207,6 @@ Public Class WrapSQLite
     Public Function ExecuteScalar(Of T)(ByVal sqlQuery As String, ParamArray parameters As Object()) As T
         Return ExecuteScalar(Of T)(sqlQuery, False, parameters)
     End Function
-
 
     ''' <summary>
     ''' Executes a execute-scalar statement.
@@ -242,7 +220,6 @@ Public Class WrapSQLite
         Return ExecuteScalar(Of T)(sqlQuery, True, parameters)
     End Function
 
-
     ''' <summary>
     ''' Executes a execute-scalar statement.
     ''' </summary>
@@ -253,21 +230,17 @@ Public Class WrapSQLite
     ''' <returns>Result of the scalar-query</returns>
     Private Function ExecuteScalar(Of T)(ByVal sqlQuery As String, ByVal aCon As Boolean, ParamArray parameters As Object()) As T
         If transactionActive AndAlso aCon Then Throw New Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!")
-
         Using command As SQLiteCommand = New SQLiteCommand(sqlQuery, Connection)
             If transactionActive Then command.Transaction = transaction
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             If aCon Then Open()
             Dim retval As Object = command.ExecuteScalar()
             If aCon Then Close()
             Return Convert.ChangeType(retval, GetType(T))
         End Using
     End Function
-
 
 #End Region
 
@@ -281,11 +254,9 @@ Public Class WrapSQLite
     ''' <returns>Results of a query-statement</returns>
     Public Function FillDataTable(ByVal sqlQuery As String, ParamArray parameters As Object()) As DataTable
         Using command As SQLiteCommand = New SQLiteCommand(sqlQuery, Connection)
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             Using da As SQLiteDataAdapter = New SQLiteDataAdapter(command)
                 Dim dt As DataTable = New DataTable()
                 da.Fill(dt)
@@ -293,7 +264,6 @@ Public Class WrapSQLite
             End Using
         End Using
     End Function
-
 
     ''' <summary>
     ''' Creates a DataAdapter on the given query-statement.
@@ -303,11 +273,9 @@ Public Class WrapSQLite
     ''' <returns>DataAdapter of the given query-statement</returns>
     Public Function GetDataAdapter(ByVal sqlQuery As String, ParamArray parameters As Object()) As SQLiteDataAdapter
         Using command As SQLiteCommand = New SQLiteCommand(sqlQuery, Connection)
-
             For Each parameter As Object In parameters
                 command.Parameters.AddWithValue(String.Empty, parameter)
             Next
-
             Return New SQLiteDataAdapter(command)
         End Using
     End Function
