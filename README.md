@@ -25,8 +25,8 @@ Multiple wrapper-classes for several languages and DB-Types
 Navigate to "Finished" and select your desired Language, then select either the source-file or the assembly and add it to your own project.
 
 A full documentation is included in every language-sub-folder:
-- [README - C#](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23/README.md)
-- [README - VB.NET](https://github.com/TobiHatti/SQL-Wrapper-Classes/blob/master/Finished/VB.NET/README.md)
+- [README - C#](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23)
+- [README - VB.NET](https://github.com/TobiHatti/SQL-Wrapper-Classes/blob/master/Finished/VB.NET)
 
 __NOTE: Some Files/Assemblies/Libraries require additional packages, such as NuGet packages, to work without any errors!__
 
