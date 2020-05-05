@@ -1,0 +1,9 @@
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.deps.json
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.dll
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.pdb
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.vbprojAssemblyReference.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.vbproj.CoreCompileInputs.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.AssemblyInfoInputs.cache
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.AssemblyInfo.vb
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.dll
+H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.pdb

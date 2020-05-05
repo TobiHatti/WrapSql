@@ -1,0 +1,9 @@
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.deps.json
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.dll
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\bin\Release\netstandard2.0\WrapSQL_ODBC.pdb
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.csprojAssemblyReference.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.csproj.CoreCompileInputs.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.AssemblyInfoInputs.cache
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.AssemblyInfo.cs
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.dll
+H:\Git\SQLWrappers\Development\C#\WrapSQL_ODBC\obj\Release\netstandard2.0\WrapSQL_ODBC.pdb
