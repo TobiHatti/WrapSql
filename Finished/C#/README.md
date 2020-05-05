@@ -9,7 +9,7 @@ Currently supported DB-Types:
 ## Method overview
 
 - [Constructors](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#constructors)
-- [`Open()` and `Close()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#cpen-and-close)
+- [`Open()` and `Close()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#open-and-close)
 - [Transactions](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#transactions)
 - [Passing SQL-Statements and Parameters](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#passing-sql-statements-and-parameters)
 - [`ExecuteNonQuery()` and `ExecuteNonQueryACon()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#executenonquery-and-executenonqueryacon)
