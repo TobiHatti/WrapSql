@@ -8,15 +8,15 @@ Currently supported DB-Types:
 
 ## Method overview
 
-- [Constructors](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#Constructors)
-- [`Open()` and `Close()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#Open()-and-Close())
-- [Transactions](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#Transactions)
-- [Passing SQL-Statements and Parameters](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#Passing-SQL-Statements-and-Parameters)
-- [`ExecuteNonQuery()` and `ExecuteNonQueryACon()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#ExecuteNonQuery()-and-ExecuteNonQueryACon())
-- [`ExecuteQuery()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#ExecuteQuery())
-- [`ExecuteScalar()` and `ExecuteScalarACon()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#ExecuteScalar()-and-ExecuteScalarACon())
-- [`FillDataTable()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#FillDataTable())
-- [`GetDataAdapter()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#GetDataAdapter())
+- [Constructors](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#constructors)
+- [`Open()` and `Close()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#cpen-and-close)
+- [Transactions](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#transactions)
+- [Passing SQL-Statements and Parameters](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#passing-sql-statements-and-parameters)
+- [`ExecuteNonQuery()` and `ExecuteNonQueryACon()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#executenonquery-and-executenonqueryacon)
+- [`ExecuteQuery()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#executequery)
+- [`ExecuteScalar()` and `ExecuteScalarACon()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#executescalar-and-executescalaracon)
+- [`FillDataTable()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#filldatatable)
+- [`GetDataAdapter()`](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23#getdataadapter)
 
 # Usage
 
