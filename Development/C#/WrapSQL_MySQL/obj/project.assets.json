@@ -4491,11 +4491,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_MySQL\\WrapSQL_MySQL.csproj",
+      "projectUniqueName": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_MySQL\\WrapSQL_MySQL.csproj",
       "projectName": "WrapSQL_MySQL",
-      "projectPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_MySQL\\WrapSQL_MySQL.csproj",
+      "projectPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_MySQL\\WrapSQL_MySQL.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_MySQL\\obj\\",
+      "outputPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_MySQL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

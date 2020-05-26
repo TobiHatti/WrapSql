@@ -267,11 +267,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_SQLite\\WrapSQL_SQLite.csproj",
+      "projectUniqueName": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_SQLite\\WrapSQL_SQLite.csproj",
       "projectName": "WrapSQL_SQLite",
-      "projectPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_SQLite\\WrapSQL_SQLite.csproj",
+      "projectPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_SQLite\\WrapSQL_SQLite.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_SQLite\\obj\\",
+      "outputPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_SQLite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

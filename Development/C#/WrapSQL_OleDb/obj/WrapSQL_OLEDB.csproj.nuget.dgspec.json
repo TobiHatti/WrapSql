@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {}
+    "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {}
   },
   "projects": {
-    "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {
+    "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+        "projectUniqueName": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
         "projectName": "WrapSQL_OleDb",
-        "projectPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+        "projectPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
+        "outputPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

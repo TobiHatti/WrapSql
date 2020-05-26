@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IhTzG/ooyc2wQzG+rjthrqZkx8bpvjNBL29iA9JpQ8Y6qtgsV7Px5Bj6srSACBHY3Hztkn6j+fvagoH1MxKQ7A==",
+  "dgSpecHash": "/ixJ1wBXuMDe+6k94n+eWdagkMQMlLz8pVxhYjx5/UeXVwot8hhwnshQxfY7coVlTapkHVvm3S/unAFWj/VeqA==",
   "success": true,
-  "projectFilePath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj",
+  "projectFilePath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

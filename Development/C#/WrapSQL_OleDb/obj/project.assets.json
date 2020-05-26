@@ -786,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OLEDB.csproj",
-      "projectName": "WrapSQL_OLEDB",
-      "projectPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OLEDB.csproj",
+      "projectUniqueName": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+      "projectName": "WrapSQL_OleDb",
+      "projectPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "H:\\Git\\SQLWrappers\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
+      "outputPath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
