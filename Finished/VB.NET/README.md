@@ -147,25 +147,25 @@ The ExecuteScalar-Method has Normal and ACon variants, as well as auto-casting m
 ```vbnet
 ' Manual casting
 sql.Open()
-Dim amount As Integer = CInt(sql.ExecuteNonQuery("SELECT COUNT(*) FROM employees ..."))
+Dim amount As Integer = CInt(sql.ExecuteScalar("SELECT COUNT(*) FROM employees ..."))
 sql.Close()
 ```
 
 ```vbnet
 ' Manual casting (ACon)
-Dim amount As Integer = CInt(sql.ExecuteNonQueryACon("SELECT COUNT(*) FROM employees ..."))
+Dim amount As Integer = CInt(sql.ExecuteScalarACon("SELECT COUNT(*) FROM employees ..."))
 ```
 
 ```vbnet
 ' Auto casting
 sql.Open()
-Dim sum As Double = sql.ExecuteNonQuery(Of Double)("SELECT SUM(price) FROM products ...")
+Dim sum As Double = sql.ExecuteScalar(Of Double)("SELECT SUM(price) FROM products ...")
 sql.Close()
 ```
 
 ```vbnet
 ' Auto casting (ACon)
-Dim sum As Double = sql.ExecuteNonQueryACon(Of Double)("SELECT SUM(price) FROM products ...")
+Dim sum As Double = sql.ExecuteScalarACon(Of Double)("SELECT SUM(price) FROM products ...")
 ```
 
 ## FillDataTable()
