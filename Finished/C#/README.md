@@ -149,25 +149,25 @@ The ExecuteScalar-Method has Normal and ACon variants, as well as auto-casting m
 ```cs
 // Manual casting
 sql.Open();
-int amount = (int)sql.ExecuteNonQuery("SELECT COUNT(*) FROM employees ...");
+int amount = (int)sql.ExecuteScalar("SELECT COUNT(*) FROM employees ...");
 sql.Close();
 ```
 
 ```cs
 // Manual casting (ACon)
-int amount = (int)sql.ExecuteNonQueryACon("SELECT COUNT(*) FROM employees ...");
+int amount = (int)sql.ExecuteScalarACon("SELECT COUNT(*) FROM employees ...");
 ```
 
 ```cs
 // Auto casting
 sql.Open();
-double sum = sql.ExecuteNonQuery<double>("SELECT SUM(price) FROM products ...");
+double sum = sql.ExecuteScalar<double>("SELECT SUM(price) FROM products ...");
 sql.Close();
 ```
 
 ```cs
 // Auto casting (ACon)
-double sum = sql.ExecuteNonQueryACon<double>("SELECT SUM(price) FROM products ...");
+double sum = sql.ExecuteScalarACon<double>("SELECT SUM(price) FROM products ...");
 ```
 
 ## FillDataTable()
