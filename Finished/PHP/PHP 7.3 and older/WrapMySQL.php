@@ -2,7 +2,7 @@
 
 class WrapMySQL
 {
-    private $pdo = NULL;
+    private $pdo;
 
     private $dbHostname = "";
     private $dbDatabase = "";
@@ -27,15 +27,15 @@ class WrapMySQL
     // Disposes the object.
     public function __destruct()
     {
-        if($isOpen)
+        if($this->isOpen)
         {
-            $isOpen = false;
+            $this->isOpen = false;
             $this->pdo = NULL;
         }
     }
 
     // PDO-Connection object.
-    public function GetPDO()
+    public function GetPDO() : PDO
     {
         if(!$this->isOpen)
         {
@@ -47,9 +47,9 @@ class WrapMySQL
     // Opens the SQL-connection, if the connection is closed
     public function Open()
     {
-        if(!$isOpen)
+        if(!$this->isOpen)
         {
-            $isOpen = true;
+            $this->isOpen = true;
             $this->pdo = new PDO('mysql:host='.$this->dbHostname.';dbname='.$this->dbDatabase, $this->dbUsername, $this->dbPassword, array( PDO::ATTR_PERSISTENT => $this->isPersistent));
         }
     }
@@ -57,9 +57,9 @@ class WrapMySQL
     // Closes the SQL-Connection, if the connection is open.
     public function Close()
     {
-        if($isOpen)
+        if($this->isOpen)
         {
-            $isOpen = false;
+            $this->isOpen = false;
             $this->pdo = NULL;
         }
     }
