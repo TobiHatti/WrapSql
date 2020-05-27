@@ -20,6 +20,8 @@ Multiple wrapper-classes for several languages and DB-Types
   - SQLite
   - ODBC
   - OleDb
+- PHP
+  - MySQL
 
 ## Finding the right file or assembly
 Navigate to "Finished" and select your desired Language, then select either the source-file or the assembly and add it to your own project.
@@ -27,6 +29,7 @@ Navigate to "Finished" and select your desired Language, then select either the 
 A full documentation is included in every language-sub-folder:
 - [README - C#](https://github.com/TobiHatti/SQL-Wrapper-Classes/tree/master/Finished/C%23)
 - [README - VB.NET](https://github.com/TobiHatti/SQL-Wrapper-Classes/blob/master/Finished/VB.NET)
+- [README - PHP](https://github.com/TobiHatti/SQL-Wrapper-Classes/blob/master/Finished/PHP)
 
 __NOTE: Some Files/Assemblies/Libraries require additional packages, such as NuGet packages, to work without any errors!__
 
