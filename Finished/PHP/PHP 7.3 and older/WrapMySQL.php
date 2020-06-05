@@ -37,7 +37,7 @@ class WrapMySQL
     // PDO-Connection object.
     public function GetPDO() : PDO
     {
-        if(!$this->isOpen)
+        if($this->isOpen)
         {
             return $this->pdo;
         }
