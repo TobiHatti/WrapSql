@@ -2,7 +2,7 @@
 
 class WrapMySQL
 {
-    private PDO $pdo;
+    private $pdo;
 
     private string $dbHostname = "";
     private string $dbDatabase = "";
@@ -37,7 +37,7 @@ class WrapMySQL
     // PDO-Connection object.
     public function GetPDO() : PDO
     {
-        if(!$this->isOpen)
+        if($this->isOpen)
         {
             return $this->pdo;
         }
@@ -104,5 +104,4 @@ class WrapMySQL
         $stmt->execute($parameters);
         return $stmt->fetchColumn();
     }
-
 }
