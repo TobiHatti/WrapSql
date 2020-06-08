@@ -1,3 +1,5 @@
+<img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/SQL-Wrapper-Classes/EndevLibs_Logo_128.png">
+
 # SQL-Wrapper-Classes
 
 ![GitHub](https://img.shields.io/github/license/TobiHatti/SQL-Wrapper-Classes)
@@ -6,6 +8,8 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes)
+
+![image](https://endev.at/content/projects/SQL-Wrapper-Classes/SQLWrapperClasses_Banner_1080.png)
 
 Multiple wrapper-classes for several languages and DB-Types
 
