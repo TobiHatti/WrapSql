@@ -9,7 +9,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes)
 
-![image](https://endev.at/content/projects/SQL-Wrapper-Classes/SQLWrapperClasses_Banner_1080.png)
+![image](https://endev.at/content/projects/SQL-Wrapper-Classes/SQLWrapperClasses_Banner_300.png)
 
 Multiple wrapper-classes for several languages and DB-Types
 
