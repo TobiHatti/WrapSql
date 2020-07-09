@@ -1,15 +1,15 @@
-<img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/SQL-Wrapper-Classes/EndevLibs_Logo_128.png">
+<img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/SQL-Wrapper-Classes/EndevLibsLogo.svg">
 
 # SQL-Wrapper-Classes
 
 ![GitHub](https://img.shields.io/github/license/TobiHatti/SQL-Wrapper-Classes)
-[![GitHub Release Date](https://img.shields.io/github/release-date/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/releases)
+[![GitHub Release Date](https://img.shields.io/github/release-date-pre/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/releases)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TobiHatti/SQL-Wrapper-Classes?include_prereleases)](https://github.com/TobiHatti/SQL-Wrapper-Classes/releases)
 [![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes)
 
-![image](https://endev.at/content/projects/SQL-Wrapper-Classes/SQLWrapperClasses_Banner_300.png)
+![image](https://endev.at/content/projects/SQL-Wrapper-Classes/SQLWrapperClasses_Banner_300.svg)
 
 Multiple wrapper-classes for several languages and DB-Types
 
