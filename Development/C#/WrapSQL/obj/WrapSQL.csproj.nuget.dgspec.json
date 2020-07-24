@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj": {}
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {}
   },
   "projects": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj": {
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj",
-        "projectName": "WrapSQL_ODBC",
-        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\WrapSQL_ODBC.csproj",
+        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
+        "projectName": "WrapSQL",
+        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_ODBC\\obj\\",
+        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,6 +38,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -47,6 +51,14 @@
             "System.Data.Odbc": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "System.Data.OleDb": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.112.2, )"
             }
           },
           "imports": [

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kHeO8IDxRSbEW5suHWCpDWBxqD9+9vg2UbM5nwEd9UvQYiuML2LU8871kVvAHP5WOVrBW8zZrKAA87vlOnePmw==",
+  "dgSpecHash": "ftyEBSZ/tOt63zP1L+Idp+kiOGWa2tcm8GSuWCTyXueLHZOLvf4O/MykH9R5/4vvAV+xHqBLiXroTGknILc6XA==",
   "success": true,
-  "projectFilePath": "H:\\Git\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.data.oledb\\4.7.0\\system.data.oledb.4.7.0.nupkg.sha512",
