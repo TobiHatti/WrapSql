@@ -14,7 +14,7 @@
 Multiple wrapper-classes for several languages and DB-Types
 
 ### Supported Languages and DB-Types
-- C# (Soon oin NuGet)
+- C# (Soon on NuGet)
   - MySQL
   - SQLite
   - ODBC
