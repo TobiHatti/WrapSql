@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/SQL-Wrapper-Classes/EndevLibsLogo.svg">
 
-# SQL-Wrapper-Classes
+# WrapSQL
 
 ![GitHub](https://img.shields.io/github/license/TobiHatti/SQL-Wrapper-Classes)
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/TobiHatti/SQL-Wrapper-Classes)](https://github.com/TobiHatti/SQL-Wrapper-Classes/releases)
