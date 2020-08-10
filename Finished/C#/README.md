@@ -1,4 +1,4 @@
-# SQL-Wrapper - C# Port
+# WrapSQL - C# Port
 
 Currently supported DB-Types:
 - MySQL (requires [this](https://www.nuget.org/packages/MySql.Data/) NuGet-Package)
@@ -176,7 +176,7 @@ The FillDataTable-Method is usefull for populating form-controlls with DB-Entrie
 ```cs
 listboxProducts.DisplayMember = "NameAndPrice";
 listboxProducts.ValueMember = "productID";
-listboxProducts.DataSource = FillDataTable("SELECT CONCAT_WS(name, price) AS NameAndPrice, productID FROM products");
+listboxProducts.DataSource = sql.FillDataTable("SELECT CONCAT_WS(name, price) AS NameAndPrice, productID FROM products");
 ```
 No Open()/Close() is required.
 
