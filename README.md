@@ -9,7 +9,7 @@
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL)
 
-![image](https://endev.at/content/projects/SQL-Wrapper-Classes/WrapSQL_Banner_300.svg)
+![image](https://endev.at/content/projects/WrapSQL/WrapSQL_Banner_300.svg)
 
 Multiple wrapper-classes for several languages and DB-Types
 
