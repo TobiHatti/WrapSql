@@ -174,7 +174,7 @@ The FillDataTable-Method is usefull for populating form-controlls with DB-Entrie
 ```vbnet
 listboxProducts.DisplayMember = "NameAndPrice"
 listboxProducts.ValueMember = "productID"
-listboxProducts.DataSource = FillDataTable("SELECT CONCAT_WS(name, price) AS NameAndPrice, productID FROM products")
+listboxProducts.DataSource = sql.FillDataTable("SELECT CONCAT_WS(name, price) AS NameAndPrice, productID FROM products")
 ```
 No Open()/Close() is required.
 
