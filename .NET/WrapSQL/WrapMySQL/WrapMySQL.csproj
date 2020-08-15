@@ -3,10 +3,35 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>WrapSQL</RootNamespace>
+    <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
+    <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Tobias Hattinger</Authors>
+    <Company>Endev</Company>
+    <Product>WrapSQL</Product>
+    <Copyright>2020 Tobias Hattinger</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>EndevLibsLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
+    <PackageReleaseNotes>First Test version.
+Work in progress</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WrapSQLBase\WrapSQLBase.csproj" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\EndevLibsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
