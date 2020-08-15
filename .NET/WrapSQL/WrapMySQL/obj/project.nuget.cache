@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LTTSVjiHR8uLWIFF4yRIQ13Ut3jRoY6le1HjDD0G4XhNkrH905twy9cC8FssiEqbkQ0PMrNTv7sZIaJPPvjeww==",
+  "success": true,
+  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

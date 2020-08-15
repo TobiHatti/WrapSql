@@ -4,26 +4,95 @@ using System.Data.Common;
 
 namespace WrapSQL
 {
-    public abstract class WrapSQL : IDisposable
+    /// <summary>
+    /// WrapSQL base class.
+    /// </summary>
+    public abstract class WrapSQLBase : IDisposable
     {
-        protected bool transactionActive = false;
+        #region Fields
 
-        public abstract void Dispose();
+        protected string connectionString = string.Empty;
+        protected bool transactionActive = false;
+        protected DbConnection connection = null;
+        protected DbTransaction transaction = null;
+
+        #endregion
+
+        #region Properties
+
+        /// <summary>
+        /// SQL-Connection object.
+        /// </summary>
+        public DbConnection Connection
+        {
+            get => connection;
+        }
+
+        #endregion
+
+        #region Interface implementations
+
+        /// <summary>
+        /// Disposes the object.
+        /// </summary>
+        public void Dispose()
+        {
+            // Dispose the connection object
+            if (connection != null) connection.Dispose();
+        }
+
+        #endregion
 
         #region Connection Open/Close
 
-        public abstract void Open();
-        public abstract void Close();
+        /// <summary>
+        /// Opens the SQL-connection, if the connection is closed
+        /// </summary>
+        public void Open()
+        {
+            if (this.connection.State == ConnectionState.Closed)
+                connection.Open();
+        }
+
+        /// <summary>
+        /// Closes the SQL-Connection, if the connection is open.
+        /// </summary>
+        public void Close()
+        {
+            if (this.connection.State == ConnectionState.Open)
+                connection.Close();
+        }
 
         #endregion
 
         #region Transaction Begin/Commit/Rollback
 
-        public virtual void TransactionBegin() => transactionActive = true;
+        /// <summary>
+        /// Starts a transaction.
+        /// </summary>
+        public void TransactionBegin()
+        {
+            transactionActive = true;
+            transaction = Connection.BeginTransaction();
+        }
 
-        public virtual void TransactionCommit() => transactionActive = false;
+        /// <summary>
+        /// Commits a transaction.
+        /// </summary>
+        public void TransactionCommit()
+        {
+            transaction.Commit();
+            transactionActive = false;
+        }
 
-        public virtual void TransactionRollback() => transactionActive = false;
+        /// <summary>
+        /// Terminates a transaction.
+        /// </summary>
+        public void TransactionRollback()
+        {
+            transaction.Rollback();
+            transactionActive = false;
+        }
 
         #endregion
 
@@ -113,15 +182,35 @@ namespace WrapSQL
 
         #endregion
 
+        #region ExecuteQuery
+
+        /// <summary>
+        /// Executes a query-statement.
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataReader fetching the query-results</returns>
+        public abstract DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters);
+
+        #endregion
+
         #region DataAdapter
 
         /// <summary>
-        /// Fills a DataTable with the results of a query-statement.
+        /// Creates a DataTable with the results of a query-statement.
         /// </summary>
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Results of a query-statement</returns>
-        public abstract DataTable FillDataTable(string sqlQuery, params object[] parameters);
+        public abstract DataTable CreateDataTable(string sqlQuery, params object[] parameters);
+
+        /// <summary>
+        /// Creates a DataAdapter on the given query-statement.
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataAdapter of the given query-statement</returns>
+        public abstract DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters);
 
         #endregion
     }

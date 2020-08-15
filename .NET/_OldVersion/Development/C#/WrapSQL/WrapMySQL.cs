@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.Common;
 using MySql.Data.MySqlClient;
 
 namespace WrapSQL
@@ -219,7 +220,7 @@ namespace WrapSQL
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>DataAdapter of the given query-statement</returns>
-        public MySqlDataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
+        public DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
         {
             using (MySqlCommand command = new MySqlCommand(sqlQuery, Connection))
             {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ftyEBSZ/tOt63zP1L+Idp+kiOGWa2tcm8GSuWCTyXueLHZOLvf4O/MykH9R5/4vvAV+xHqBLiXroTGknILc6XA==",
+  "dgSpecHash": "mwdJRpk3GhSB6Auf1cSQjrmL018k/KJdqf+Yrx2Ao6Xklqk05MgUOW8etMFmzdhK0yVvfzgnG7UfaHDKTrDgSQ==",
   "success": true,
-  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

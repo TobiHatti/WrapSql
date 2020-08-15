@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {}
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {}
   },
   "projects": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
         "projectName": "WrapSQL_OleDb",
-        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
+        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\WrapSQL_OleDb.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
+        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL_OLEDB\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",

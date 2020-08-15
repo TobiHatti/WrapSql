@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {}
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {}
   },
   "projects": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {
+    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\WrapSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
+        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
         "projectName": "WrapSQL",
-        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
+        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\obj\\",
+        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",

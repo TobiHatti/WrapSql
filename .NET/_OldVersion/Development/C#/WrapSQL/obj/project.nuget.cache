@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3md3ioG8RHDQWUktzQaWdMMZ0EcVG2BxuQwRDUHmP53LLhMgnFOdzKtligbiLV4Athki2SORLRsko/ClXANPLw==",
+  "dgSpecHash": "hiRIptfT517xu8ghmiuVNwRSdn2Zyy1CddZICvmBPZBTUrYGUWAkpK6SEtYBxBXWJaZzaunFB0l+ZoIaaqWyIg==",
   "success": true,
-  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
+  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\_OldVersion\\Development\\C#\\WrapSQL\\WrapSQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
