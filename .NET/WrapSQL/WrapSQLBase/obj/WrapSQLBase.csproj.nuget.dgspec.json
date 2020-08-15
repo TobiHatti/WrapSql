@@ -5,10 +5,10 @@
   },
   "projects": {
     "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj": {
-      "version": "1.0.0",
+      "version": "0.0.1",
       "restore": {
         "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
-        "projectName": "WrapSQLBase",
+        "projectName": "Endev.WrapSQL.WrapSQLBase",
         "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
         "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\obj\\",

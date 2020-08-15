@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQLBase", "WrapSQLBase\WrapSQLBase.csproj", "{FB4A93EE-66CE-42DC-AF8A-07CD983837B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapMySQL", "WrapMySQL\WrapMySQL.csproj", "{BF1C58BA-C7A0-4600-AB6D-04C1150B7F91}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{FB4A93EE-66CE-42DC-AF8A-07CD983837B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB4A93EE-66CE-42DC-AF8A-07CD983837B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB4A93EE-66CE-42DC-AF8A-07CD983837B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF1C58BA-C7A0-4600-AB6D-04C1150B7F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF1C58BA-C7A0-4600-AB6D-04C1150B7F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF1C58BA-C7A0-4600-AB6D-04C1150B7F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF1C58BA-C7A0-4600-AB6D-04C1150B7F91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

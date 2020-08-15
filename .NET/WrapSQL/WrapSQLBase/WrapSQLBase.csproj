@@ -3,6 +3,31 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>WrapSQL</RootNamespace>
+    <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
+    <PackageId>Endev.WrapSQL.WrapSQLBase</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Tobias Hattinger</Authors>
+    <Company>Endev</Company>
+    <Product>WrapSQL</Product>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Base-class for any derivations of WrapSQL. This package has no use by itself.</Description>
+    <Copyright>2020 Tobias Hattinger</Copyright>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>EndevLibsLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, WrapSQL Base</PackageTags>
+    <PackageReleaseNotes>First Test version.
+Work in progress</PackageReleaseNotes>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\EndevLibsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
