@@ -5,7 +5,7 @@ using MySql.Data.MySqlClient;
 
 namespace WrapSQL
 {
-    public class WrapMySQL : WrapSQL
+    public class WrapMySQL : WrapSQL, IDisposable
     {
         #region Fields and Properties
 
@@ -156,7 +156,7 @@ namespace WrapSQL
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>DataReader fetching the query-results</returns>
-        public MySqlDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
+        public DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
         {
             MySqlCommand command = new MySqlCommand(sqlQuery, Connection);
             foreach (object parameter in parameters) command.Parameters.AddWithValue(string.Empty, parameter);

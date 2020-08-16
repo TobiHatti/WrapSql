@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLBase</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.1.2</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
@@ -17,8 +17,7 @@
     <PackageIcon>EndevLibsLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, WrapSQL Base</PackageTags>
-    <PackageReleaseNotes>First Test version.
-Work in progress</PackageReleaseNotes>
+    <PackageReleaseNotes>Changed Exception-class visibility</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryType>GitHub</RepositoryType>
   </PropertyGroup>

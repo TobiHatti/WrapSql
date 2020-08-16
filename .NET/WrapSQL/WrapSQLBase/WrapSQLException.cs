@@ -6,13 +6,13 @@ namespace WrapSQL
 {
     public class WrapSQLException : Exception
     {
-        internal WrapSQLException() { }
+        public WrapSQLException() { }
 
-        internal WrapSQLException(string message) : base(MessageFormat(message)) { }
+        public WrapSQLException(string message) : base(MessageFormat(message)) { }
 
-        internal WrapSQLException(string message, Exception inner) : base(MessageFormat(message), inner) { }
+        public WrapSQLException(string message, Exception inner) : base(MessageFormat(message), inner) { }
 
-        private static string MessageFormat(string message)
+        public static string MessageFormat(string message)
         {
             StringBuilder sb = new StringBuilder();
 

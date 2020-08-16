@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.1.1</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
@@ -20,10 +20,11 @@
 Work in progress</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <NeutralLanguage>en</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.1" />
     <PackageReference Include="MySql.Data" Version="8.0.21" />
   </ItemGroup>
 

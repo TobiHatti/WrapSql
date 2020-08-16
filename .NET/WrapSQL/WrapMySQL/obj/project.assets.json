@@ -16,7 +16,7 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.1": {
+      "Endev.WrapSQL.WrapSQLBase/0.0.1.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
@@ -1127,15 +1127,15 @@
         "lib/xamarinios/BouncyCastle.Crypto.xml"
       ]
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.1": {
-      "sha512": "mqnuFi+H+4CAazHlFkus7Jhhf355EpcYdg1vYkL2M9wOianmz/jg11/673E94rPeNHP7aaoYfiqG3ksLriLvsA==",
+    "Endev.WrapSQL.WrapSQLBase/0.0.1.1": {
+      "sha512": "0bBzJu3fnfRihG/vd06sUb7dddc5pyUYthP8rX70bD1r4sgC+SXxL1Z6yhX5nCL3IxBBBss5gVrqMRnwOYa0eg==",
       "type": "package",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.1",
+      "path": "endev.wrapsql.wrapsqlbase/0.0.1.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EndevLibsLogo.png",
-        "endev.wrapsql.wrapsqlbase.0.0.1.nupkg.sha512",
+        "endev.wrapsql.wrapsqlbase.0.0.1.1.nupkg.sha512",
         "endev.wrapsql.wrapsqlbase.nuspec",
         "lib/netstandard2.0/WrapSQLBase.dll"
       ]
@@ -4544,7 +4544,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Endev.WrapSQL.WrapSQLBase >= 0.0.1",
+      "Endev.WrapSQL.WrapSQLBase >= 0.0.1.1",
       "MySql.Data >= 8.0.21",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -4553,7 +4553,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "0.0.1",
+    "version": "0.0.1.1",
     "restore": {
       "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj",
       "projectName": "Endev.WrapSQL.WrapMySQL",
@@ -4588,7 +4588,7 @@
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": {
             "target": "Package",
-            "version": "[0.0.1, )"
+            "version": "[0.0.1.1, )"
           },
           "MySql.Data": {
             "target": "Package",

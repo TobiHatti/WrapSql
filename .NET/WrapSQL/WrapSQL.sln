@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQLBase", "WrapSQLBase\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapMySQL", "WrapMySQL\WrapMySQL.csproj", "{408F9919-54D8-4FD5-B18C-8D5D94AD1C8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestWrapSQL", "UnitTestWrapSQL\UnitTestWrapSQL.csproj", "{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{408F9919-54D8-4FD5-B18C-8D5D94AD1C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{408F9919-54D8-4FD5-B18C-8D5D94AD1C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{408F9919-54D8-4FD5-B18C-8D5D94AD1C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
