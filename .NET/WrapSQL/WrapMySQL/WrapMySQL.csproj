@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
@@ -22,6 +22,7 @@ Work in progress</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Wrapper-class for MySQL for simpler and cleaner code.</Description>
+    <AssemblyVersion>0.0.2.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

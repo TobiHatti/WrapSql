@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapMySQL", "WrapMySQL\Wrap
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestWrapSQL", "UnitTestWrapSQL\UnitTestWrapSQL.csproj", "{CE7B1640-BEDE-4D63-A040-3F16F54C81CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapODBC", "WrapODBC\WrapODBC.csproj", "{A2F02A22-B966-41BC-AC89-BA7F28930D5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapODBC", "WrapODBC\WrapODBC.csproj", "{A2F02A22-B966-41BC-AC89-BA7F28930D5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapOleDB", "WrapOleDB\WrapOleDB.csproj", "{10327F75-5567-4D8D-86A7-91ADB98A4EC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapOleDB", "WrapOleDB\WrapOleDB.csproj", "{10327F75-5567-4D8D-86A7-91ADB98A4EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSQLite", "WrapSQLite\WrapSQLite.csproj", "{D95B8196-B6D4-47EA-86F3-109766098DC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{10327F75-5567-4D8D-86A7-91ADB98A4EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10327F75-5567-4D8D-86A7-91ADB98A4EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10327F75-5567-4D8D-86A7-91ADB98A4EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95B8196-B6D4-47EA-86F3-109766098DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95B8196-B6D4-47EA-86F3-109766098DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95B8196-B6D4-47EA-86F3-109766098DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95B8196-B6D4-47EA-86F3-109766098DC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

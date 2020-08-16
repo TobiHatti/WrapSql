@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapODBC</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>

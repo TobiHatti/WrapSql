@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>WrapSQL</RootNamespace>
+    <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
+    <PackageId>Endev.WrapSQL.WrapSQLite</PackageId>
+    <Version>0.0.2</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>Tobias Hattinger</Authors>
+    <Company>Endev</Company>
+    <Product>WrapSQL</Product>
+    <Description>Wrapper-class for SQLite for simpler and cleaner code.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>2020 Tobias Hattinger</Copyright>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>EndevLibsLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, SQLite, WrapSQLite</PackageTags>
+    <PackageReleaseNotes>First Test version.
+Work in progress</PackageReleaseNotes>
+    <NeutralLanguage>Englisch</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\WrapSQLite.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\WrapSQLite.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\EndevLibsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.2" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.1" />
+  </ItemGroup>
+
+</Project>

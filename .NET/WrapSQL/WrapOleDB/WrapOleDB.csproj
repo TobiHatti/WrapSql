@@ -6,7 +6,7 @@
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapOleDB</PackageId>
     <Authors>Tobias Hattinger</Authors>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
     <Description>Wrapper-class for OleDB-databases for simpler and cleaner code.</Description>
