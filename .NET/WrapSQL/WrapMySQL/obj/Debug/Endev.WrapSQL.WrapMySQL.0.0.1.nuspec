@@ -10,7 +10,7 @@
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <icon>EndevLibsLogo.png</icon>
     <projectUrl>https://endev.at/p/wrapsql</projectUrl>
-    <description>Package Description</description>
+    <description>Wrapper-class for MySQL for simpler and cleaner code.</description>
     <releaseNotes>First Test version.
 Work in progress</releaseNotes>
     <copyright>2020 Tobias Hattinger</copyright>
@@ -18,7 +18,7 @@ Work in progress</releaseNotes>
     <repository type="GitHub" url="https://github.com/TobiHatti/WrapSQL" />
     <dependencies>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="Endev.WrapSQL.WrapSQLBase" version="0.0.1" exclude="Build,Analyzers" />
+        <dependency id="Endev.WrapSQL.WrapSQLBase" version="0.0.1.2" exclude="Build,Analyzers" />
         <dependency id="MySql.Data" version="8.0.21" exclude="Build,Analyzers" />
       </group>
     </dependencies>

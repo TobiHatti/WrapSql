@@ -11,8 +11,19 @@ namespace WrapSQL
     {
         #region Fields
 
+        /// <summary>
+        /// Flag to check if a transaction is currently active
+        /// </summary>
         protected bool transactionActive = false;
+
+        /// <summary>
+        /// Database connection
+        /// </summary>
         protected DbConnection connection = null;
+
+        /// <summary>
+        /// Database transaction
+        /// </summary>
         protected DbTransaction transaction = null;
 
         #endregion

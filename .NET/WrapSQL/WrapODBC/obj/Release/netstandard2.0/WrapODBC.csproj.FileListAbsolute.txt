@@ -1,0 +1,5 @@
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\bin\Release\netstandard2.0\WrapODBC.deps.json
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\bin\Release\netstandard2.0\WrapODBC.dll
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\obj\Release\netstandard2.0\WrapODBC.AssemblyInfoInputs.cache
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\obj\Release\netstandard2.0\WrapODBC.AssemblyInfo.cs
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\obj\Release\netstandard2.0\WrapODBC.csprojAssemblyReference.cache

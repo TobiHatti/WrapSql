@@ -183,7 +183,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "0.0.1.2",
+    "version": "0.0.1.3",
     "restore": {
       "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
       "projectName": "Endev.WrapSQL.WrapSQLBase",

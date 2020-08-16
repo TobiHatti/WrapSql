@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>WrapSQL</RootNamespace>
+    <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
+    <PackageId>Endev.WrapSQL.WrapODBC</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Tobias Hattinger</Authors>
+    <Company>Endev</Company>
+    <Product>WrapSQL</Product>
+    <Description>Wrapper-class for ODBC database connections for simpler and cleaner code.</Description>
+    <Copyright>2020 Tobias Hattinger</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>EndevLibsLogo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, ODBC, WrapODBC</PackageTags>
+    <PackageReleaseNotes>First Test version.
+Work in progress</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\WrapODBC.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapODBC\WrapODBC.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\EndevLibsLogo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.2" />
+    <PackageReference Include="System.Data.Odbc" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

@@ -9,7 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "WrapMySQL/0.0.1": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "0.0.1",
+          "Endev.WrapSQL.WrapSQLBase": "0.0.1.2",
           "MySql.Data": "8.0.21",
           "NETStandard.Library": "2.0.3"
         },
@@ -30,11 +30,11 @@
           }
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.1": {
+      "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "0.0.1.0",
-            "fileVersion": "0.0.1.0"
+            "assemblyVersion": "0.0.1.2",
+            "fileVersion": "0.0.1.2"
           }
         }
       },
@@ -886,12 +886,12 @@
       "path": "bouncycastle.netcore/1.8.3",
       "hashPath": "bouncycastle.netcore.1.8.3.nupkg.sha512"
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.1": {
+    "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mqnuFi+H+4CAazHlFkus7Jhhf355EpcYdg1vYkL2M9wOianmz/jg11/673E94rPeNHP7aaoYfiqG3ksLriLvsA==",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.1",
-      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.1.nupkg.sha512"
+      "sha512": "sha512-HFb73cMK5hzWg985n7W6sUweOL6yWpidOIFgDNUht6cObH0cgMkuUHNg4dSJu6DI6oxDnwfuKAbCU+uZY/M+dQ==",
+      "path": "endev.wrapsql.wrapsqlbase/0.0.1.2",
+      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.1.2.nupkg.sha512"
     },
     "Google.Protobuf/3.6.1": {
       "type": "package",

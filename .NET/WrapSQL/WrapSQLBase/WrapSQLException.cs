@@ -1,17 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace WrapSQL
 {
+    /// <summary>
+    /// Exception-Class for WrapSQL. Internal use only.
+    /// </summary>
     public class WrapSQLException : Exception
     {
+        /// <summary>
+        /// Creates a new WrapSQL-Exception
+        /// </summary>
         public WrapSQLException() { }
 
+        /// <summary>
+        /// Creates a new WrapSQL-Exception
+        /// </summary>
+        /// <param name="message">Exception-message</param>
         public WrapSQLException(string message) : base(MessageFormat(message)) { }
 
+        /// <summary>
+        /// Creates a new WrapSQL-Exception
+        /// </summary>
+        /// <param name="message">Exception-message</param>
+        /// <param name="inner">Inner exception</param>
         public WrapSQLException(string message, Exception inner) : base(MessageFormat(message), inner) { }
 
+        /// <summary>
+        /// Formats the given message and adds a custom exception-header.
+        /// </summary>
+        /// <param name="message">Exception-message</param>
+        /// <returns>Formated exception message</returns>
         public static string MessageFormat(string message)
         {
             StringBuilder sb = new StringBuilder();
