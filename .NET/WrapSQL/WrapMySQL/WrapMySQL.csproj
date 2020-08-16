@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.2.1</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
@@ -16,13 +16,12 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
-    <PackageReleaseNotes>Pre-Release, untested.
-Work in progress.</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug fix in WrapMySQLData</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Wrapper-class for MySQL for simpler and cleaner code.</Description>
-    <AssemblyVersion>0.0.2.0</AssemblyVersion>
+    <AssemblyVersion>0.0.2.1</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
