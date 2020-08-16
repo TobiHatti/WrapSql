@@ -5,6 +5,9 @@ using System.Data.Common;
 
 namespace WrapSQL
 {
+    /// <summary>
+    /// MySQL-Port of WrapSQL.
+    /// </summary>
     public class WrapMySQL : WrapSQLBase, IDisposable
     {
         /// <summary>
@@ -42,6 +45,7 @@ namespace WrapSQL
             connection = new MySqlConnection($"SERVER={mysqlData.Hostname};Port={mysqlData.Port};SslMode={mysqlData.SSLMode};DATABASE={mysqlData.Database};USER ID={mysqlData.Username};PASSWORD={mysqlData.Password}");
         }
 
+        ///<inheritdoc/>
         protected override int ExecuteNonQuery(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
@@ -58,6 +62,7 @@ namespace WrapSQL
             }
         }
 
+        ///<inheritdoc/>
         protected override T ExecuteScalar<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
@@ -73,6 +78,7 @@ namespace WrapSQL
             }
         }
 
+        ///<inheritdoc/>
         public override DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
         {
             MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection);
@@ -80,6 +86,7 @@ namespace WrapSQL
             return command.ExecuteReader();
         }
 
+        ///<inheritdoc/>
         public override DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
         {
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
@@ -89,6 +96,7 @@ namespace WrapSQL
             }
         }
 
+        ///<inheritdoc/>
         public override DataTable CreateDataTable(string sqlQuery, params object[] parameters)
         {
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))

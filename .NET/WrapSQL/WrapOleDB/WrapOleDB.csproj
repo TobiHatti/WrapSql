@@ -4,44 +4,44 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
-    <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>0.0.1</Version>
+    <PackageId>Endev.WrapSQL.WrapOleDB</PackageId>
     <Authors>Tobias Hattinger</Authors>
+    <Version>0.0.1</Version>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
+    <Description>Wrapper-class for OleDB-databases for simpler and cleaner code.</Description>
     <Copyright>2020 Tobias Hattinger</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
     <PackageIcon>EndevLibsLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
-    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
+    <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, OleDB, WrapOleDB</PackageTags>
     <PackageReleaseNotes>First Test version.
 Work in progress</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <NeutralLanguage>en</NeutralLanguage>
-    <Description>Wrapper-class for MySQL for simpler and cleaner code.</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\WrapMySQL.xml</DocumentationFile>
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapOleDB\WrapOleDB.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\WrapMySQL.xml</DocumentationFile>
+    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapOleDB\WrapOleDB.xml</DocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.2" />
-    <PackageReference Include="MySql.Data" Version="8.0.21" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\..\EndevLibsLogo.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.2" />
+    <PackageReference Include="System.Data.OleDb" Version="4.7.1" />
   </ItemGroup>
 
 </Project>

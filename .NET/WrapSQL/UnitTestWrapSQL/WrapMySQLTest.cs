@@ -7,10 +7,10 @@ namespace UnitTestWrapSQL
     [TestClass]
     public class WrapMySQLTest
     {
-        string dbHost = "";
-        string sbName = "";
-        string dbUser = "";
-        string dbPass = "";
+        readonly string dbHost = "";
+        readonly string sbName = "";
+        readonly string dbUser = "";
+        readonly string dbPass = "";
 
         [TestMethod]
         public void WrapMySQL_ConnectionTest_ExpectSuccess()
