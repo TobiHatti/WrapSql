@@ -17,8 +17,8 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, ODBC, WrapODBC</PackageTags>
-    <PackageReleaseNotes>First Test version.
-Work in progress</PackageReleaseNotes>
+    <PackageReleaseNotes>Pre-Release, untested.
+Work in progress.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -40,7 +40,7 @@ Work in progress</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.1.2" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.2" />
     <PackageReference Include="System.Data.Odbc" Version="4.7.0" />
   </ItemGroup>
 

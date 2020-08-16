@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "YIr/G0Hti1t+RUzZ/SsVpN8XueyOMFFkeGS0AQVBk7VN6uPz24hK2uJULqCGaEDmfvsgscUNYPrdTcmMBjZ4bw==",
+  "dgSpecHash": "kJ4cajgMYmXQAbvqBWKkwrczxdS2MeVC7yIt0GpUB13PaSeRSxyyVd5R9+MU8y0uiJ1JXL2NasWCEakOtjL1JQ==",
   "success": true,
   "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapODBC\\WrapODBC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.1.2\\endev.wrapsql.wrapsqlbase.0.0.1.2.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.2\\endev.wrapsql.wrapsqlbase.0.0.2.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.data.odbc\\4.7.0\\system.data.odbc.4.7.0.nupkg.sha512"

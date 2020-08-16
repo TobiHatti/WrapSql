@@ -4,5 +4,32 @@
         <name>WrapSQLite</name>
     </assembly>
     <members>
+        <member name="T:WrapSQL.WrapSQLite">
+            <summary>
+            SQLite-Port of WrapSQL.
+            </summary>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.#ctor(System.String,System.Boolean)">
+            <summary>
+            Creates a new ODBC-Wrapper object.
+            </summary>
+            <param name="connectionString">Connection-string for the database</param>
+            <param name="isFilepath">If set to true, only the filename has to be provided, instead of the whole connection-string</param>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.ExecuteNonQuery(System.String,System.Boolean,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.ExecuteScalar``1(System.String,System.Boolean,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.ExecuteQuery(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.GetDataAdapter(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapSQLite.CreateDataTable(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
     </members>
 </doc>

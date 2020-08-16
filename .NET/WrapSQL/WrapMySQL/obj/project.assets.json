@@ -16,7 +16,7 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
+      "Endev.WrapSQL.WrapSQLBase/0.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
@@ -1127,17 +1127,18 @@
         "lib/xamarinios/BouncyCastle.Crypto.xml"
       ]
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
-      "sha512": "HFb73cMK5hzWg985n7W6sUweOL6yWpidOIFgDNUht6cObH0cgMkuUHNg4dSJu6DI6oxDnwfuKAbCU+uZY/M+dQ==",
+    "Endev.WrapSQL.WrapSQLBase/0.0.2": {
+      "sha512": "avZFivNAEyuhfiOQqFDIeNVXufRwv146ui78RDsJpdO/PeDdf6aQ+0TRYwPjcXXhzxyfxOLAWjRmSwczEHhHbA==",
       "type": "package",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.1.2",
+      "path": "endev.wrapsql.wrapsqlbase/0.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EndevLibsLogo.png",
-        "endev.wrapsql.wrapsqlbase.0.0.1.2.nupkg.sha512",
+        "endev.wrapsql.wrapsqlbase.0.0.2.nupkg.sha512",
         "endev.wrapsql.wrapsqlbase.nuspec",
-        "lib/netstandard2.0/WrapSQLBase.dll"
+        "lib/netstandard2.0/WrapSQLBase.dll",
+        "lib/netstandard2.0/WrapSQLBase.xml"
       ]
     },
     "Google.Protobuf/3.6.1": {
@@ -4544,7 +4545,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Endev.WrapSQL.WrapSQLBase >= 0.0.1.2",
+      "Endev.WrapSQL.WrapSQLBase >= 0.0.2",
       "MySql.Data >= 8.0.21",
       "NETStandard.Library >= 2.0.3"
     ]
@@ -4588,7 +4589,7 @@
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": {
             "target": "Package",
-            "version": "[0.0.1.2, )"
+            "version": "[0.0.2, )"
           },
           "MySql.Data": {
             "target": "Package",

@@ -7,3 +7,4 @@ U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapS
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.dll
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.pdb
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.csprojAssemblyReference.cache
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.xml

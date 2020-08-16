@@ -2,8 +2,9 @@ U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapS
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\bin\Release\netstandard2.0\WrapSQLite.dll
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\bin\Release\netstandard2.0\WrapSQLite.pdb
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\bin\Release\netstandard2.0\WrapSQLite.xml
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.csprojAssemblyReference.cache
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.AssemblyInfoInputs.cache
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.AssemblyInfo.cs
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.dll
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.pdb
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.csproj.CoreCompileInputs.cache
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLite\obj\Release\netstandard2.0\WrapSQLite.csprojAssemblyReference.cache

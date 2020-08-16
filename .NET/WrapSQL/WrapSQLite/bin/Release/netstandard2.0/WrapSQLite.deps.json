@@ -9,18 +9,19 @@
     ".NETStandard,Version=v2.0/": {
       "WrapSQLite/0.0.2": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "0.0.1.2",
-          "NETStandard.Library": "2.0.3"
+          "Endev.WrapSQL.WrapSQLBase": "0.0.2",
+          "NETStandard.Library": "2.0.3",
+          "System.Data.SQLite.Core": "1.0.113.1"
         },
         "runtime": {
           "WrapSQLite.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
+      "Endev.WrapSQL.WrapSQLBase/0.0.2": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "0.0.1.2",
-            "fileVersion": "0.0.1.2"
+            "assemblyVersion": "0.0.2.0",
+            "fileVersion": "0.0.2.0"
           }
         }
       },
@@ -28,6 +29,14 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "System.Data.SQLite.Core/1.0.113.1": {
+        "runtime": {
+          "lib/netstandard2.0/System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.113.0",
+            "fileVersion": "1.0.113.0"
+          }
         }
       }
     }
@@ -38,12 +47,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.1.2": {
+    "Endev.WrapSQL.WrapSQLBase/0.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HFb73cMK5hzWg985n7W6sUweOL6yWpidOIFgDNUht6cObH0cgMkuUHNg4dSJu6DI6oxDnwfuKAbCU+uZY/M+dQ==",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.1.2",
-      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.1.2.nupkg.sha512"
+      "sha512": "sha512-avZFivNAEyuhfiOQqFDIeNVXufRwv146ui78RDsJpdO/PeDdf6aQ+0TRYwPjcXXhzxyfxOLAWjRmSwczEHhHbA==",
+      "path": "endev.wrapsql.wrapsqlbase/0.0.2",
+      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.2.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -58,6 +67,13 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.113.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ymvB558/Tgdxj2MzJjhDvPLJ/S2WgG1KzQ1cmqzsW3+YQ5DO+eAU04OpY5deK6fndM+DEU8+lwmmYHxxUS2Qvw==",
+      "path": "system.data.sqlite.core/1.0.113.1",
+      "hashPath": "system.data.sqlite.core.1.0.113.1.nupkg.sha512"
     }
   }
 }

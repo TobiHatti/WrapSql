@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WrapOleDB</name>
+    </assembly>
+    <members>
+        <member name="T:WrapSQL.WrapOleDB">
+            <summary>
+            OleDB-Port of WrapSQL.
+            </summary>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.#ctor(System.String)">
+            <summary>
+            Creates a new ODBC-Wrapper object.
+            </summary>
+            <param name="connectionString">Connection-string for the database</param>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.ExecuteNonQuery(System.String,System.Boolean,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.ExecuteScalar``1(System.String,System.Boolean,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.ExecuteQuery(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.GetDataAdapter(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+        <member name="M:WrapSQL.WrapOleDB.CreateDataTable(System.String,System.Object[])">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

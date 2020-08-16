@@ -11,13 +11,16 @@
     <icon>EndevLibsLogo.png</icon>
     <projectUrl>https://endev.at/p/wrapsql</projectUrl>
     <description>Wrapper-class for SQLite for simpler and cleaner code.</description>
-    <releaseNotes>First Test version.
-Work in progress</releaseNotes>
+    <releaseNotes>Pre-Release, untested.
+Work in progress.</releaseNotes>
     <copyright>2020 Tobias Hattinger</copyright>
     <tags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, SQLite, WrapSQLite</tags>
     <repository type="GitHub" url="https://github.com/TobiHatti/WrapSQL" />
     <dependencies>
-      <group targetFramework=".NETStandard2.0" />
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Endev.WrapSQL.WrapSQLBase" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SQLite.Core" version="1.0.113.1" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>
