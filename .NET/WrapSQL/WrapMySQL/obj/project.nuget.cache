@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "E/u49zzGhiMjpLfmLhG217tM6+riWrZyBc3JNsUsomR2sf/AA97FFphwZ025VjBpnqUY5AdsUsCUMV5Wf5C2XQ==",
+  "dgSpecHash": "x8TBqj86SmP9DoF4oRBth6L0m+VRmjLf7Jk2zadLOeOSm2BQsLsQndHbtu8IvNucj7pnVXZizEl80jQ9oKjYJg==",
   "success": true,
   "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.1.1\\endev.wrapsql.wrapsqlbase.0.0.1.1.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.1.2\\endev.wrapsql.wrapsqlbase.0.0.1.2.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\k4os.compression.lz4.streams\\1.1.11\\k4os.compression.lz4.streams.1.1.11.nupkg.sha512",

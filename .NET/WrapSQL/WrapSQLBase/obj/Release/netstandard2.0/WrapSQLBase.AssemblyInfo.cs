@@ -20,6 +20,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapSQLBase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.1.2")]
+[assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
 

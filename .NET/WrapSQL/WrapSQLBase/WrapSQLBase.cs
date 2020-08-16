@@ -11,7 +11,6 @@ namespace WrapSQL
     {
         #region Fields
 
-        protected string connectionString = string.Empty;
         protected bool transactionActive = false;
         protected DbConnection connection = null;
         protected DbTransaction transaction = null;

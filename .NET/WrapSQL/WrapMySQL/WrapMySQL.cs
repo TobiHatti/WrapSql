@@ -8,20 +8,17 @@ namespace WrapSQL
     public class WrapMySQL : WrapSQLBase, IDisposable
     {
         /// <summary>
-        /// Creates a new SQL-Wrapper object.
+        /// Creates a new MySQL-Wrapper object.
         /// </summary>
         /// <param name="connectionString">Connection-string for the database</param>
         public WrapMySQL(string connectionString)
         {
-            // Set connection-string
-            this.connectionString = connectionString;
-
             // Create connection
-            connection = new MySqlConnection(this.connectionString);
+            connection = new MySqlConnection(connectionString);
         }
 
         /// <summary>
-        /// Creates a new SQL-Wrapper object.
+        /// Creates a new MySQL-Wrapper object.
         /// </summary>
         /// <param name="server">Hostname or IP of the server</param>
         /// <param name="database">Target database</param>
@@ -31,16 +28,22 @@ namespace WrapSQL
         /// <param name="sslMode">SSL encryption mode</param>
         public WrapMySQL(string server, string database, string username, string password, int port = 3306, string sslMode = "none")
         {
-            // Assemble connection-string
-            this.connectionString = $"SERVER={server};Port={port};SslMode={sslMode};DATABASE={database};USER ID={username};PASSWORD={password}";
-
             // Create connection
-            connection = new MySqlConnection(this.connectionString);
+            connection = new MySqlConnection($"SERVER={server};Port={port};SslMode={sslMode};DATABASE={database};USER ID={username};PASSWORD={password}");
+        }
+
+        /// <summary>
+        /// Creates a new MySQL-Wrapper object.
+        /// </summary>
+        /// <param name="mysqlData">MySQL connection data</param>
+        public WrapMySQL(WrapMySQLData mysqlData)
+        {
+            // Create connection
+            connection = new MySqlConnection($"SERVER={mysqlData.Hostname};Port={mysqlData.Port};SslMode={mysqlData.SSLMode};DATABASE={mysqlData.Database};USER ID={mysqlData.Username};PASSWORD={mysqlData.Password}");
         }
 
         protected override int ExecuteNonQuery(string sqlQuery, bool aCon, params object[] parameters)
         {
-        
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
@@ -57,7 +60,7 @@ namespace WrapSQL
 
         protected override T ExecuteScalar<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new Exception("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
             {
