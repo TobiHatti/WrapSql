@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2020 Tobias Hattinger")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Wrapper-class for MySQL for simpler and cleaner code.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.2.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.2")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.2.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.2.1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapMySQL")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.0.2.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.0.2.1")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.

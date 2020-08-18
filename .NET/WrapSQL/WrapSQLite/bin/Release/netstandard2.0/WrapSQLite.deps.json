@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapSQLite/0.0.2": {
+      "WrapSQLite/0.0.2.1": {
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": "0.0.2",
           "NETStandard.Library": "2.0.3",
@@ -42,7 +42,7 @@
     }
   },
   "libraries": {
-    "WrapSQLite/0.0.2": {
+    "WrapSQLite/0.0.2.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -18,32 +18,32 @@
         /// <summary>
         /// Hostname of the MySQL-Database (localhost / www.sample.org / 10.0.0.123)
         /// </summary>
-        public string Hostname { get; }
+        public string Hostname { get; set; }
 
         /// <summary>
         /// Name of the MySQL-Database
         /// </summary>
-        public string Database { get; }
+        public string Database { get; set; }
 
         /// <summary>
         /// Username for the MySQL-Authentication
         /// </summary>
-        public string Username { get; }
+        public string Username { get; set; }
 
         /// <summary>
         /// Password for the MySQL-Authentication
         /// </summary>
-        public string Password { get; }
+        public string Password { get; set; }
 
         /// <summary>
         /// SSL-Mode of the MySQL-connection
         /// </summary>
-        public string SSLMode { get; }
+        public string SSLMode { get; set; }
 
         /// <summary>
         /// Port of the MySQL-server
         /// </summary>
-        public int Port { get; }
+        public int Port { get; set; }
 
         /// <summary>
         /// Creates a new MySQL-data object

@@ -41,3 +41,5 @@ U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapS
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\UnitTestWrapSQL\obj\Release\UnitTestWrapSQL.csproj.CopyComplete
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\UnitTestWrapSQL\obj\Release\UnitTestWrapSQL.dll
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\UnitTestWrapSQL\obj\Release\UnitTestWrapSQL.pdb
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\UnitTestWrapSQL\bin\Release\WrapMySQL.xml
+U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\UnitTestWrapSQL\bin\Release\WrapSQLBase.xml

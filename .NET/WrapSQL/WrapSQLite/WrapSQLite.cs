@@ -20,7 +20,13 @@ namespace WrapSQL
         {
             // Create connection
 
-            if(isFilepath) connection = new SQLiteConnection($@"URI=file:{connectionString}");
+            if (isFilepath)
+            {
+                if (!Directory.Exists(Path.GetDirectoryName(connectionString))) 
+                    Directory.CreateDirectory(Path.GetDirectoryName(connectionString));
+
+                connection = new SQLiteConnection($@"URI=file:{connectionString}");
+            }
             else connection = new SQLiteConnection(connectionString);
         }
 

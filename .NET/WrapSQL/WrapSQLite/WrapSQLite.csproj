@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLite</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.2.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Tobias Hattinger</Authors>
@@ -19,8 +19,8 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, SQLite, WrapSQLite</PackageTags>
-    <PackageReleaseNotes>Pre-Release, untested.
-Work in progress.</PackageReleaseNotes>
+    <PackageReleaseNotes>Minor bug fix:
+Create directory if not existing</PackageReleaseNotes>
     <NeutralLanguage>Englisch</NeutralLanguage>
   </PropertyGroup>
 
