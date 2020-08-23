@@ -45,6 +45,16 @@
         /// </summary>
         public int Port { get; set; }
 
+        public bool Pooling { get; set; }
+
+        public int ConnectionTimeout { get; set; }
+
+        public int CommandTimeout { get; set; }
+       
+        public string CharSet { get; set; }
+
+        public bool IgnorePrepare { get; set; }
+
         /// <summary>
         /// Creates a new MySQL-data object
         /// </summary>
