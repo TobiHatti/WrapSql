@@ -92,6 +92,31 @@
             Port of the MySQL-server
             </summary>
         </member>
+        <member name="P:WrapSQL.WrapMySQLData.Pooling">
+            <summary>
+            Enable/Disable connection pooling
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.ConnectionTimeout">
+            <summary>
+            Sets the connection timeout
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.CommandTimeout">
+            <summary>
+            Sets the command execution timeout
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.CharSet">
+            <summary>
+            Specifies the charset which should be used
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.IgnorePrepare">
+            <summary>
+            Enable/Disable prepared statements
+            </summary>
+        </member>
         <member name="M:WrapSQL.WrapMySQLData.#ctor">
             <summary>
             Creates a new MySQL-data object

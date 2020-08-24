@@ -45,14 +45,29 @@
         /// </summary>
         public int Port { get; set; }
 
+        /// <summary>
+        /// Enable/Disable connection pooling
+        /// </summary>
         public bool Pooling { get; set; }
 
+        /// <summary>
+        /// Sets the connection timeout
+        /// </summary>
         public int ConnectionTimeout { get; set; }
 
+        /// <summary>
+        /// Sets the command execution timeout
+        /// </summary>
         public int CommandTimeout { get; set; }
        
+        /// <summary>
+        /// Specifies the charset which should be used
+        /// </summary>
         public string CharSet { get; set; }
 
+        /// <summary>
+        /// Enable/Disable prepared statements
+        /// </summary>
         public bool IgnorePrepare { get; set; }
 
         /// <summary>
