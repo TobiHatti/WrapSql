@@ -131,16 +131,5 @@
             <param name="Username">Login username</param>
             <param name="Password">Login password</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQLData.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String)">
-            <summary>
-            Creates a new MySQL-data object
-            </summary>
-            <param name="Hostname">Hostname or IP of the server</param>
-            <param name="Database">Target database</param>
-            <param name="Username">Login username</param>
-            <param name="Password">Login password</param>
-            <param name="Port">MySQL Server-port</param>
-            <param name="SSLMode">SSL encryption mode</param>
-        </member>
     </members>
 </doc>

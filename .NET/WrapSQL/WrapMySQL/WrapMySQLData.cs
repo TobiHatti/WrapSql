@@ -74,7 +74,7 @@
         /// Creates a new MySQL-data object
         /// </summary>
         public WrapMySQLData()
-            : this(string.Empty, string.Empty, string.Empty, string.Empty, DefaultMySQLPort, DefaultSSLMode) { }
+            : this(string.Empty, string.Empty, string.Empty, string.Empty) { }
 
         /// <summary>
         /// Creates a new MySQL-data object
@@ -84,26 +84,11 @@
         /// <param name="Username">Login username</param>
         /// <param name="Password">Login password</param>
         public WrapMySQLData(string Hostname, string Database, string Username, string Password)
-            : this(Hostname, Database, Username, Password, DefaultMySQLPort, DefaultSSLMode) { }
-
-        /// <summary>
-        /// Creates a new MySQL-data object
-        /// </summary>
-        /// <param name="Hostname">Hostname or IP of the server</param>
-        /// <param name="Database">Target database</param>
-        /// <param name="Username">Login username</param>
-        /// <param name="Password">Login password</param>
-        /// <param name="Port">MySQL Server-port</param>
-        /// <param name="SSLMode">SSL encryption mode</param>
-        public WrapMySQLData(string Hostname, string Database, string Username, string Password, int Port, string SSLMode)
         {
             this.Hostname = Hostname;
             this.Database = Database;
             this.Username = Username;
             this.Password = Password;
-
-            this.Port = Port;
-            this.SSLMode = SSLMode;
         }
     }
 }
