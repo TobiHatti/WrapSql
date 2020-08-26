@@ -1,4 +1,6 @@
-﻿namespace WrapSQL
+﻿using System.Text;
+
+namespace WrapSQL
 {
     /// <summary>
     /// Object containing any data relevant for establishing MySQL-connections
@@ -18,57 +20,57 @@
         /// <summary>
         /// Hostname of the MySQL-Database (localhost / www.sample.org / 10.0.0.123)
         /// </summary>
-        public string Hostname { get; set; }
+        public string Hostname { get; set; } = string.Empty;
 
         /// <summary>
         /// Name of the MySQL-Database
         /// </summary>
-        public string Database { get; set; }
+        public string Database { get; set; } = string.Empty;
 
         /// <summary>
         /// Username for the MySQL-Authentication
         /// </summary>
-        public string Username { get; set; }
+        public string Username { get; set; } = string.Empty;
 
         /// <summary>
         /// Password for the MySQL-Authentication
         /// </summary>
-        public string Password { get; set; }
+        public string Password { get; set; } = string.Empty;
 
         /// <summary>
         /// SSL-Mode of the MySQL-connection
         /// </summary>
-        public string SSLMode { get; set; }
+        public string SSLMode { get; set; } = "none";
 
         /// <summary>
         /// Port of the MySQL-server
         /// </summary>
-        public int Port { get; set; }
+        public int Port { get; set; } = 3306;
 
         /// <summary>
         /// Enable/Disable connection pooling
         /// </summary>
-        public bool Pooling { get; set; }
+        public bool Pooling { get; set; } = true;
 
         /// <summary>
         /// Sets the connection timeout
         /// </summary>
-        public int ConnectionTimeout { get; set; }
+        public int ConnectionTimeout { get; set; } = -1;
 
         /// <summary>
         /// Sets the command execution timeout
         /// </summary>
-        public int CommandTimeout { get; set; }
-       
+        public int CommandTimeout { get; set; } = -1;
+
         /// <summary>
         /// Specifies the charset which should be used
         /// </summary>
-        public string CharSet { get; set; }
+        public string CharSet { get; set; } = string.Empty;
 
         /// <summary>
         /// Enable/Disable prepared statements
         /// </summary>
-        public bool IgnorePrepare { get; set; }
+        public bool IgnorePrepare { get; set; } = false;
 
         /// <summary>
         /// Creates a new MySQL-data object
@@ -89,6 +91,14 @@
             this.Database = Database;
             this.Username = Username;
             this.Password = Password;
+        }
+
+        public override string ToString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+
+            return sb.ToString();
         }
     }
 }
