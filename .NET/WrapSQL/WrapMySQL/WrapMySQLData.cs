@@ -93,10 +93,33 @@ namespace WrapSQL
             this.Password = Password;
         }
 
+        /// <summary>
+        /// Creates a MySQL connection string
+        /// </summary>
+        /// <returns>MySQL connection string</returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
 
+            sb.Append($"Server={Hostname};");
+
+            if (Port != -1) sb.Append($"Port={Port};");
+
+            sb.Append($"Database={Database};");
+            sb.Append($"Uid={Username};");
+            sb.Append($"Pwd={Password};");
+
+            if (!string.IsNullOrEmpty(SSLMode)) sb.Append($"SslMode={SSLMode};");
+
+            if (!Pooling) sb.Append("Pooling=False;");
+
+            if (ConnectionTimeout != -1) sb.Append($"Connection Timeout={ConnectionTimeout};");
+
+            if (CommandTimeout != -1) sb.Append($"default command timeout={CommandTimeout};");
+
+            if (IgnorePrepare) sb.Append("Ignore Prepared=True;");
+
+            if (!string.IsNullOrEmpty(CharSet)) sb.Append($"CharSet={CharSet};");
 
             return sb.ToString();
         }

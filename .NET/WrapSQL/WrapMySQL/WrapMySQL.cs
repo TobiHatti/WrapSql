@@ -29,10 +29,10 @@ namespace WrapSQL
         /// <param name="password">Login password</param>
         /// <param name="port">Server-port. Default: 3306</param>
         /// <param name="sslMode">SSL encryption mode</param>
-        public WrapMySQL(string server, string database, string username, string password, int port = 3306, string sslMode = "none")
+        public WrapMySQL(string server, string database, string username, string password)
         {
             // Create connection
-            connection = new MySqlConnection($"SERVER={server};Port={port};SslMode={sslMode};DATABASE={database};USER ID={username};PASSWORD={password}");
+            connection = new MySqlConnection($"Server={server};Database={database};Uid={username};Pwd={password}");
         }
 
         /// <summary>
@@ -42,7 +42,7 @@ namespace WrapSQL
         public WrapMySQL(WrapMySQLData mysqlData)
         {
             // Create connection
-            connection = new MySqlConnection($"SERVER={mysqlData.Hostname};Port={mysqlData.Port};SslMode={mysqlData.SSLMode};DATABASE={mysqlData.Database};USER ID={mysqlData.Username};PASSWORD={mysqlData.Password}");
+            connection = new MySqlConnection(mysqlData.ToString());
         }
 
         ///<inheritdoc/>
