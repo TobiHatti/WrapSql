@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapMySQL/0.0.2.1": {
+      "WrapMySQL/0.0.2.2": {
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": "0.0.2",
           "MySql.Data": "8.0.21",
@@ -874,7 +874,7 @@
     }
   },
   "libraries": {
-    "WrapMySQL/0.0.2.1": {
+    "WrapMySQL/0.0.2.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

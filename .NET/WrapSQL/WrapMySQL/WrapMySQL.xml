@@ -15,7 +15,7 @@
             </summary>
             <param name="connectionString">Connection-string for the database</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String)">
+        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new MySQL-Wrapper object.
             </summary>
@@ -130,6 +130,12 @@
             <param name="Database">Target database</param>
             <param name="Username">Login username</param>
             <param name="Password">Login password</param>
+        </member>
+        <member name="M:WrapSQL.WrapMySQLData.ToString">
+            <summary>
+            Creates a MySQL connection string
+            </summary>
+            <returns>MySQL connection string</returns>
         </member>
     </members>
 </doc>

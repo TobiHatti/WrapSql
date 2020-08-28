@@ -4554,7 +4554,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "0.0.2.1",
+    "version": "0.0.2.2",
     "restore": {
       "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj",
       "projectName": "Endev.WrapSQL.WrapMySQL",
@@ -4571,7 +4571,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/TobiHatti/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

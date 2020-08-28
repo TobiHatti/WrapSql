@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Endev.WrapSQL.WrapMySQL</id>
+    <version>0.0.2.2</version>
+    <authors>Tobias Hattinger</authors>
+    <owners>Tobias Hattinger</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>EndevLibsLogo.png</icon>
+    <projectUrl>https://endev.at/p/wrapsql</projectUrl>
+    <description>Wrapper-class for MySQL for simpler and cleaner code.</description>
+    <releaseNotes>Bug fix in WrapMySQLData</releaseNotes>
+    <copyright>2020 Tobias Hattinger</copyright>
+    <tags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</tags>
+    <repository type="GitHub" url="https://github.com/TobiHatti/WrapSQL" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Endev.WrapSQL.WrapSQLBase" version="0.0.2" exclude="Build,Analyzers" />
+        <dependency id="MySql.Data" version="8.0.21" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.dll" target="lib\netstandard2.0\WrapMySQL.dll" />
+    <file src="U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.xml" target="lib\netstandard2.0\WrapMySQL.xml" />
+    <file src="U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\EndevLibsLogo.png" target="EndevLibsLogo.png" />
+  </files>
+</package>
