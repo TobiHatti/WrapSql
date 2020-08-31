@@ -1,0 +1,6 @@
+version: 0.0.3.0
+image: Visual Studio 2019
+platform: Any CPU
+build:
+  project: .NET/WrapSQL/WrapSQL.sln
+  verbosity: minimal
