@@ -5,11 +5,19 @@
 ![GitHub](https://img.shields.io/github/license/TobiHatti/WrapSQL)
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL/releases)
 [![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TobiHatti/WrapSQL?include_prereleases)](https://github.com/TobiHatti/WrapSQL/releases)
+![Nuget](https://img.shields.io/nuget/v/endev.wrapsql.wrapsqlbase?label=release&logo=nuget)
 [![GitHub last commit](https://img.shields.io/github/last-commit/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues-raw/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL/issues)
 [![GitHub language count](https://img.shields.io/github/languages/count/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL)
 
 ![image](https://endev.at/content/projects/WrapSQL/WrapSQL_Banner_300.svg)
+
+![Nuget](https://img.shields.io/nuget/dt/endev.wrapsql.wrapsqlbase?label=downloads%20%28WrapSQLBase%29&logo=nuget)
+![Nuget](https://img.shields.io/nuget/dt/endev.wrapsql.wrapmysql?label=downloads%20%28WrapMySQL%29&logo=nuget)
+![Nuget](https://img.shields.io/nuget/dt/endev.wrapsql.wrapsqlite?label=downloads%20%28WrapSQLite%29&logo=nuget)
+![Nuget](https://img.shields.io/nuget/dt/endev.wrapsql.wrapodbc?label=downloads%20%28WrapODBC%29&logo=nuget)
+![Nuget](https://img.shields.io/nuget/dt/endev.wrapsql.wrapoledb?label=downloads%20%28WrapOleDB%29&logo=nuget)
+
 
 Multiple wrapper-classes for several languages and DB-Types
 
