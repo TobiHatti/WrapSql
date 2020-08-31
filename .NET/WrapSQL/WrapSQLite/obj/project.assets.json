@@ -305,7 +305,7 @@
     "C:\\Users\\Tobias\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "0.0.2.1",
+    "version": "0.0.3",
     "restore": {
       "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
       "projectName": "Endev.WrapSQL.WrapSQLite",

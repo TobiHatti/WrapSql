@@ -7,4 +7,3 @@ U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapS
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Release\netstandard2.0\WrapSQLBase.dll
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Release\netstandard2.0\WrapSQLBase.pdb
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Release\netstandard2.0\WrapSQLBase.xml
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Release\netstandard2.0\WrapSQLBase.csprojAssemblyReference.cache

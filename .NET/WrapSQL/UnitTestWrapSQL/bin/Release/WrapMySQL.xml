@@ -15,7 +15,7 @@
             </summary>
             <param name="connectionString">Connection-string for the database</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String)">
+        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new MySQL-Wrapper object.
             </summary>
@@ -92,6 +92,31 @@
             Port of the MySQL-server
             </summary>
         </member>
+        <member name="P:WrapSQL.WrapMySQLData.Pooling">
+            <summary>
+            Enable/Disable connection pooling
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.ConnectionTimeout">
+            <summary>
+            Sets the connection timeout
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.CommandTimeout">
+            <summary>
+            Sets the command execution timeout
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.CharSet">
+            <summary>
+            Specifies the charset which should be used
+            </summary>
+        </member>
+        <member name="P:WrapSQL.WrapMySQLData.IgnorePrepare">
+            <summary>
+            Enable/Disable prepared statements
+            </summary>
+        </member>
         <member name="M:WrapSQL.WrapMySQLData.#ctor">
             <summary>
             Creates a new MySQL-data object
@@ -106,16 +131,11 @@
             <param name="Username">Login username</param>
             <param name="Password">Login password</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQLData.#ctor(System.String,System.String,System.String,System.String,System.Int32,System.String)">
+        <member name="M:WrapSQL.WrapMySQLData.ToString">
             <summary>
-            Creates a new MySQL-data object
+            Creates a MySQL connection string
             </summary>
-            <param name="Hostname">Hostname or IP of the server</param>
-            <param name="Database">Target database</param>
-            <param name="Username">Login username</param>
-            <param name="Password">Login password</param>
-            <param name="Port">MySQL Server-port</param>
-            <param name="SSLMode">SSL encryption mode</param>
+            <returns>MySQL connection string</returns>
         </member>
     </members>
 </doc>

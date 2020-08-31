@@ -15,8 +15,8 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2020 Tobias Hattinger")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Base-class for any derivations of WrapSQL. \r\nThis package has no use by itself.\r\n" +
-    "\r\n=== WrapSQL ===\r\nWrapSQL is a simple, lightweight database-wrapper\r\nfor easier" +
-    " and faster development.")]
+    "\r\nWrapSQL is a simple, lightweight database-wrapper\r\nfor easier and faster devel" +
+    "opment.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]

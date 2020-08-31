@@ -6,12 +6,11 @@
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapOleDB</PackageId>
     <Authors>Tobias Hattinger</Authors>
-    <Version>0.0.2</Version>
+    <Version>0.0.3.0</Version>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
     <Description>Wrapper-class for OleDB-databases for simpler and cleaner code.
 
-=== WrapSQL ===
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
     <Copyright>2020 Tobias Hattinger</Copyright>
@@ -21,7 +20,8 @@ for easier and faster development.</Description>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, OleDB, WrapOleDB</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Updated for WrapSQLBase 0.0.3.0
+Improved error- and exception-handling</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>

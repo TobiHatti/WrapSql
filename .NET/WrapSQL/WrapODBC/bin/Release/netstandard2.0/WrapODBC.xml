@@ -15,19 +15,19 @@
             </summary>
             <param name="connectionString">Connection-string for the database</param>
         </member>
-        <member name="M:WrapSQL.WrapODBC.ExecuteNonQuery(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapODBC.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapODBC.ExecuteScalar``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapODBC.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapODBC.ExecuteQuery(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapODBC.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapODBC.GetDataAdapter(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapODBC.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapODBC.CreateDataTable(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapODBC.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
     </members>

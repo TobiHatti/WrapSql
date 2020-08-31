@@ -5,13 +5,12 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapODBC</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3.0</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
     <Description>Wrapper-class for ODBC database connections for simpler and cleaner code.
 
-=== WrapSQL ===
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
     <Copyright>2020 Tobias Hattinger</Copyright>
@@ -21,7 +20,8 @@ for easier and faster development.</Description>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, ODBC, WrapODBC</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Updated for WrapSQLBase 0.0.3.0
+Improved error- and exception-handling</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

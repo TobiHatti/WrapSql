@@ -7,9 +7,9 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapSQLite/0.0.2.1": {
+      "WrapSQLite/0.0.3.0": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "0.0.2",
+          "Endev.WrapSQL.WrapSQLBase": "0.0.3",
           "NETStandard.Library": "2.0.3",
           "System.Data.SQLite.Core": "1.0.113.1"
         },
@@ -17,11 +17,11 @@
           "WrapSQLite.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.2": {
+      "Endev.WrapSQL.WrapSQLBase/0.0.3": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "0.0.2.0",
-            "fileVersion": "0.0.2.0"
+            "assemblyVersion": "0.0.3.0",
+            "fileVersion": "0.0.3.0"
           }
         }
       },
@@ -42,17 +42,17 @@
     }
   },
   "libraries": {
-    "WrapSQLite/0.0.2.1": {
+    "WrapSQLite/0.0.3.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.2": {
+    "Endev.WrapSQL.WrapSQLBase/0.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-avZFivNAEyuhfiOQqFDIeNVXufRwv146ui78RDsJpdO/PeDdf6aQ+0TRYwPjcXXhzxyfxOLAWjRmSwczEHhHbA==",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.2",
-      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.2.nupkg.sha512"
+      "sha512": "sha512-KKrD6rQdF8WQxsQmvYl99+14xUmWc/R6kG4D5idQlH3E9sKm5IrJRFNrKaYsSJp2mfUjnaCDvnWPWC+WOxdLJQ==",
+      "path": "endev.wrapsql.wrapsqlbase/0.0.3",
+      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.3.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

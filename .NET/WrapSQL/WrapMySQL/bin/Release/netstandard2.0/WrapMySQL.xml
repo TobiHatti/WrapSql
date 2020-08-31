@@ -23,8 +23,6 @@
             <param name="database">Target database</param>
             <param name="username">Login username</param>
             <param name="password">Login password</param>
-            <param name="port">Server-port. Default: 3306</param>
-            <param name="sslMode">SSL encryption mode</param>
         </member>
         <member name="M:WrapSQL.WrapMySQL.#ctor(WrapSQL.WrapMySQLData)">
             <summary>
@@ -32,19 +30,19 @@
             </summary>
             <param name="mysqlData">MySQL connection data</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteNonQuery(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapMySQL.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteScalar``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapMySQL.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteQuery(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapMySQL.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.GetDataAdapter(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapMySQL.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.CreateDataTable(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapMySQL.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
         <member name="T:WrapSQL.WrapMySQLData">

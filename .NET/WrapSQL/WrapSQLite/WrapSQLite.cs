@@ -25,13 +25,13 @@ namespace WrapSQL
                 if (!Directory.Exists(Path.GetDirectoryName(connectionString))) 
                     Directory.CreateDirectory(Path.GetDirectoryName(connectionString));
 
-                connection = new SQLiteConnection($@"URI=file:{connectionString}");
+                Connection = new SQLiteConnection($@"URI=file:{connectionString}");
             }
-            else connection = new SQLiteConnection(connectionString);
+            else Connection = new SQLiteConnection(connectionString);
         }
 
         ///<inheritdoc/>
-        protected override int ExecuteNonQuery(string sqlQuery, bool aCon, params object[] parameters)
+        protected override int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
@@ -48,7 +48,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        protected override T ExecuteScalar<T>(string sqlQuery, bool aCon, params object[] parameters)
+        protected override T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
@@ -64,7 +64,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
+        protected override DbDataReader ExecuteQueryImplement(string sqlQuery, params object[] parameters)
         {
             SQLiteCommand command = new SQLiteCommand(sqlQuery, (SQLiteConnection)Connection);
             foreach (object parameter in parameters) command.Parameters.AddWithValue(string.Empty, parameter);
@@ -72,7 +72,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
+        protected override DataAdapter GetDataAdapterImplement(string sqlQuery, params object[] parameters)
         {
             using (SQLiteCommand command = new SQLiteCommand(sqlQuery, (SQLiteConnection)Connection))
             {
@@ -82,7 +82,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DataTable CreateDataTable(string sqlQuery, params object[] parameters)
+        protected override DataTable CreateDataTableImplement(string sqlQuery, params object[] parameters)
         {
             using (SQLiteCommand command = new SQLiteCommand(sqlQuery, (SQLiteConnection)Connection))
             {

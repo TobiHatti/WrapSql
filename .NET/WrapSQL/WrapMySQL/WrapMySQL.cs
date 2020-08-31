@@ -17,7 +17,7 @@ namespace WrapSQL
         public WrapMySQL(string connectionString)
         {
             // Create connection
-            connection = new MySqlConnection(connectionString);
+            Connection = new MySqlConnection(connectionString);
         }
 
         /// <summary>
@@ -30,7 +30,7 @@ namespace WrapSQL
         public WrapMySQL(string server, string database, string username, string password)
         {
             // Create connection
-            connection = new MySqlConnection($"Server={server};Database={database};Uid={username};Pwd={password}");
+            Connection = new MySqlConnection($"Server={server};Database={database};Uid={username};Pwd={password}");
         }
 
         /// <summary>
@@ -40,11 +40,11 @@ namespace WrapSQL
         public WrapMySQL(WrapMySQLData mysqlData)
         {
             // Create connection
-            connection = new MySqlConnection(mysqlData.ToString());
+            Connection = new MySqlConnection(mysqlData.ToString());
         }
 
         ///<inheritdoc/>
-        protected override int ExecuteNonQuery(string sqlQuery, bool aCon, params object[] parameters)
+        protected override int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
@@ -61,7 +61,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        protected override T ExecuteScalar<T>(string sqlQuery, bool aCon, params object[] parameters)
+        protected override T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
             if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
@@ -77,7 +77,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
+        protected override DbDataReader ExecuteQueryImplement(string sqlQuery, params object[] parameters)
         {
             MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection);
             foreach (object parameter in parameters) command.Parameters.AddWithValue(string.Empty, parameter);
@@ -85,7 +85,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
+        protected override DataAdapter GetDataAdapterImplement(string sqlQuery, params object[] parameters)
         {
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
             {
@@ -95,7 +95,7 @@ namespace WrapSQL
         }
 
         ///<inheritdoc/>
-        public override DataTable CreateDataTable(string sqlQuery, params object[] parameters)
+        protected override DataTable CreateDataTableImplement(string sqlQuery, params object[] parameters)
         {
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
             {

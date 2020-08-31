@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLite</PackageId>
-    <Version>0.0.2.1</Version>
+    <Version>0.0.3.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Tobias Hattinger</Authors>
@@ -13,7 +13,6 @@
     <Product>WrapSQL</Product>
     <Description>Wrapper-class for SQLite for simpler and cleaner code.
 
-=== WrapSQL ===
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -23,7 +22,8 @@ for easier and faster development.</Description>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, SQLite, WrapSQLite</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Updated for WrapSQLBase 0.0.3.0
+Improved error- and exception-handling</PackageReleaseNotes>
     <NeutralLanguage>Englisch</NeutralLanguage>
   </PropertyGroup>
 

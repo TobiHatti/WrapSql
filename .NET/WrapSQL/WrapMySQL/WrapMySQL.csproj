@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>0.0.2.2</Version>
+    <Version>0.0.3.0</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
@@ -16,16 +16,17 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>Updated for WrapSQLBase 0.0.3.0
+Improved error- and exception-handling
+Added advanced connection-string options</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
     <Description>Wrapper-class for MySQL for simpler and cleaner code.
 
-=== WrapSQL ===
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
-    <AssemblyVersion>0.0.2.2</AssemblyVersion>
+    <AssemblyVersion>0.0.3.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">

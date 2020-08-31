@@ -16,19 +16,19 @@
             <param name="connectionString">Connection-string for the database</param>
             <param name="isFilepath">If set to true, only the filename has to be provided, instead of the whole connection-string</param>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteNonQuery(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapSQLite.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteScalar``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSQL.WrapSQLite.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteQuery(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapSQLite.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.GetDataAdapter(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapSQLite.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.CreateDataTable(System.String,System.Object[])">
+        <member name="M:WrapSQL.WrapSQLite.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
     </members>

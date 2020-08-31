@@ -14,7 +14,6 @@
     <Description>Base-class for any derivations of WrapSQL. 
 This package has no use by itself.
 
-=== WrapSQL ===
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
     <Copyright>2020 Tobias Hattinger</Copyright>
