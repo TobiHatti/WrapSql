@@ -5,19 +5,24 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLBase</PackageId>
-    <Version>0.0.2.0</Version>
+    <Version>0.0.3.0</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Description>Base-class for any derivations of WrapSQL. This package has no use by itself.</Description>
+    <Description>Base-class for any derivations of WrapSQL. 
+This package has no use by itself.
+
+=== WrapSQL ===
+WrapSQL is a simple, lightweight database-wrapper
+for easier and faster development.</Description>
     <Copyright>2020 Tobias Hattinger</Copyright>
     <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
     <PackageIcon>EndevLibsLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, WrapSQL Base</PackageTags>
-    <PackageReleaseNotes>Changed Exception-class visibility</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>

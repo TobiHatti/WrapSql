@@ -16,11 +16,15 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
-    <PackageReleaseNotes>Bug fix in WrapMySQLData</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
-    <Description>Wrapper-class for MySQL for simpler and cleaner code.</Description>
+    <Description>Wrapper-class for MySQL for simpler and cleaner code.
+
+=== WrapSQL ===
+WrapSQL is a simple, lightweight database-wrapper
+for easier and faster development.</Description>
     <AssemblyVersion>0.0.2.2</AssemblyVersion>
   </PropertyGroup>
 
@@ -33,7 +37,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.2" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.3" />
     <PackageReference Include="MySql.Data" Version="8.0.21" />
   </ItemGroup>
 

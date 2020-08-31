@@ -27,8 +27,6 @@ namespace WrapSQL
         /// <param name="database">Target database</param>
         /// <param name="username">Login username</param>
         /// <param name="password">Login password</param>
-        /// <param name="port">Server-port. Default: 3306</param>
-        /// <param name="sslMode">SSL encryption mode</param>
         public WrapMySQL(string server, string database, string username, string password)
         {
             // Create connection

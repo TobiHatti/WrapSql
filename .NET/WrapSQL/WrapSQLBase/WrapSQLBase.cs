@@ -17,11 +17,6 @@ namespace WrapSQL
         protected bool transactionActive = false;
 
         /// <summary>
-        /// Database connection
-        /// </summary>
-        protected DbConnection connection = null;
-
-        /// <summary>
         /// Database transaction
         /// </summary>
         protected DbTransaction transaction = null;
@@ -33,13 +28,10 @@ namespace WrapSQL
         /// <summary>
         /// SQL-Connection object.
         /// </summary>
-        public DbConnection Connection
-        {
-            get => connection;
-        }
+        public DbConnection Connection { get; protected set; } = null;
 
         /// <summary>
-        /// 
+        /// Reports the Error-Code of the last executed operation
         /// </summary>
         public WrapSQLErrorCode LastErrorCode { get; protected set; } = WrapSQLErrorCode.None;
 
@@ -53,7 +45,7 @@ namespace WrapSQL
         public void Dispose()
         {
             // Dispose the connection object
-            if (connection != null) connection.Dispose();
+            if (Connection != null) Connection.Dispose();
         }
 
         #endregion
@@ -68,8 +60,8 @@ namespace WrapSQL
         {
             try
             {
-                if (this.connection.State == ConnectionState.Closed)
-                    connection.Open();
+                if (this.Connection.State == ConnectionState.Closed)
+                    Connection.Open();
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
             catch(Exception ex)
@@ -86,8 +78,8 @@ namespace WrapSQL
         {
             try
             {
-                if (this.connection.State == ConnectionState.Open)
-                    connection.Close();
+                if (this.Connection.State == ConnectionState.Open)
+                    Connection.Close();
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
             catch (Exception ex)
@@ -170,7 +162,14 @@ namespace WrapSQL
         /// <returns>NonQuery result</returns>
         protected abstract int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters);
 
-        protected int ExecuteNonQueryHandled(string sqlQuery, bool aCon, params object[] parameters)
+        /// <summary>
+        /// Executes a non-query statement (Handled wrapper).
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="aCon">Manage connection states (AutoConnect)</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>NonQuery result</returns>
+        private int ExecuteNonQueryHandled(string sqlQuery, bool aCon, params object[] parameters)
         {
             try
             {
@@ -220,7 +219,15 @@ namespace WrapSQL
         /// <returns>Result of the scalar-query</returns>
         protected abstract T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters);
 
-        protected T ExecuteScalarHandled<T>(string sqlQuery, bool aCon, params object[] parameters)
+        /// <summary>
+        /// Executes a execute-scalar statement (Handled wrapper).
+        /// </summary>
+        /// <typeparam name="T">Target-datatype of the result</typeparam>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="aCon">Manage connection states (AutoConnect)</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>Result of the scalar-query</returns>
+        private T ExecuteScalarHandled<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
             try
             {
@@ -281,15 +288,78 @@ namespace WrapSQL
 
         /// <summary>
         /// Executes a query-statement.
+        /// NOTE FOR IMPLEMENTATION: 
+        /// Do not handle exceptions or errors within this method!
         /// </summary>
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>DataReader fetching the query-results</returns>
-        public abstract DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters);
+        protected abstract DbDataReader ExecuteQueryImplement(string sqlQuery, params object[] parameters);
+
+        /// <summary>
+        /// Executes a query-statement (Handled wrapper).
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataReader fetching the query-results</returns>
+        private DbDataReader ExecuteQueryManaged(string sqlQuery, params object[] parameters)
+        {
+            try
+            {
+                DbDataReader dbResult = ExecuteQueryImplement(sqlQuery, parameters);
+                LastErrorCode = WrapSQLErrorCode.Success;
+                return dbResult;
+            }
+            catch (Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.OperationQueryFailed;
+                throw new WrapSQLException("The operation \"ExecuteQuery\" failed.", ex);
+            }
+        }
+
+        /// <summary>
+        /// Executes a query-statement.
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataReader fetching the query-results</returns>
+        public DbDataReader ExecuteQuery(string sqlQuery, params object[] parameters)
+            => ExecuteQueryManaged(sqlQuery, parameters);
 
         #endregion
 
-        #region DataAdapter
+        #region DataTable
+
+        /// <summary>
+        /// Creates a DataTable with the results of a query-statement.
+        /// NOTE FOR IMPLEMENTATION: 
+        /// Do not handle exceptions or errors within this method!
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>Results of a query-statement</returns>
+        protected abstract DataTable CreateDataTableImplement(string sqlQuery, params object[] parameters);
+
+        /// <summary>
+        /// Creates a DataTable with the results of a query-statement (Handled wrapper). 
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>Results of a query-statement</returns>
+        private DataTable CreateDataTableHandled(string sqlQuery, params object[] parameters)
+        {
+            try
+            {
+                DataTable dbResult = CreateDataTableImplement(sqlQuery, parameters);
+                LastErrorCode = WrapSQLErrorCode.Success;
+                return dbResult;
+            }
+            catch (Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.OperationDataTableFailed;
+                throw new WrapSQLException("The operation \"CreateDataTable\" failed.", ex);
+            }
+        }
 
         /// <summary>
         /// Creates a DataTable with the results of a query-statement.
@@ -297,7 +367,43 @@ namespace WrapSQL
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Results of a query-statement</returns>
-        public abstract DataTable CreateDataTable(string sqlQuery, params object[] parameters);
+        public DataTable CreateDataTable(string sqlQuery, params object[] parameters)
+            => CreateDataTableHandled(sqlQuery, parameters);
+
+        #endregion
+
+        #region DataAdapter
+
+        /// <summary>
+        /// Creates a DataAdapter on the given query-statement.
+        /// NOTE FOR IMPLEMENTATION: 
+        /// Do not handle exceptions or errors within this method!
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataAdapter of the given query-statement</returns>
+        protected abstract DataAdapter GetDataAdapterImplement(string sqlQuery, params object[] parameters);
+
+        /// <summary>
+        /// Creates a DataAdapter on the given query-statement (Handled wrapper).
+        /// </summary>
+        /// <param name="sqlQuery">SQL-query</param>
+        /// <param name="parameters">Query-parameters</param>
+        /// <returns>DataAdapter of the given query-statement</returns>
+        private DataAdapter GetDataAdapterHandled(string sqlQuery, params object[] parameters)
+        {
+            try
+            {
+                DataAdapter dbResult = GetDataAdapterImplement(sqlQuery, parameters);
+                LastErrorCode = WrapSQLErrorCode.Success;
+                return dbResult;
+            }
+            catch (Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.OperationDataAdapterFailed;
+                throw new WrapSQLException("The operation \"GetDataAdapter\" failed.", ex);
+            }
+        }
 
         /// <summary>
         /// Creates a DataAdapter on the given query-statement.
@@ -305,7 +411,8 @@ namespace WrapSQL
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>DataAdapter of the given query-statement</returns>
-        public abstract DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters);
+        public DataAdapter GetDataAdapter(string sqlQuery, params object[] parameters)
+            => GetDataAdapterHandled(sqlQuery, parameters);
 
         #endregion
     }

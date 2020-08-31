@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ryotnY4/LFq7QnWDa2FhMzPN0fiXz+kD9tzvz0SQ9RSKQbSstush7lLJ8oZ9Ei4RaSeyLhSlGDgcMOmqelqJaA==",
+  "dgSpecHash": "ThJxREBhDzyqh7rQUsd9ICUg252AKMMSVqGkUbPSpl7xr5KFqgkBfEkuf9SkeYeOUCRNMvHM8POxe5P4sQiU0w==",
   "success": true,
   "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.2\\endev.wrapsql.wrapsqlbase.0.0.2.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.3\\endev.wrapsql.wrapsqlbase.0.0.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.1\\system.data.sqlite.core.1.0.113.1.nupkg.sha512"
