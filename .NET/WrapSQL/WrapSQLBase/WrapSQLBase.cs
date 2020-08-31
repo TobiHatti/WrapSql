@@ -38,6 +38,11 @@ namespace WrapSQL
             get => connection;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        public WrapSQLErrorCode LastErrorCode { get; protected set; } = WrapSQLErrorCode.None;
+
         #endregion
 
         #region Interface implementations
@@ -58,19 +63,38 @@ namespace WrapSQL
         /// <summary>
         /// Opens the SQL-connection, if the connection is closed
         /// </summary>
-        public void Open()
+        /// <returns>Returns true if the connection was established successfully</returns>
+        public virtual void Open()
         {
-            if (this.connection.State == ConnectionState.Closed)
-                connection.Open();
+            try
+            {
+                if (this.connection.State == ConnectionState.Closed)
+                    connection.Open();
+                LastErrorCode = WrapSQLErrorCode.Success;
+            }
+            catch(Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.ConnectionCreationFailed;
+                throw new WrapSQLException("Connection could not be opened.", ex);
+            }
         }
 
         /// <summary>
         /// Closes the SQL-Connection, if the connection is open.
         /// </summary>
-        public void Close()
+        public virtual void Close()
         {
-            if (this.connection.State == ConnectionState.Open)
-                connection.Close();
+            try
+            {
+                if (this.connection.State == ConnectionState.Open)
+                    connection.Close();
+                LastErrorCode = WrapSQLErrorCode.Success;
+            }
+            catch (Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.ConnectionCloseFailed;
+                throw new WrapSQLException("Connection could not be closed.", ex);
+            }
         }
 
         #endregion
@@ -82,8 +106,17 @@ namespace WrapSQL
         /// </summary>
         public void TransactionBegin()
         {
-            transactionActive = true;
-            transaction = Connection.BeginTransaction();
+            try
+            {
+                transactionActive = true;
+                transaction = Connection.BeginTransaction();
+                LastErrorCode = WrapSQLErrorCode.Success;
+            }
+            catch(Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.TransactionBeginFailed;
+                throw new WrapSQLException("Transaction could not be started.", ex);
+            }
         }
 
         /// <summary>
@@ -91,8 +124,17 @@ namespace WrapSQL
         /// </summary>
         public void TransactionCommit()
         {
-            transaction.Commit();
-            transactionActive = false;
+            try
+            {
+                transaction.Commit();
+                transactionActive = false;
+                LastErrorCode = WrapSQLErrorCode.Success;
+            }
+            catch(Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.TransactionCommitFailed;
+                throw new WrapSQLException("Transaction could not be commited.", ex);
+            }
         }
 
         /// <summary>
@@ -100,8 +142,17 @@ namespace WrapSQL
         /// </summary>
         public void TransactionRollback()
         {
-            transaction.Rollback();
-            transactionActive = false;
+            try
+            {
+                transaction.Rollback();
+                transactionActive = false;
+                LastErrorCode = WrapSQLErrorCode.Success;
+            }
+            catch(Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.TransactionRollbackFailed;
+                throw new WrapSQLException("Transaction could not be rolled back.", ex);
+            }
         }
 
         #endregion
@@ -110,12 +161,29 @@ namespace WrapSQL
 
         /// <summary>
         /// Executes a non-query statement. 
+        /// NOTE FOR IMPLEMENTATION: 
+        /// Do not handle exceptions or errors within this method!
         /// </summary>
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="aCon">Manage connection states (AutoConnect)</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>NonQuery result</returns>
-        protected abstract int ExecuteNonQuery(string sqlQuery, bool aCon, params object[] parameters);
+        protected abstract int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters);
+
+        protected int ExecuteNonQueryHandled(string sqlQuery, bool aCon, params object[] parameters)
+        {
+            try
+            {
+                int dbResult = ExecuteNonQueryImplement(sqlQuery, aCon, parameters);
+                LastErrorCode = WrapSQLErrorCode.Success;
+                return dbResult;
+            }
+            catch(Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.OperationNonQueryFailed;
+                throw new WrapSQLException("The operation \"ExecuteNonQuery\" failed.", ex);
+            }
+        }
 
         /// <summary>
         /// Executes a non-query statement. 
@@ -124,7 +192,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>NonQuery result</returns>
         public int ExecuteNonQuery(string sqlQuery, params object[] parameters)
-            => ExecuteNonQuery(sqlQuery, false, parameters);
+            => ExecuteNonQueryHandled(sqlQuery, false, parameters);
 
         /// <summary>
         /// Executes a non-query statement. 
@@ -134,7 +202,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>NonQuery result</returns>
         public int ExecuteNonQueryACon(string sqlQuery, params object[] parameters)
-            => ExecuteNonQuery(sqlQuery, true, parameters);
+            => ExecuteNonQueryHandled(sqlQuery, true, parameters);
 
         #endregion
 
@@ -142,13 +210,30 @@ namespace WrapSQL
 
         /// <summary>
         /// Executes a execute-scalar statement.
+        /// NOTE FOR IMPLEMENTATION: 
+        /// Do not handle exceptions or errors within this method!
         /// </summary>
         /// <typeparam name="T">Target-datatype of the result</typeparam>
         /// <param name="sqlQuery">SQL-query</param>
         /// <param name="aCon">Manage connection states (AutoConnect)</param>
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Result of the scalar-query</returns>
-        protected abstract T ExecuteScalar<T>(string sqlQuery, bool aCon, params object[] parameters);
+        protected abstract T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters);
+
+        protected T ExecuteScalarHandled<T>(string sqlQuery, bool aCon, params object[] parameters)
+        {
+            try
+            {
+                T dbResult = ExecuteScalarImplement<T>(sqlQuery, aCon, parameters);
+                LastErrorCode = WrapSQLErrorCode.Success;
+                return dbResult;
+            }
+            catch (Exception ex)
+            {
+                LastErrorCode = WrapSQLErrorCode.OperationScalarFailed;
+                throw new WrapSQLException("The operation \"ExecuteScalar\" failed.", ex);
+            }
+        }
 
         /// <summary>
         /// Executes a execute-scalar statement. 
@@ -157,7 +242,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Result of the scalar-query</returns>
         public object ExecuteScalar(string sqlQuery, params object[] parameters)
-            => ExecuteScalar<object>(sqlQuery, false, parameters);
+            => ExecuteScalarHandled<object>(sqlQuery, false, parameters);
 
         /// <summary>
         /// Executes a execute-scalar statement. 
@@ -167,7 +252,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Result of the scalar-query</returns>
         public object ExecuteScalarACon(string sqlQuery, params object[] parameters)
-            => ExecuteScalar<object>(sqlQuery, true, parameters);
+            => ExecuteScalarHandled<object>(sqlQuery, true, parameters);
 
         /// <summary>
         /// Executes a execute-scalar statement. 
@@ -177,7 +262,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Result of the scalar-query</returns>
         public T ExecuteScalar<T>(string sqlQuery, params object[] parameters)
-            => ExecuteScalar<T>(sqlQuery, false, parameters);
+            => ExecuteScalarHandled<T>(sqlQuery, false, parameters);
 
         /// <summary>
         /// Executes a execute-scalar statement.
@@ -188,7 +273,7 @@ namespace WrapSQL
         /// <param name="parameters">Query-parameters</param>
         /// <returns>Result of the scalar-query</returns>
         public T ExecuteScalarACon<T>(string sqlQuery, params object[] parameters)
-            => ExecuteScalar<T>(sqlQuery, true, parameters);
+            => ExecuteScalarHandled<T>(sqlQuery, true, parameters);
 
         #endregion
 
