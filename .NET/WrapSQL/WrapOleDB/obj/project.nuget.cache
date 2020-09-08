@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPJmZjYdcK7n2JyqC6Scy8CYqWPH8FSySyENErWOGwY/AHR1dhnFIuxGXJ/2GVsOzKeCE5ImLK1xcH5+xlwMVQ==",
+  "dgSpecHash": "Xg57NV9SdD4X3f88y7MY6FbnDiGPxlvkH84l3btjiYxAin1TW1TZ8PbJrTCPSHFiiS54HhdrsND+L6BWK2hFug==",
   "success": true,
   "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\0.0.3\\endev.wrapsql.wrapsqlbase.0.0.3.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\2.0.0\\endev.wrapsql.wrapsqlbase.2.0.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

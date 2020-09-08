@@ -6,7 +6,7 @@
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapOleDB</PackageId>
     <Authors>Tobias Hattinger</Authors>
-    <Version>0.0.3.0</Version>
+    <Version>2.0.0.0</Version>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
     <Description>Wrapper-class for OleDB-databases for simpler and cleaner code.
@@ -20,8 +20,10 @@ for easier and faster development.</Description>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, OleDB, WrapOleDB</PackageTags>
-    <PackageReleaseNotes>Updated for WrapSQLBase 0.0.3.0
-Improved error- and exception-handling</PackageReleaseNotes>
+    <PackageReleaseNotes>WrapSQL v2.0.0.0 - 
+Added several new features, 
+improved runtime efficiency and stability, 
+general bug fixes and improvements</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
@@ -43,7 +45,7 @@ Improved error- and exception-handling</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="0.0.3" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="2.0.0" />
     <PackageReference Include="System.Data.OleDb" Version="4.7.1" />
   </ItemGroup>
 

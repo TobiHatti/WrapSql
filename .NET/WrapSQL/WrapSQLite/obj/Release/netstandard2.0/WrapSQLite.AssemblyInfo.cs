@@ -16,11 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2020 Tobias Hattinger")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Wrapper-class for SQLite for simpler and cleaner code.\r\n\r\nWrapSQL is a simple, li" +
     "ghtweight database-wrapper\r\nfor easier and faster development.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapSQLite")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("Englisch")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.

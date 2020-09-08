@@ -7,9 +7,9 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapODBC/0.0.3.0": {
+      "WrapODBC/2.0.0.0": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "0.0.3",
+          "Endev.WrapSQL.WrapSQLBase": "2.0.0",
           "NETStandard.Library": "2.0.3",
           "System.Data.Odbc": "4.7.0"
         },
@@ -17,11 +17,11 @@
           "WrapODBC.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/0.0.3": {
+      "Endev.WrapSQL.WrapSQLBase/2.0.0": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -42,17 +42,17 @@
     }
   },
   "libraries": {
-    "WrapODBC/0.0.3.0": {
+    "WrapODBC/2.0.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Endev.WrapSQL.WrapSQLBase/0.0.3": {
+    "Endev.WrapSQL.WrapSQLBase/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KKrD6rQdF8WQxsQmvYl99+14xUmWc/R6kG4D5idQlH3E9sKm5IrJRFNrKaYsSJp2mfUjnaCDvnWPWC+WOxdLJQ==",
-      "path": "endev.wrapsql.wrapsqlbase/0.0.3",
-      "hashPath": "endev.wrapsql.wrapsqlbase.0.0.3.nupkg.sha512"
+      "sha512": "sha512-NDViUTpJ0rVf+TyMGcgxtipU9usBuHs4mS+Qg8/wINUG751Hhas605H8ij+A/k9MS/H682+qfzfYmfy2lZo0Ig==",
+      "path": "endev.wrapsql.wrapsqlbase/2.0.0",
+      "hashPath": "endev.wrapsql.wrapsqlbase.2.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

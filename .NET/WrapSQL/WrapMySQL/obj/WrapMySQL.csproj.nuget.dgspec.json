@@ -5,7 +5,7 @@
   },
   "projects": {
     "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj": {
-      "version": "0.0.3",
+      "version": "2.0.0",
       "restore": {
         "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapMySQL\\WrapMySQL.csproj",
         "projectName": "Endev.WrapSQL.WrapMySQL",
@@ -41,7 +41,7 @@
           "dependencies": {
             "Endev.WrapSQL.WrapSQLBase": {
               "target": "Package",
-              "version": "[0.0.3, )"
+              "version": "[2.0.0, )"
             },
             "MySql.Data": {
               "target": "Package",

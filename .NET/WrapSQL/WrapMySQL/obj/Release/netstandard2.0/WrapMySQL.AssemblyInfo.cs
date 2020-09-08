@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Wrapper-class for MySQL for simpler and cleaner code.\r\n\r\nWrapSQL is a simple, lig" +
     "htweight database-wrapper\r\nfor easier and faster development.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.3.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.3.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapMySQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.3.0")]
