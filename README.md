@@ -1,6 +1,6 @@
 <img align="right" width="80" height="80" data-rmimg src="https://endev.at/content/projects/WrapSQL/EndevLibsLogo.svg">
 
-# WrapSQL [WIP]
+# WrapSQL
 
 ![GitHub](https://img.shields.io/github/license/TobiHatti/WrapSQL)
 [![GitHub Release Date](https://img.shields.io/github/release-date-pre/TobiHatti/WrapSQL)](https://github.com/TobiHatti/WrapSQL/releases)
