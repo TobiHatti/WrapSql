@@ -61,7 +61,7 @@ Get the latest version from the [releases page](https://github.com/TobiHatti/Wra
 ## Documentation
 
 - [README - C#](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-C%23.md)
-- [README - F#](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-F%23.md)
+- README - F# (TBA)
 - [README - VB.NET](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-VB.md)
 - [README - PHP](https://github.com/TobiHatti/WrapSQL/tree/master/PHP/Readme.md)
 
