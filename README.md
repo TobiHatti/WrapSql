@@ -22,12 +22,7 @@
 Multiple wrapper-classes for several languages and DB-Types
 
 ### Supported Languages and DB-Types
-- C# (Soon on NuGet)
-  - MySQL
-  - SQLite
-  - ODBC
-  - OleDb
-- VB.NET
+- .Net (C#, F#, VB.Net)
   - MySQL
   - SQLite
   - ODBC
@@ -35,26 +30,62 @@ Multiple wrapper-classes for several languages and DB-Types
 - PHP
   - MySQL
 
-## Finding the right file or assembly
-Navigate to "Finished" and select your desired Language, then select either the source-file or the assembly and add it to your own project.
+## How to get the right version for your project
 
-A full documentation is included in every language-sub-folder:
-- [README - C#](https://github.com/TobiHatti/WrapSQL/tree/master/Finished/C%23)
-- [README - VB.NET](https://github.com/TobiHatti/WrapSQL/blob/master/Finished/VB.NET)
-- [README - PHP](https://github.com/TobiHatti/WrapSQL/blob/master/Finished/PHP)
+__.Net:__
 
-__NOTE: Some Files/Assemblies/Libraries require additional packages, such as NuGet packages, to work without any errors!__
+Download the latest version of WrapSQL as a nuget-package from [nuget.org](https://www.nuget.org/profiles/TobiHatti) or [GitHub Packages](https://github.com/TobiHatti/WrapSQL/packages).
+
+- __WrapMySQL:__
+  - via command-line: `Install-Package Endev.WrapSQL.WrapMySQL`
+  - Download on [nuget.org](https://www.nuget.org/packages/Endev.WrapSQL.WrapMySQL/)
+
+- __WrapSQLite:__
+  - via command-line: `Install-Package Endev.WrapSQL.WrapSQLite`
+  - Download on [nuget.org](https://www.nuget.org/packages/Endev.WrapSQL.WrapSQLite/)
+
+- __WrapODBC:__
+  - via command-line: `Install-Package Endev.WrapSQL.WrapODBC`
+  - Download on [nuget.org](https://www.nuget.org/packages/Endev.WrapSQL.WrapODBC/)
+
+- __WrapOleDB:__
+  - via command-line: `Install-Package Endev.WrapSQL.WrapOleDB`
+  - Download on [nuget.org](https://www.nuget.org/packages/Endev.WrapSQL.WrapOleDB/)
+
+
+__PHP:__
+
+Get the latest version from the [releases page](https://github.com/TobiHatti/WrapSQL/releases/latest)
+
+
+## Documentation
+
+- [README - C#](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-C%23.md)
+- [README - F#](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-F%23.md)
+- [README - VB.NET](https://github.com/TobiHatti/WrapSQL/tree/master/.NET/Readme-VB.md)
+- [README - PHP](https://github.com/TobiHatti/WrapSQL/tree/master/PHP/Readme.md)
+
 
 ## Quick overview
-These Methods/Function exists for every language. Check corresponding readme for additional features.
+The following methods/function exists for every port of WrapSQL in every language. Check corresponding readme for additional features.
 
 ```cs
-// Executes a non-query statement, e.g. UPDATE, INSERT, DELETE, ...
-WrapSQL.ExecuteNonQuery("UPDATE ...", parameter1, parameter2, ...);
+// Creating a WrapSQL-Object (e.g. WrapMySQL)
+using(WrapMySQL sql = new WrapMySQL("--- MySQL Connection String ---")
+{
+    // Executes a non-query statement, e.g. UPDATE, INSERT, DELETE, ...
+    sql.ExecuteNonQuery("UPDATE customers SET Firstname = ? WHERE ID = ?", firstName, customerID);
 
-// Returns a single value from a select-statement
-WrapSQL.ExecuteScalar("SELECT COUNT(*) FROM ...", parameter1, parameter2, ...);
+    // Returns a single value from a select-statement
+    int completedOrderCount = sql.ExecuteScalar<int>("SELECT COUNT(*) FROM orders WHERE completed = ?", true);
 
-// Returns all effected rows retrieved by the select-statement
-WrapSQL.ExecuteQuery("SELECT * FROM ...", parameter1, parameter2, ...);
+    // Returns all effected rows retrieved by the select-statement
+    using (MySQLDataReader reader = (MySQLDataReader)sql.ExecuteQuery("SELECT * FROM orders"))
+    {
+        while (reader.Read())
+        {
+            Console.WriteLine(reader["orderStatus"]);
+        }
+    }
+}
 ```
