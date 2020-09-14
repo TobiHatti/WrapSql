@@ -71,7 +71,7 @@ The following methods/function exists for every port of WrapSQL in every languag
 
 ```cs
 // Creating a WrapSQL-Object (e.g. WrapMySQL)
-using(WrapMySQL sql = new WrapMySQL("--- MySQL Connection String ---")
+using(WrapMySQL sql = new WrapMySQL("--- MySQL Connection String ---"))
 {
     // Executes a non-query statement, e.g. UPDATE, INSERT, DELETE, ...
     sql.ExecuteNonQuery("UPDATE customers SET Firstname = ? WHERE ID = ?", firstName, customerID);
