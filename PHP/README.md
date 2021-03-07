@@ -1,4 +1,4 @@
-# SQL-Wrapper - PHP Port
+# WrapSQL - PHP Port
 
 Currently supported DB-Types:
 - MySQL (requires PDO, usually installed by default)
@@ -50,7 +50,6 @@ catch
 }
 $sql->Close();
 ```
-__NOTE: Methods with the suffix `ACon` are not allowed durring a transaction and will throw an exception!__
 
 ## Passing SQL-Statements and Parameters
 
