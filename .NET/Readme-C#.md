@@ -136,7 +136,7 @@ Make sure to use the correct SQLReader:
 
 ```cs
 sql.Open();
-using(MySQLDataReader reader = (MySQLDataReader)sql.ExecuteQuery("SELECT * FROM orders"))
+using(MySqlDataReader reader = (MySqlDataReader)sql.ExecuteQuery("SELECT * FROM orders"))
 {
     while(reader.Read())
     {
