@@ -7,3 +7,14 @@ U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapS
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.pdb
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.xml
 U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.csproj.CoreCompileInputs.cache
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.AssemblyInfoInputs.cache
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.AssemblyInfo.cs
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.csproj.CoreCompileInputs.cache
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.dll
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.pdb
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.deps.json
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.dll
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.pdb
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Release\netstandard2.0\WrapMySQL.xml
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Release\netstandard2.0\WrapMySQL.csproj.AssemblyReference.cache

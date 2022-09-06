@@ -22,7 +22,7 @@ namespace WrapSQL
 
             if (isFilepath)
             {
-                if (!Directory.Exists(Path.GetDirectoryName(connectionString))) 
+                if (!Directory.Exists(Path.GetDirectoryName(connectionString)))
                     Directory.CreateDirectory(Path.GetDirectoryName(connectionString));
 
                 Connection = new SQLiteConnection($@"URI=file:{connectionString}");
@@ -59,7 +59,8 @@ namespace WrapSQL
                 if (aCon) Open();
                 object retval = command.ExecuteScalar();
                 if (aCon) Close();
-                return (T)Convert.ChangeType(retval, typeof(T));
+                if (retval is null && Nullable.GetUnderlyingType(typeof(T)) == null && SkalarDefaultOnNull) return default(T);
+                else return (T)Convert.ChangeType(retval, typeof(T));
             }
         }
 

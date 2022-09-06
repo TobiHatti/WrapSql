@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Endev.WrapSQL.WrapSQLBase/2.0.0": {
+      "Endev.WrapSQL.WrapSQLBase/2.1.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
@@ -35,7 +35,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "System.Data.SQLite.Core/1.0.113.1": {
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Data.SQLite.dll": {}
@@ -44,52 +44,42 @@
           "lib/netstandard2.0/System.Data.SQLite.dll": {}
         },
         "runtimeTargets": {
-          "runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll": {
+          "runtimes/linux-x64/native/SQLite.Interop.dll": {
             "assetType": "native",
             "rid": "linux-x64"
           },
-          "runtimes/linux-x64/native/netstandard2.1/SQLite.Interop.dll": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll": {
+          "runtimes/osx-x64/native/SQLite.Interop.dll": {
             "assetType": "native",
             "rid": "osx-x64"
           },
-          "runtimes/osx-x64/native/netstandard2.1/SQLite.Interop.dll": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll": {
+          "runtimes/win-x64/native/SQLite.Interop.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
-          "runtimes/win-x64/native/netstandard2.1/SQLite.Interop.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          },
-          "runtimes/win-x86/native/netstandard2.1/SQLite.Interop.dll": {
+          "runtimes/win-x86/native/SQLite.Interop.dll": {
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "type": "package",
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "[1.0.116]"
         }
       }
     }
   },
   "libraries": {
-    "Endev.WrapSQL.WrapSQLBase/2.0.0": {
-      "sha512": "NDViUTpJ0rVf+TyMGcgxtipU9usBuHs4mS+Qg8/wINUG751Hhas605H8ij+A/k9MS/H682+qfzfYmfy2lZo0Ig==",
+    "Endev.WrapSQL.WrapSQLBase/2.1.0": {
+      "sha512": "paZayEUK3PvLvCdTKhy5LYFgOFCvEaRChwfYcIcIbIv73HnxmRKhE5YiiN1y52amqHNEdia+ElJn6QLPHYxXCA==",
       "type": "package",
-      "path": "endev.wrapsql.wrapsqlbase/2.0.0",
+      "path": "endev.wrapsql.wrapsqlbase/2.1.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EndevLibsLogo.png",
-        "endev.wrapsql.wrapsqlbase.2.0.0.nupkg.sha512",
+        "endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512",
         "endev.wrapsql.wrapsqlbase.nuspec",
         "lib/netstandard2.0/WrapSQLBase.dll",
         "lib/netstandard2.0/WrapSQLBase.xml"
@@ -239,83 +229,65 @@
         "netstandard.library.nuspec"
       ]
     },
-    "System.Data.SQLite.Core/1.0.113.1": {
-      "sha512": "ymvB558/Tgdxj2MzJjhDvPLJ/S2WgG1KzQ1cmqzsW3+YQ5DO+eAU04OpY5deK6fndM+DEU8+lwmmYHxxUS2Qvw==",
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
+      "sha512": "VEe/vzvn2ECKovtyb+nf8fsnNQ4EYOUms7gnp9729NN7FSR/0v/uVoBDO7DETzV7YCquRVwRnSnYuoOwAoTEKA==",
       "type": "package",
-      "path": "system.data.sqlite.core/1.0.113.1",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.116",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "build/net20/System.Data.SQLite.Core.targets",
-        "build/net20/x64/SQLite.Interop.dll",
-        "build/net20/x86/SQLite.Interop.dll",
-        "build/net40/System.Data.SQLite.Core.targets",
-        "build/net40/x64/SQLite.Interop.dll",
-        "build/net40/x86/SQLite.Interop.dll",
-        "build/net45/System.Data.SQLite.Core.targets",
-        "build/net45/x64/SQLite.Interop.dll",
-        "build/net45/x86/SQLite.Interop.dll",
-        "build/net451/System.Data.SQLite.Core.targets",
-        "build/net451/x64/SQLite.Interop.dll",
-        "build/net451/x86/SQLite.Interop.dll",
-        "build/net46/System.Data.SQLite.Core.targets",
-        "build/net46/x64/SQLite.Interop.dll",
-        "build/net46/x86/SQLite.Interop.dll",
-        "lib/net20/System.Data.SQLite.dll",
-        "lib/net20/System.Data.SQLite.dll.config",
-        "lib/net20/System.Data.SQLite.xml",
-        "lib/net40/System.Data.SQLite.dll",
-        "lib/net40/System.Data.SQLite.dll.config",
-        "lib/net40/System.Data.SQLite.xml",
-        "lib/net45/System.Data.SQLite.dll",
-        "lib/net45/System.Data.SQLite.dll.config",
-        "lib/net45/System.Data.SQLite.xml",
-        "lib/net451/System.Data.SQLite.dll",
-        "lib/net451/System.Data.SQLite.dll.config",
-        "lib/net451/System.Data.SQLite.xml",
-        "lib/net46/System.Data.SQLite.dll",
-        "lib/net46/System.Data.SQLite.dll.config",
-        "lib/net46/System.Data.SQLite.xml",
         "lib/netstandard2.0/System.Data.SQLite.dll",
-        "lib/netstandard2.0/System.Data.SQLite.dll.config",
+        "lib/netstandard2.0/System.Data.SQLite.dll.altconfig",
         "lib/netstandard2.0/System.Data.SQLite.xml",
         "lib/netstandard2.1/System.Data.SQLite.dll",
-        "lib/netstandard2.1/System.Data.SQLite.dll.config",
+        "lib/netstandard2.1/System.Data.SQLite.dll.altconfig",
         "lib/netstandard2.1/System.Data.SQLite.xml",
-        "runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll",
-        "runtimes/linux-x64/native/netstandard2.1/SQLite.Interop.dll",
-        "runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll",
-        "runtimes/osx-x64/native/netstandard2.1/SQLite.Interop.dll",
-        "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll",
-        "runtimes/win-x64/native/netstandard2.1/SQLite.Interop.dll",
-        "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll",
-        "runtimes/win-x86/native/netstandard2.1/SQLite.Interop.dll",
-        "system.data.sqlite.core.1.0.113.1.nupkg.sha512",
+        "runtimes/linux-x64/native/SQLite.Interop.dll",
+        "runtimes/osx-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x64/native/SQLite.Interop.dll",
+        "runtimes/win-x86/native/SQLite.Interop.dll",
+        "stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512",
+        "stub.system.data.sqlite.core.netstandard.nuspec"
+      ]
+    },
+    "System.Data.SQLite.Core/1.0.116": {
+      "sha512": "djwmo97syWCpUPJbDS0e2qUFUa8cDLeIfMotVkaRkAC5gpfBSZLMzvoLkLp1prY8waAuH1jEC3wcB2ymVVQWtA==",
+      "type": "package",
+      "path": "system.data.sqlite.core/1.0.116",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "system.data.sqlite.core.1.0.116.nupkg.sha512",
         "system.data.sqlite.core.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Endev.WrapSQL.WrapSQLBase >= 2.0.0",
+      "Endev.WrapSQL.WrapSQLBase >= 2.1.0",
       "NETStandard.Library >= 2.0.3",
-      "System.Data.SQLite.Core >= 1.0.113.1"
+      "System.Data.SQLite.Core >= 1.0.116"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tobias\\.nuget\\packages\\": {}
+    "C:\\Users\\Tobias\\.nuget\\packages\\": {},
+    "C:\\PermaInstall\\CodeEditors\\VisualStudioShared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2.0.0",
+    "version": "2.1.0",
     "restore": {
-      "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
+      "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
       "projectName": "Endev.WrapSQL.WrapSQLite",
-      "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
+      "projectPath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\WrapSQLite.csproj",
       "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-      "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\obj\\",
+      "outputPath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLite\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\PermaInstall\\CodeEditors\\VisualStudioShared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -328,6 +300,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -339,10 +312,11 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": {
             "target": "Package",
-            "version": "[2.0.0, )"
+            "version": "[2.1.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -352,7 +326,7 @@
           },
           "System.Data.SQLite.Core": {
             "target": "Package",
-            "version": "[1.0.113.1, )"
+            "version": "[1.0.116, )"
           }
         },
         "imports": [
@@ -365,7 +339,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\TempInstall\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -5,21 +5,19 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>2.0.0.0</Version>
+    <Version>2.1.0.0</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSQL</Product>
-    <Copyright>2020 Tobias Hattinger</Copyright>
+    <Copyright>2022 Tobias Hattinger</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
     <PackageIcon>EndevLibsLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
-    <PackageReleaseNotes>WrapSQL v2.0.0.0 - 
-Added several new features, 
-improved runtime efficiency and stability, 
-general bug fixes and improvements</PackageReleaseNotes>
+    <PackageReleaseNotes>WrapSQL v2.1.0.0 - 
+Added support for SkalarDefaultOnNull property.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
@@ -27,11 +25,11 @@ general bug fixes and improvements</PackageReleaseNotes>
 
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
-    <AssemblyVersion>0.0.3.0</AssemblyVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\WrapMySQL.xml</DocumentationFile>
+    <DocumentationFile>F:\Projects\WrapSQL\.NET\WrapSQL\WrapMySQL\WrapMySQL.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -39,8 +37,8 @@ for easier and faster development.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="2.0.0" />
-    <PackageReference Include="MySql.Data" Version="8.0.21" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="2.1.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.30" />
   </ItemGroup>
 
   <ItemGroup>

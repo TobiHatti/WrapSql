@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj": {}
+    "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj": {}
   },
   "projects": {
-    "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj": {
-      "version": "2.0.0",
+    "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj": {
+      "version": "2.1.0",
       "restore": {
-        "projectUniqueName": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
+        "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
         "projectName": "Endev.WrapSQL.WrapOleDB",
-        "projectPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
+        "projectPath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
         "packagesPath": "C:\\Users\\Tobias\\.nuget\\packages\\",
-        "outputPath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\obj\\",
+        "outputPath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\PermaInstall\\CodeEditors\\VisualStudioShared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\Tobias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,6 +31,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -38,10 +43,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "Endev.WrapSQL.WrapSQLBase": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[2.1.0, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",
@@ -51,7 +57,7 @@
             },
             "System.Data.OleDb": {
               "target": "Package",
-              "version": "[4.7.1, )"
+              "version": "[6.0.0, )"
             }
           },
           "imports": [
@@ -64,7 +70,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\TempInstall\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

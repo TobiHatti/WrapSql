@@ -35,6 +35,10 @@ namespace WrapSQL
         /// </summary>
         public WrapSQLErrorCode LastErrorCode { get; protected set; } = WrapSQLErrorCode.None;
 
+        /// <summary>
+        /// Determines if Execute-Scalar should return the requested type's default value, or throw an exception (only affects non-nullable types)
+        /// </summary>
+        public bool SkalarDefaultOnNull { get; set; } = true;
         #endregion
 
         #region Interface implementations
@@ -64,7 +68,7 @@ namespace WrapSQL
                     Connection.Open();
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LastErrorCode = WrapSQLErrorCode.ConnectionCreationFailed;
                 throw new WrapSQLException("Connection could not be opened.", ex);
@@ -104,7 +108,7 @@ namespace WrapSQL
                 transaction = Connection.BeginTransaction();
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LastErrorCode = WrapSQLErrorCode.TransactionBeginFailed;
                 throw new WrapSQLException("Transaction could not be started.", ex);
@@ -122,7 +126,7 @@ namespace WrapSQL
                 transactionActive = false;
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LastErrorCode = WrapSQLErrorCode.TransactionCommitFailed;
                 throw new WrapSQLException("Transaction could not be commited.", ex);
@@ -140,7 +144,7 @@ namespace WrapSQL
                 transactionActive = false;
                 LastErrorCode = WrapSQLErrorCode.Success;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LastErrorCode = WrapSQLErrorCode.TransactionRollbackFailed;
                 throw new WrapSQLException("Transaction could not be rolled back.", ex);
@@ -177,7 +181,7 @@ namespace WrapSQL
                 LastErrorCode = WrapSQLErrorCode.Success;
                 return dbResult;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 LastErrorCode = WrapSQLErrorCode.OperationNonQueryFailed;
                 throw new WrapSQLException("The operation \"ExecuteNonQuery\" failed.", ex);

@@ -72,7 +72,8 @@ namespace WrapSQL
                 if (aCon) Open();
                 object retval = command.ExecuteScalar();
                 if (aCon) Close();
-                return (T)Convert.ChangeType(retval, typeof(T));
+                if (retval is null && Nullable.GetUnderlyingType(typeof(T)) == null && SkalarDefaultOnNull) return default(T);
+                else return (T)Convert.ChangeType(retval, typeof(T));
             }
         }
 

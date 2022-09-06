@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RciA7HzldkBuRC9L4aKUcYCyEesztrv1dHI3nhFbOcU5u098mH5r6g09seiQaGwP570yyGre+l8BTclL6aT/Mg==",
+  "dgSpecHash": "z7FJ60PWZL4tWEQu7NEIV/+uvJungIHRnO4QCCG4ExTedC2m8H5ffwb6FRqISENUovjZ0jurCcyRJrJ8Vv/+nQ==",
   "success": true,
-  "projectFilePath": "U:\\(06) Code\\(00) Mixed Language Projects\\(01) Projects [GIT]\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
+  "projectFilePath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

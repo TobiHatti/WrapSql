@@ -7,21 +7,21 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapSQLite/2.0.0.0": {
+      "WrapSQLite/2.1.0.0": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "2.0.0",
+          "Endev.WrapSQL.WrapSQLBase": "2.1.0",
           "NETStandard.Library": "2.0.3",
-          "System.Data.SQLite.Core": "1.0.113.1"
+          "System.Data.SQLite.Core": "1.0.116"
         },
         "runtime": {
           "WrapSQLite.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/2.0.0": {
+      "Endev.WrapSQL.WrapSQLBase/2.1.0": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "0.0.3.0",
-            "fileVersion": "0.0.3.0"
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
           }
         }
       },
@@ -31,28 +31,33 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "System.Data.SQLite.Core/1.0.113.1": {
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
         "runtime": {
           "lib/netstandard2.0/System.Data.SQLite.dll": {
-            "assemblyVersion": "1.0.113.0",
-            "fileVersion": "1.0.113.0"
+            "assemblyVersion": "1.0.116.0",
+            "fileVersion": "1.0.116.0"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.116": {
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.116"
         }
       }
     }
   },
   "libraries": {
-    "WrapSQLite/2.0.0.0": {
+    "WrapSQLite/2.1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Endev.WrapSQL.WrapSQLBase/2.0.0": {
+    "Endev.WrapSQL.WrapSQLBase/2.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NDViUTpJ0rVf+TyMGcgxtipU9usBuHs4mS+Qg8/wINUG751Hhas605H8ij+A/k9MS/H682+qfzfYmfy2lZo0Ig==",
-      "path": "endev.wrapsql.wrapsqlbase/2.0.0",
-      "hashPath": "endev.wrapsql.wrapsqlbase.2.0.0.nupkg.sha512"
+      "sha512": "sha512-paZayEUK3PvLvCdTKhy5LYFgOFCvEaRChwfYcIcIbIv73HnxmRKhE5YiiN1y52amqHNEdia+ElJn6QLPHYxXCA==",
+      "path": "endev.wrapsql.wrapsqlbase/2.1.0",
+      "hashPath": "endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -68,12 +73,19 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "System.Data.SQLite.Core/1.0.113.1": {
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ymvB558/Tgdxj2MzJjhDvPLJ/S2WgG1KzQ1cmqzsW3+YQ5DO+eAU04OpY5deK6fndM+DEU8+lwmmYHxxUS2Qvw==",
-      "path": "system.data.sqlite.core/1.0.113.1",
-      "hashPath": "system.data.sqlite.core.1.0.113.1.nupkg.sha512"
+      "sha512": "sha512-VEe/vzvn2ECKovtyb+nf8fsnNQ4EYOUms7gnp9729NN7FSR/0v/uVoBDO7DETzV7YCquRVwRnSnYuoOwAoTEKA==",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.116",
+      "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.116.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.116": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-djwmo97syWCpUPJbDS0e2qUFUa8cDLeIfMotVkaRkAC5gpfBSZLMzvoLkLp1prY8waAuH1jEC3wcB2ymVVQWtA==",
+      "path": "system.data.sqlite.core/1.0.116",
+      "hashPath": "system.data.sqlite.core.1.0.116.nupkg.sha512"
     }
   }
 }

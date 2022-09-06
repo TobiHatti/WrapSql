@@ -29,6 +29,11 @@
             Reports the Error-Code of the last executed operation
             </summary>
         </member>
+        <member name="P:WrapSQL.WrapSQLBase.SkalarDefaultOnNull">
+            <summary>
+            Determines if Execute-Scalar should return the requested type's default value, or throw an exception (only affects non-nullable types)
+            </summary>
+        </member>
         <member name="M:WrapSQL.WrapSQLBase.Dispose">
             <summary>
             Disposes the object.

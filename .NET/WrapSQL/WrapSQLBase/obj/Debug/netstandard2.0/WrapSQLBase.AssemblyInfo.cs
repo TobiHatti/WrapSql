@@ -13,13 +13,16 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Endev")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyCopyrightAttribute("2020 Tobias Hattinger")]
-[assembly: System.Reflection.AssemblyDescriptionAttribute("Base-class for any derivations of WrapSQL. This package has no use by itself.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.1.3")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.1.3")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute("2022 Tobias Hattinger")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Base-class for any derivations of WrapSQL. \r\nThis package has no use by itself.\r\n" +
+    "\r\nWrapSQL is a simple, lightweight database-wrapper\r\nfor easier and faster devel" +
+    "opment.")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapSQLBase")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.0.1.3")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.1.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/TobiHatti/WrapSQL")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
 // Von der MSBuild WriteCodeFragment-Klasse generiert.
