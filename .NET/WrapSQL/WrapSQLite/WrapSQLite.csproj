@@ -1,16 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>WrapSQL</RootNamespace>
+    <RootNamespace>WrapSql</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLite</PackageId>
-    <Version>2.1.0.0</Version>
+    <Version>3.0.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
-    <Product>WrapSQL</Product>
+    <Product>WrapSql</Product>
     <Description>Wrapper-class for SQLite for simpler and cleaner code.
 
 WrapSQL is a simple, lightweight database-wrapper
@@ -22,9 +22,10 @@ for easier and faster development.</Description>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, SQLite, WrapSQLite</PackageTags>
-    <PackageReleaseNotes>WrapSQL v2.1.0.0 - 
-Added support for SkalarDefaultOnNull property.</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
+    <AssemblyVersion>3.0.0</AssemblyVersion>
+    <FileVersion>3.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -43,7 +44,7 @@ Added support for SkalarDefaultOnNull property.</PackageReleaseNotes>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="2.1.0" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="3.0.0" />
     <PackageReference Include="System.Data.SQLite.Core" Version="1.0.116" />
   </ItemGroup>
 

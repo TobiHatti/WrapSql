@@ -1,11 +1,11 @@
 ﻿using System.Text;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// Object containing any data relevant for establishing MySQL-connections
     /// </summary>
-    public class WrapMySQLData
+    public class WrapMySqlData : IWrapSqlConnector
     {
         /// <summary>
         /// Default MySQL-server port
@@ -75,7 +75,7 @@ namespace WrapSQL
         /// <summary>
         /// Creates a new MySQL-data object
         /// </summary>
-        public WrapMySQLData()
+        public WrapMySqlData()
             : this(string.Empty, string.Empty, string.Empty, string.Empty) { }
 
         /// <summary>
@@ -85,7 +85,7 @@ namespace WrapSQL
         /// <param name="Database">Target database</param>
         /// <param name="Username">Login username</param>
         /// <param name="Password">Login password</param>
-        public WrapMySQLData(string Hostname, string Database, string Username, string Password)
+        public WrapMySqlData(string Hostname, string Database, string Username, string Password)
         {
             this.Hostname = Hostname;
             this.Database = Database;

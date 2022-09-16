@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>WrapSQL</RootNamespace>
+    <RootNamespace>WrapSql</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapMySQL</PackageId>
-    <Version>2.1.0.0</Version>
+    <Version>3.0.0</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
-    <Product>WrapSQL</Product>
+    <Product>WrapSql</Product>
     <Copyright>2022 Tobias Hattinger</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
@@ -16,8 +16,7 @@
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, MySQL, WrapMySQL</PackageTags>
-    <PackageReleaseNotes>WrapSQL v2.1.0.0 - 
-Added support for SkalarDefaultOnNull property.</PackageReleaseNotes>
+    <PackageReleaseNotes></PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <NeutralLanguage>en</NeutralLanguage>
@@ -25,7 +24,8 @@ Added support for SkalarDefaultOnNull property.</PackageReleaseNotes>
 
 WrapSQL is a simple, lightweight database-wrapper
 for easier and faster development.</Description>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0</AssemblyVersion>
+    <FileVersion>3.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -37,7 +37,7 @@ for easier and faster development.</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="2.1.0" />
+    <PackageReference Include="Endev.WrapSQL.WrapSQLBase" Version="3.0.0" />
     <PackageReference Include="MySql.Data" Version="8.0.30" />
   </ItemGroup>
 

@@ -4,18 +4,18 @@
         <name>WrapMySQL</name>
     </assembly>
     <members>
-        <member name="T:WrapSQL.WrapMySQL">
+        <member name="T:WrapSql.WrapMySql">
             <summary>
             MySQL-Port of WrapSQL.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String)">
+        <member name="M:WrapSql.WrapMySql.#ctor(System.String)">
             <summary>
             Creates a new MySQL-Wrapper object.
             </summary>
             <param name="connectionString">Connection-string for the database</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.#ctor(System.String,System.String,System.String,System.String)">
+        <member name="M:WrapSql.WrapMySql.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new MySQL-Wrapper object.
             </summary>
@@ -24,103 +24,103 @@
             <param name="username">Login username</param>
             <param name="password">Login password</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.#ctor(WrapSQL.WrapMySQLData)">
+        <member name="M:WrapSql.WrapMySql.#ctor(WrapSql.IWrapSqlConnector)">
             <summary>
             Creates a new MySQL-Wrapper object.
             </summary>
             <param name="mysqlData">MySQL connection data</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapMySql.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapMySql.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.ExecuteQueryImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapMySql.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.GetDataAdapterImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapMySql.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapMySQL.CreateDataTableImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapMySql.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="T:WrapSQL.WrapMySQLData">
+        <member name="T:WrapSql.WrapMySqlData">
             <summary>
             Object containing any data relevant for establishing MySQL-connections
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapMySQLData.DefaultMySQLPort">
+        <member name="F:WrapSql.WrapMySqlData.DefaultMySQLPort">
             <summary>
             Default MySQL-server port
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapMySQLData.DefaultSSLMode">
+        <member name="F:WrapSql.WrapMySqlData.DefaultSSLMode">
             <summary>
             Default MySQL-SSL mode (none).
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Hostname">
+        <member name="P:WrapSql.WrapMySqlData.Hostname">
             <summary>
             Hostname of the MySQL-Database (localhost / www.sample.org / 10.0.0.123)
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Database">
+        <member name="P:WrapSql.WrapMySqlData.Database">
             <summary>
             Name of the MySQL-Database
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Username">
+        <member name="P:WrapSql.WrapMySqlData.Username">
             <summary>
             Username for the MySQL-Authentication
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Password">
+        <member name="P:WrapSql.WrapMySqlData.Password">
             <summary>
             Password for the MySQL-Authentication
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.SSLMode">
+        <member name="P:WrapSql.WrapMySqlData.SSLMode">
             <summary>
             SSL-Mode of the MySQL-connection
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Port">
+        <member name="P:WrapSql.WrapMySqlData.Port">
             <summary>
             Port of the MySQL-server
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.Pooling">
+        <member name="P:WrapSql.WrapMySqlData.Pooling">
             <summary>
             Enable/Disable connection pooling
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.ConnectionTimeout">
+        <member name="P:WrapSql.WrapMySqlData.ConnectionTimeout">
             <summary>
             Sets the connection timeout
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.CommandTimeout">
+        <member name="P:WrapSql.WrapMySqlData.CommandTimeout">
             <summary>
             Sets the command execution timeout
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.CharSet">
+        <member name="P:WrapSql.WrapMySqlData.CharSet">
             <summary>
             Specifies the charset which should be used
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapMySQLData.IgnorePrepare">
+        <member name="P:WrapSql.WrapMySqlData.IgnorePrepare">
             <summary>
             Enable/Disable prepared statements
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapMySQLData.#ctor">
+        <member name="M:WrapSql.WrapMySqlData.#ctor">
             <summary>
             Creates a new MySQL-data object
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapMySQLData.#ctor(System.String,System.String,System.String,System.String)">
+        <member name="M:WrapSql.WrapMySqlData.#ctor(System.String,System.String,System.String,System.String)">
             <summary>
             Creates a new MySQL-data object
             </summary>
@@ -129,7 +129,7 @@
             <param name="Username">Login username</param>
             <param name="Password">Login password</param>
         </member>
-        <member name="M:WrapSQL.WrapMySQLData.ToString">
+        <member name="M:WrapSql.WrapMySqlData.ToString">
             <summary>
             Creates a MySQL connection string
             </summary>

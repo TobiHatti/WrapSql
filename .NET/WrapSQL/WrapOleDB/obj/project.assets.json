@@ -2,13 +2,20 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Endev.WrapSQL.WrapSQLBase/2.1.0": {
+      "Endev.WrapSQL.WrapSQLBase/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/EndevLibsLogo.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -207,15 +214,17 @@
     }
   },
   "libraries": {
-    "Endev.WrapSQL.WrapSQLBase/2.1.0": {
-      "sha512": "paZayEUK3PvLvCdTKhy5LYFgOFCvEaRChwfYcIcIbIv73HnxmRKhE5YiiN1y52amqHNEdia+ElJn6QLPHYxXCA==",
+    "Endev.WrapSQL.WrapSQLBase/3.0.0": {
+      "sha512": "lgt5UuyDvMpp/wbwYG7dSaDSiYFJA53uMLvDaRFwuRmKXcyu6uZ62vixLy78b6FTFRLHrbUGNirWRzmTNJKESg==",
       "type": "package",
-      "path": "endev.wrapsql.wrapsqlbase/2.1.0",
+      "path": "endev.wrapsql.wrapsqlbase/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EndevLibsLogo.png",
-        "endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512",
+        "content/EndevLibsLogo.ico",
+        "contentFiles/any/netstandard2.0/EndevLibsLogo.ico",
+        "endev.wrapsql.wrapsqlbase.3.0.0.nupkg.sha512",
         "endev.wrapsql.wrapsqlbase.nuspec",
         "lib/netstandard2.0/WrapSQLBase.dll",
         "lib/netstandard2.0/WrapSQLBase.xml"
@@ -769,7 +778,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Endev.WrapSQL.WrapSQLBase >= 2.1.0",
+      "Endev.WrapSQL.WrapSQLBase >= 3.0.0",
       "NETStandard.Library >= 2.0.3",
       "System.Data.OleDb >= 6.0.0"
     ]
@@ -779,7 +788,7 @@
     "C:\\PermaInstall\\CodeEditors\\VisualStudioShared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2.1.0",
+    "version": "3.0.0",
     "restore": {
       "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapOleDB\\WrapOleDB.csproj",
       "projectName": "Endev.WrapSQL.WrapOleDB",
@@ -821,7 +830,7 @@
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[3.0.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",

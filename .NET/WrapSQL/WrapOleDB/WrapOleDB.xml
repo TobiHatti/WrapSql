@@ -4,30 +4,30 @@
         <name>WrapOleDB</name>
     </assembly>
     <members>
-        <member name="T:WrapSQL.WrapOleDB">
+        <member name="T:WrapSql.WrapOleDB">
             <summary>
             OleDB-Port of WrapSQL.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.#ctor(System.String)">
+        <member name="M:WrapSql.WrapOleDB.#ctor(System.String)">
             <summary>
             Creates a new ODBC-Wrapper object.
             </summary>
             <param name="connectionString">Connection-string for the database</param>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapOleDB.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapOleDB.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.ExecuteQueryImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapOleDB.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.GetDataAdapterImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapOleDB.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapOleDB.CreateDataTableImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapOleDB.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
     </members>

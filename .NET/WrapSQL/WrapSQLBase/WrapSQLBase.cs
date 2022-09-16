@@ -2,12 +2,12 @@
 using System.Data;
 using System.Data.Common;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// WrapSQL base class.
     /// </summary>
-    public abstract class WrapSQLBase : IDisposable
+    public abstract class WrapSqlBase : IDisposable, IWrapSql
     {
         #region Fields
 
@@ -33,7 +33,7 @@ namespace WrapSQL
         /// <summary>
         /// Reports the Error-Code of the last executed operation
         /// </summary>
-        public WrapSQLErrorCode LastErrorCode { get; protected set; } = WrapSQLErrorCode.None;
+        public WrapSqlErrorCode LastErrorCode { get; protected set; } = WrapSqlErrorCode.None;
 
         /// <summary>
         /// Determines if Execute-Scalar should return the requested type's default value, or throw an exception (only affects non-nullable types)
@@ -66,12 +66,12 @@ namespace WrapSQL
             {
                 if (this.Connection.State == ConnectionState.Closed)
                     Connection.Open();
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.ConnectionCreationFailed;
-                throw new WrapSQLException("Connection could not be opened.", ex);
+                LastErrorCode = WrapSqlErrorCode.ConnectionCreationFailed;
+                throw new WrapSqlException("Connection could not be opened.", ex);
             }
         }
 
@@ -84,12 +84,12 @@ namespace WrapSQL
             {
                 if (this.Connection.State == ConnectionState.Open)
                     Connection.Close();
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.ConnectionCloseFailed;
-                throw new WrapSQLException("Connection could not be closed.", ex);
+                LastErrorCode = WrapSqlErrorCode.ConnectionCloseFailed;
+                throw new WrapSqlException("Connection could not be closed.", ex);
             }
         }
 
@@ -106,12 +106,12 @@ namespace WrapSQL
             {
                 transactionActive = true;
                 transaction = Connection.BeginTransaction();
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.TransactionBeginFailed;
-                throw new WrapSQLException("Transaction could not be started.", ex);
+                LastErrorCode = WrapSqlErrorCode.TransactionBeginFailed;
+                throw new WrapSqlException("Transaction could not be started.", ex);
             }
         }
 
@@ -124,12 +124,12 @@ namespace WrapSQL
             {
                 transaction.Commit();
                 transactionActive = false;
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.TransactionCommitFailed;
-                throw new WrapSQLException("Transaction could not be commited.", ex);
+                LastErrorCode = WrapSqlErrorCode.TransactionCommitFailed;
+                throw new WrapSqlException("Transaction could not be commited.", ex);
             }
         }
 
@@ -142,12 +142,12 @@ namespace WrapSQL
             {
                 transaction.Rollback();
                 transactionActive = false;
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.TransactionRollbackFailed;
-                throw new WrapSQLException("Transaction could not be rolled back.", ex);
+                LastErrorCode = WrapSqlErrorCode.TransactionRollbackFailed;
+                throw new WrapSqlException("Transaction could not be rolled back.", ex);
             }
         }
 
@@ -178,13 +178,13 @@ namespace WrapSQL
             try
             {
                 int dbResult = ExecuteNonQueryImplement(sqlQuery, aCon, parameters);
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
                 return dbResult;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.OperationNonQueryFailed;
-                throw new WrapSQLException("The operation \"ExecuteNonQuery\" failed.", ex);
+                LastErrorCode = WrapSqlErrorCode.OperationNonQueryFailed;
+                throw new WrapSqlException("The operation \"ExecuteNonQuery\" failed.", ex);
             }
         }
 
@@ -236,13 +236,13 @@ namespace WrapSQL
             try
             {
                 T dbResult = ExecuteScalarImplement<T>(sqlQuery, aCon, parameters);
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
                 return dbResult;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.OperationScalarFailed;
-                throw new WrapSQLException("The operation \"ExecuteScalar\" failed.", ex);
+                LastErrorCode = WrapSqlErrorCode.OperationScalarFailed;
+                throw new WrapSqlException("The operation \"ExecuteScalar\" failed.", ex);
             }
         }
 
@@ -311,13 +311,13 @@ namespace WrapSQL
             try
             {
                 DbDataReader dbResult = ExecuteQueryImplement(sqlQuery, parameters);
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
                 return dbResult;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.OperationQueryFailed;
-                throw new WrapSQLException("The operation \"ExecuteQuery\" failed.", ex);
+                LastErrorCode = WrapSqlErrorCode.OperationQueryFailed;
+                throw new WrapSqlException("The operation \"ExecuteQuery\" failed.", ex);
             }
         }
 
@@ -355,13 +355,13 @@ namespace WrapSQL
             try
             {
                 DataTable dbResult = CreateDataTableImplement(sqlQuery, parameters);
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
                 return dbResult;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.OperationDataTableFailed;
-                throw new WrapSQLException("The operation \"CreateDataTable\" failed.", ex);
+                LastErrorCode = WrapSqlErrorCode.OperationDataTableFailed;
+                throw new WrapSqlException("The operation \"CreateDataTable\" failed.", ex);
             }
         }
 
@@ -399,13 +399,13 @@ namespace WrapSQL
             try
             {
                 DataAdapter dbResult = GetDataAdapterImplement(sqlQuery, parameters);
-                LastErrorCode = WrapSQLErrorCode.Success;
+                LastErrorCode = WrapSqlErrorCode.Success;
                 return dbResult;
             }
             catch (Exception ex)
             {
-                LastErrorCode = WrapSQLErrorCode.OperationDataAdapterFailed;
-                throw new WrapSQLException("The operation \"GetDataAdapter\" failed.", ex);
+                LastErrorCode = WrapSqlErrorCode.OperationDataAdapterFailed;
+                throw new WrapSqlException("The operation \"GetDataAdapter\" failed.", ex);
             }
         }
 

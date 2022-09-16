@@ -4,31 +4,31 @@
         <name>WrapSQLite</name>
     </assembly>
     <members>
-        <member name="T:WrapSQL.WrapSQLite">
+        <member name="T:WrapSql.WrapSQLite">
             <summary>
             SQLite-Port of WrapSQL.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.#ctor(System.String,System.Boolean)">
+        <member name="M:WrapSql.WrapSQLite.#ctor(System.String,System.Boolean)">
             <summary>
             Creates a new ODBC-Wrapper object.
             </summary>
             <param name="connectionString">Connection-string for the database</param>
             <param name="isFilepath">If set to true, only the filename has to be provided, instead of the whole connection-string</param>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSQLite.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSQLite.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.ExecuteQueryImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSQLite.ExecuteQueryImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.GetDataAdapterImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSQLite.GetDataAdapterImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
-        <member name="M:WrapSQL.WrapSQLite.CreateDataTableImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSQLite.CreateDataTableImplement(System.String,System.Object[])">
             <inheritdoc/>
         </member>
     </members>

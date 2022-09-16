@@ -2,13 +2,20 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "Endev.WrapSQL.WrapSQLBase/2.1.0": {
+      "Endev.WrapSQL.WrapSQLBase/3.0.0": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
         },
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.0/EndevLibsLogo.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -35,7 +42,7 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/System.Data.Odbc.dll": {}
@@ -47,15 +54,17 @@
     }
   },
   "libraries": {
-    "Endev.WrapSQL.WrapSQLBase/2.1.0": {
-      "sha512": "paZayEUK3PvLvCdTKhy5LYFgOFCvEaRChwfYcIcIbIv73HnxmRKhE5YiiN1y52amqHNEdia+ElJn6QLPHYxXCA==",
+    "Endev.WrapSQL.WrapSQLBase/3.0.0": {
+      "sha512": "lgt5UuyDvMpp/wbwYG7dSaDSiYFJA53uMLvDaRFwuRmKXcyu6uZ62vixLy78b6FTFRLHrbUGNirWRzmTNJKESg==",
       "type": "package",
-      "path": "endev.wrapsql.wrapsqlbase/2.1.0",
+      "path": "endev.wrapsql.wrapsqlbase/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "EndevLibsLogo.png",
-        "endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512",
+        "content/EndevLibsLogo.ico",
+        "contentFiles/any/netstandard2.0/EndevLibsLogo.ico",
+        "endev.wrapsql.wrapsqlbase.3.0.0.nupkg.sha512",
         "endev.wrapsql.wrapsqlbase.nuspec",
         "lib/netstandard2.0/WrapSQLBase.dll",
         "lib/netstandard2.0/WrapSQLBase.xml"
@@ -205,10 +214,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "System.Data.Odbc/6.0.0": {
-      "sha512": "pnZjwe0Qwr1Rnp7NExd5zz4YwXJrYuAbWNKjEQpTzCEg6f/L5DYJS7w3hG3vgSj1t/r79UL390YzXIklf1VuQQ==",
+    "System.Data.Odbc/6.0.1": {
+      "sha512": "4vl7z0b8gcwc2NotcpEkqaLVQAw/wo46zV1uVSoIx2UfJdqlxWKD3ViUicCNJGo41th4kaGcY9kyVe2q9EuB4w==",
       "type": "package",
-      "path": "system.data.odbc/6.0.0",
+      "path": "system.data.odbc/6.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -251,7 +260,7 @@
         "runtimes/win/lib/net6.0/System.Data.Odbc.xml",
         "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.dll",
         "runtimes/win/lib/netcoreapp3.1/System.Data.Odbc.xml",
-        "system.data.odbc.6.0.0.nupkg.sha512",
+        "system.data.odbc.6.0.1.nupkg.sha512",
         "system.data.odbc.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -259,9 +268,9 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Endev.WrapSQL.WrapSQLBase >= 2.1.0",
+      "Endev.WrapSQL.WrapSQLBase >= 3.0.0",
       "NETStandard.Library >= 2.0.3",
-      "System.Data.Odbc >= 6.0.0"
+      "System.Data.Odbc >= 6.0.1"
     ]
   },
   "packageFolders": {
@@ -269,7 +278,7 @@
     "C:\\PermaInstall\\CodeEditors\\VisualStudioShared\\NuGetPackages": {}
   },
   "project": {
-    "version": "2.1.0",
+    "version": "3.0.0",
     "restore": {
       "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapODBC\\WrapODBC.csproj",
       "projectName": "Endev.WrapSQL.WrapODBC",
@@ -311,7 +320,7 @@
         "dependencies": {
           "Endev.WrapSQL.WrapSQLBase": {
             "target": "Package",
-            "version": "[2.1.0, )"
+            "version": "[3.0.0, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
@@ -321,7 +330,7 @@
           },
           "System.Data.Odbc": {
             "target": "Package",
-            "version": "[6.0.0, )"
+            "version": "[6.0.1, )"
           }
         },
         "imports": [

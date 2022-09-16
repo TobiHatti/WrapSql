@@ -4,12 +4,12 @@ using System.Data.Common;
 using System.Data.SQLite;
 using System.IO;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// SQLite-Port of WrapSQL.
     /// </summary>
-    public class WrapSQLite : WrapSQLBase, IDisposable
+    public class WrapSQLite : WrapSqlBase, IDisposable
     {
         /// <summary>
         /// Creates a new ODBC-Wrapper object.
@@ -33,7 +33,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (SQLiteCommand command = new SQLiteCommand(sqlQuery, (SQLiteConnection)Connection))
             {
@@ -50,7 +50,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (SQLiteCommand command = new SQLiteCommand(sqlQuery, (SQLiteConnection)Connection))
             {

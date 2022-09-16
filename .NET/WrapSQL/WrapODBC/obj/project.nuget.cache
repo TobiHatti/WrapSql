@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UIzZjVZQsb58Mzc+sNo/QWBbVxWsrGMSJHvOkvACEC4YSZaQAKkFKU5HqNMizVHMzOp3f8umZ7JgZXOlHp2+CA==",
+  "dgSpecHash": "gt0Vg/JRMpOtMwFBvTPWo/VLsOEdCMlt4oXz+R+9ZUTZulrkLIqD0AdP4hJJP8cOq3iks2iM0V5Yj3/1E3CCXw==",
   "success": true,
   "projectFilePath": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapODBC\\WrapODBC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\2.1.0\\endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512",
+    "C:\\Users\\Tobias\\.nuget\\packages\\endev.wrapsql.wrapsqlbase\\3.0.0\\endev.wrapsql.wrapsqlbase.3.0.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Tobias\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Tobias\\.nuget\\packages\\system.data.odbc\\6.0.0\\system.data.odbc.6.0.0.nupkg.sha512"
+    "C:\\Users\\Tobias\\.nuget\\packages\\system.data.odbc\\6.0.1\\system.data.odbc.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }

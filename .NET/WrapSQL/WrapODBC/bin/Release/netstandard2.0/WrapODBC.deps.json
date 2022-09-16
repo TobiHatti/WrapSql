@@ -7,21 +7,21 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "WrapODBC/2.1.0.0": {
+      "WrapODBC/3.0.0": {
         "dependencies": {
-          "Endev.WrapSQL.WrapSQLBase": "2.1.0",
+          "Endev.WrapSQL.WrapSQLBase": "3.0.0",
           "NETStandard.Library": "2.0.3",
-          "System.Data.Odbc": "6.0.0"
+          "System.Data.Odbc": "6.0.1"
         },
         "runtime": {
           "WrapODBC.dll": {}
         }
       },
-      "Endev.WrapSQL.WrapSQLBase/2.1.0": {
+      "Endev.WrapSQL.WrapSQLBase/3.0.0": {
         "runtime": {
           "lib/netstandard2.0/WrapSQLBase.dll": {
-            "assemblyVersion": "2.1.0.0",
-            "fileVersion": "2.1.0.0"
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.0.0"
           }
         }
       },
@@ -31,28 +31,28 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "System.Data.Odbc/6.0.0": {
+      "System.Data.Odbc/6.0.1": {
         "runtime": {
           "lib/netstandard2.0/System.Data.Odbc.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.0.21.52210"
+            "assemblyVersion": "6.0.0.1",
+            "fileVersion": "6.0.922.41905"
           }
         }
       }
     }
   },
   "libraries": {
-    "WrapODBC/2.1.0.0": {
+    "WrapODBC/3.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Endev.WrapSQL.WrapSQLBase/2.1.0": {
+    "Endev.WrapSQL.WrapSQLBase/3.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-paZayEUK3PvLvCdTKhy5LYFgOFCvEaRChwfYcIcIbIv73HnxmRKhE5YiiN1y52amqHNEdia+ElJn6QLPHYxXCA==",
-      "path": "endev.wrapsql.wrapsqlbase/2.1.0",
-      "hashPath": "endev.wrapsql.wrapsqlbase.2.1.0.nupkg.sha512"
+      "sha512": "sha512-lgt5UuyDvMpp/wbwYG7dSaDSiYFJA53uMLvDaRFwuRmKXcyu6uZ62vixLy78b6FTFRLHrbUGNirWRzmTNJKESg==",
+      "path": "endev.wrapsql.wrapsqlbase/3.0.0",
+      "hashPath": "endev.wrapsql.wrapsqlbase.3.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -68,12 +68,12 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
-    "System.Data.Odbc/6.0.0": {
+    "System.Data.Odbc/6.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pnZjwe0Qwr1Rnp7NExd5zz4YwXJrYuAbWNKjEQpTzCEg6f/L5DYJS7w3hG3vgSj1t/r79UL390YzXIklf1VuQQ==",
-      "path": "system.data.odbc/6.0.0",
-      "hashPath": "system.data.odbc.6.0.0.nupkg.sha512"
+      "sha512": "sha512-4vl7z0b8gcwc2NotcpEkqaLVQAw/wo46zV1uVSoIx2UfJdqlxWKD3ViUicCNJGo41th4kaGcY9kyVe2q9EuB4w==",
+      "path": "system.data.odbc/6.0.1",
+      "hashPath": "system.data.odbc.6.0.1.nupkg.sha512"
     }
   }
 }

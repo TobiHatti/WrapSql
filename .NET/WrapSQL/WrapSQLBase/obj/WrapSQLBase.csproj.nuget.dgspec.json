@@ -5,7 +5,7 @@
   },
   "projects": {
     "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj": {
-      "version": "2.1.0",
+      "version": "3.0.0",
       "restore": {
         "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
         "projectName": "Endev.WrapSQL.WrapSQLBase",

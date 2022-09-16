@@ -3,12 +3,12 @@ using System.Data;
 using System.Data.Common;
 using System.Data.OleDb;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// OleDB-Port of WrapSQL.
     /// </summary>
-    public class WrapOleDB : WrapSQLBase, IDisposable
+    public class WrapOleDB : WrapSqlBase, IDisposable
     {
         /// <summary>
         /// Creates a new ODBC-Wrapper object.
@@ -23,7 +23,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (OleDbCommand command = new OleDbCommand(sqlQuery, (OleDbConnection)Connection))
             {
@@ -40,7 +40,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (OleDbCommand command = new OleDbCommand(sqlQuery, (OleDbConnection)Connection))
             {

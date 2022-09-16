@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace WrapSQL
+﻿namespace WrapSql
 {
     /// <summary>
     /// Error-Codes for WrapSQL
     /// </summary>
-    public enum WrapSQLErrorCode
+    public enum WrapSqlErrorCode
     {
         /// <summary>
         /// No error (initial value)

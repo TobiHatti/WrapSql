@@ -4,68 +4,68 @@
         <name>WrapSQLBase</name>
     </assembly>
     <members>
-        <member name="T:WrapSQL.WrapSQLBase">
+        <member name="T:WrapSql.WrapSqlBase">
             <summary>
             WrapSQL base class.
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLBase.transactionActive">
+        <member name="F:WrapSql.WrapSqlBase.transactionActive">
             <summary>
             Flag to check if a transaction is currently active
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLBase.transaction">
+        <member name="F:WrapSql.WrapSqlBase.transaction">
             <summary>
             Database transaction
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapSQLBase.Connection">
+        <member name="P:WrapSql.WrapSqlBase.Connection">
             <summary>
             SQL-Connection object.
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapSQLBase.LastErrorCode">
+        <member name="P:WrapSql.WrapSqlBase.LastErrorCode">
             <summary>
             Reports the Error-Code of the last executed operation
             </summary>
         </member>
-        <member name="P:WrapSQL.WrapSQLBase.SkalarDefaultOnNull">
+        <member name="P:WrapSql.WrapSqlBase.SkalarDefaultOnNull">
             <summary>
             Determines if Execute-Scalar should return the requested type's default value, or throw an exception (only affects non-nullable types)
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.Dispose">
+        <member name="M:WrapSql.WrapSqlBase.Dispose">
             <summary>
             Disposes the object.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.Open">
+        <member name="M:WrapSql.WrapSqlBase.Open">
             <summary>
             Opens the SQL-connection, if the connection is closed
             </summary>
             <returns>Returns true if the connection was established successfully</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.Close">
+        <member name="M:WrapSql.WrapSqlBase.Close">
             <summary>
             Closes the SQL-Connection, if the connection is open.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.TransactionBegin">
+        <member name="M:WrapSql.WrapSqlBase.TransactionBegin">
             <summary>
             Starts a transaction.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.TransactionCommit">
+        <member name="M:WrapSql.WrapSqlBase.TransactionCommit">
             <summary>
             Commits a transaction.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.TransactionRollback">
+        <member name="M:WrapSql.WrapSqlBase.TransactionRollback">
             <summary>
             Terminates a transaction.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteNonQueryImplement(System.String,System.Boolean,System.Object[])">
             <summary>
             Executes a non-query statement. 
             NOTE FOR IMPLEMENTATION: 
@@ -76,7 +76,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>NonQuery result</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteNonQueryHandled(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteNonQueryHandled(System.String,System.Boolean,System.Object[])">
             <summary>
             Executes a non-query statement (Handled wrapper).
             </summary>
@@ -85,7 +85,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>NonQuery result</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteNonQuery(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteNonQuery(System.String,System.Object[])">
             <summary>
             Executes a non-query statement. 
             </summary>
@@ -93,7 +93,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>NonQuery result</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteNonQueryACon(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteNonQueryACon(System.String,System.Object[])">
             <summary>
             Executes a non-query statement. 
             Automatically opens and closes the connection.
@@ -102,7 +102,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>NonQuery result</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalarImplement``1(System.String,System.Boolean,System.Object[])">
             <summary>
             Executes a execute-scalar statement.
             NOTE FOR IMPLEMENTATION: 
@@ -114,7 +114,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalarHandled``1(System.String,System.Boolean,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalarHandled``1(System.String,System.Boolean,System.Object[])">
             <summary>
             Executes a execute-scalar statement (Handled wrapper).
             </summary>
@@ -124,7 +124,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalar(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalar(System.String,System.Object[])">
             <summary>
             Executes a execute-scalar statement. 
             </summary>
@@ -132,7 +132,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalarACon(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalarACon(System.String,System.Object[])">
             <summary>
             Executes a execute-scalar statement. 
             Automatically opens and closes the connection.
@@ -141,7 +141,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalar``1(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalar``1(System.String,System.Object[])">
             <summary>
             Executes a execute-scalar statement. 
             </summary>
@@ -150,7 +150,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteScalarACon``1(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteScalarACon``1(System.String,System.Object[])">
             <summary>
             Executes a execute-scalar statement.
             Automatically opens and closes the connection.
@@ -160,7 +160,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Result of the scalar-query</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteQueryImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteQueryImplement(System.String,System.Object[])">
             <summary>
             Executes a query-statement.
             NOTE FOR IMPLEMENTATION: 
@@ -170,7 +170,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataReader fetching the query-results</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteQueryManaged(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteQueryManaged(System.String,System.Object[])">
             <summary>
             Executes a query-statement (Handled wrapper).
             </summary>
@@ -178,7 +178,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataReader fetching the query-results</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.ExecuteQuery(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.ExecuteQuery(System.String,System.Object[])">
             <summary>
             Executes a query-statement.
             </summary>
@@ -186,7 +186,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataReader fetching the query-results</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.CreateDataTableImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.CreateDataTableImplement(System.String,System.Object[])">
             <summary>
             Creates a DataTable with the results of a query-statement.
             NOTE FOR IMPLEMENTATION: 
@@ -196,7 +196,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Results of a query-statement</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.CreateDataTableHandled(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.CreateDataTableHandled(System.String,System.Object[])">
             <summary>
             Creates a DataTable with the results of a query-statement (Handled wrapper). 
             </summary>
@@ -204,7 +204,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Results of a query-statement</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.CreateDataTable(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.CreateDataTable(System.String,System.Object[])">
             <summary>
             Creates a DataTable with the results of a query-statement.
             </summary>
@@ -212,7 +212,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>Results of a query-statement</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.GetDataAdapterImplement(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.GetDataAdapterImplement(System.String,System.Object[])">
             <summary>
             Creates a DataAdapter on the given query-statement.
             NOTE FOR IMPLEMENTATION: 
@@ -222,7 +222,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataAdapter of the given query-statement</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.GetDataAdapterHandled(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.GetDataAdapterHandled(System.String,System.Object[])">
             <summary>
             Creates a DataAdapter on the given query-statement (Handled wrapper).
             </summary>
@@ -230,7 +230,7 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataAdapter of the given query-statement</returns>
         </member>
-        <member name="M:WrapSQL.WrapSQLBase.GetDataAdapter(System.String,System.Object[])">
+        <member name="M:WrapSql.WrapSqlBase.GetDataAdapter(System.String,System.Object[])">
             <summary>
             Creates a DataAdapter on the given query-statement.
             </summary>
@@ -238,95 +238,95 @@
             <param name="parameters">Query-parameters</param>
             <returns>DataAdapter of the given query-statement</returns>
         </member>
-        <member name="T:WrapSQL.WrapSQLErrorCode">
+        <member name="T:WrapSql.WrapSqlErrorCode">
             <summary>
             Error-Codes for WrapSQL
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.None">
+        <member name="F:WrapSql.WrapSqlErrorCode.None">
             <summary>
             No error (initial value)
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.Success">
+        <member name="F:WrapSql.WrapSqlErrorCode.Success">
             <summary>
             Success - The last operation was executed successfully
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.ConnectionCreationFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.ConnectionCreationFailed">
             <summary>
             Connection creation failed - WrapSQL could not establish a connection to the database
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.ConnectionCloseFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.ConnectionCloseFailed">
             <summary>
             Connection close failed - WrapSQL could not close the current connection
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.TransactionBeginFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.TransactionBeginFailed">
             <summary>
             Transaction begin failed - The transaction could not be started
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.TransactionCommitFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.TransactionCommitFailed">
             <summary>
             Transaction commit failed - The transaction could not be commited
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.TransactionRollbackFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.TransactionRollbackFailed">
             <summary>
             Transaction rollback failed - The transaction could not be rolled back
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.OperationNonQueryFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.OperationNonQueryFailed">
             <summary>
             Operation NonQuery failed - An error occured within the ExecuteNonQuery-Method
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.OperationScalarFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.OperationScalarFailed">
             <summary>
             Operation Scalar failed - An error occured within the ExecuteScalar-Method
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.OperationQueryFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.OperationQueryFailed">
             <summary>
             Operation Query failed - An error occured within the ExecuteQuery-Method
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.OperationDataAdapterFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.OperationDataAdapterFailed">
             <summary>
             Operation DataAdapter failed - An error occured within the GetDataAdapter-Method
             </summary>
         </member>
-        <member name="F:WrapSQL.WrapSQLErrorCode.OperationDataTableFailed">
+        <member name="F:WrapSql.WrapSqlErrorCode.OperationDataTableFailed">
             <summary>
             Operation DataTable failed - An error occured within the CreateDataTable-Method
             </summary>
         </member>
-        <member name="T:WrapSQL.WrapSQLException">
+        <member name="T:WrapSql.WrapSqlException">
             <summary>
             Exception-Class for WrapSQL. Internal use only.
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLException.#ctor">
+        <member name="M:WrapSql.WrapSqlException.#ctor">
             <summary>
             Creates a new WrapSQL-Exception
             </summary>
         </member>
-        <member name="M:WrapSQL.WrapSQLException.#ctor(System.String)">
+        <member name="M:WrapSql.WrapSqlException.#ctor(System.String)">
             <summary>
             Creates a new WrapSQL-Exception
             </summary>
             <param name="message">Exception-message</param>
         </member>
-        <member name="M:WrapSQL.WrapSQLException.#ctor(System.String,System.Exception)">
+        <member name="M:WrapSql.WrapSqlException.#ctor(System.String,System.Exception)">
             <summary>
             Creates a new WrapSQL-Exception
             </summary>
             <param name="message">Exception-message</param>
             <param name="inner">Inner exception</param>
         </member>
-        <member name="M:WrapSQL.WrapSQLException.MessageFormat(System.String)">
+        <member name="M:WrapSql.WrapSqlException.MessageFormat(System.String)">
             <summary>
             Formats the given message and adds a custom exception-header.
             </summary>

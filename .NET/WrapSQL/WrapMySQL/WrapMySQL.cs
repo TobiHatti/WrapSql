@@ -3,18 +3,18 @@ using System;
 using System.Data;
 using System.Data.Common;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// MySQL-Port of WrapSQL.
     /// </summary>
-    public class WrapMySQL : WrapSQLBase, IDisposable
+    public class WrapMySql : WrapSqlBase, IDisposable
     {
         /// <summary>
         /// Creates a new MySQL-Wrapper object.
         /// </summary>
         /// <param name="connectionString">Connection-string for the database</param>
-        public WrapMySQL(string connectionString)
+        public WrapMySql(string connectionString)
         {
             // Create connection
             Connection = new MySqlConnection(connectionString);
@@ -27,7 +27,7 @@ namespace WrapSQL
         /// <param name="database">Target database</param>
         /// <param name="username">Login username</param>
         /// <param name="password">Login password</param>
-        public WrapMySQL(string server, string database, string username, string password)
+        public WrapMySql(string server, string database, string username, string password)
         {
             // Create connection
             Connection = new MySqlConnection($"Server={server};Database={database};Uid={username};Pwd={password}");
@@ -37,7 +37,7 @@ namespace WrapSQL
         /// Creates a new MySQL-Wrapper object.
         /// </summary>
         /// <param name="mysqlData">MySQL connection data</param>
-        public WrapMySQL(WrapMySQLData mysqlData)
+        public WrapMySql(IWrapSqlConnector mysqlData)
         {
             // Create connection
             Connection = new MySqlConnection(mysqlData.ToString());
@@ -46,7 +46,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override int ExecuteNonQueryImplement(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
             {
@@ -63,7 +63,7 @@ namespace WrapSQL
         ///<inheritdoc/>
         protected override T ExecuteScalarImplement<T>(string sqlQuery, bool aCon, params object[] parameters)
         {
-            if (transactionActive && aCon) throw new WrapSQLException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
+            if (transactionActive && aCon) throw new WrapSqlException("AutoConnect-methods (ACon) are not allowed durring a transaction!");
 
             using (MySqlCommand command = new MySqlCommand(sqlQuery, (MySqlConnection)Connection))
             {

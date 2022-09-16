@@ -42,8 +42,8 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.21.5.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Protobuf.3.21.5\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.21.6.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.21.6\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="K4os.Compression.LZ4, Version=1.2.16.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Compression.LZ4.1.2.16\lib\net46\K4os.Compression.LZ4.dll</HintPath>
@@ -98,8 +98,8 @@
     <Reference Include="WrapMySQL, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Endev.WrapSQL.WrapMySQL.2.0.0.1\lib\netstandard2.0\WrapMySQL.dll</HintPath>
     </Reference>
-    <Reference Include="WrapSQLBase, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Endev.WrapSQL.WrapSQLBase.2.1.0\lib\netstandard2.0\WrapSQLBase.dll</HintPath>
+    <Reference Include="WrapSQLBase, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Endev.WrapSQL.WrapSQLBase.3.0.0\lib\netstandard2.0\WrapSQLBase.dll</HintPath>
     </Reference>
     <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.30\lib\net452\ZstdNet.dll</HintPath>
@@ -112,6 +112,9 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EndevLibsLogo.ico" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

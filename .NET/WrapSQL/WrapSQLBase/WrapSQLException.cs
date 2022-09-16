@@ -1,30 +1,30 @@
 ﻿using System;
 using System.Text;
 
-namespace WrapSQL
+namespace WrapSql
 {
     /// <summary>
     /// Exception-Class for WrapSQL. Internal use only.
     /// </summary>
-    public class WrapSQLException : Exception
+    public class WrapSqlException : Exception
     {
         /// <summary>
         /// Creates a new WrapSQL-Exception
         /// </summary>
-        public WrapSQLException() { }
+        public WrapSqlException() { }
 
         /// <summary>
         /// Creates a new WrapSQL-Exception
         /// </summary>
         /// <param name="message">Exception-message</param>
-        public WrapSQLException(string message) : base(MessageFormat(message)) { }
+        public WrapSqlException(string message) : base(MessageFormat(message)) { }
 
         /// <summary>
         /// Creates a new WrapSQL-Exception
         /// </summary>
         /// <param name="message">Exception-message</param>
         /// <param name="inner">Inner exception</param>
-        public WrapSQLException(string message, Exception inner) : base(MessageFormat(message), inner) { }
+        public WrapSqlException(string message, Exception inner) : base(MessageFormat(message), inner) { }
 
         /// <summary>
         /// Formats the given message and adds a custom exception-header.
@@ -35,8 +35,8 @@ namespace WrapSQL
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine("Warning: WrapSQL-Exception thrown!");
-            sb.AppendLine("WrapSQL encountered an error. See below for further information:");
+            sb.AppendLine("Warning: WrapSql-Exception thrown!");
+            sb.AppendLine("WrapSql encountered an error. See below for further information:");
             if (string.IsNullOrEmpty(message)) sb.AppendLine("-- No information given. --");
             else sb.AppendLine(message);
 

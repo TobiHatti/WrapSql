@@ -16,11 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2022 Tobias Hattinger")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Wrapper-class for MySQL for simpler and cleaner code.\r\n\r\nWrapSQL is a simple, lig" +
     "htweight database-wrapper\r\nfor easier and faster development.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("WrapSQL")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("3.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.0")]
+[assembly: System.Reflection.AssemblyProductAttribute("WrapSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapMySQL")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.1.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("3.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/TobiHatti/WrapSQL")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
