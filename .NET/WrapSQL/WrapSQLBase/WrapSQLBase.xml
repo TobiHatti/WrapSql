@@ -326,7 +326,7 @@
             <param name="message">Exception-message</param>
             <param name="inner">Inner exception</param>
         </member>
-        <member name="M:WrapSql.WrapSqlException.MessageFormat(System.String)">
+        <member name="M:WrapSql.WrapSqlException.MessageFormat(System.String,System.String)">
             <summary>
             Formats the given message and adds a custom exception-header.
             </summary>

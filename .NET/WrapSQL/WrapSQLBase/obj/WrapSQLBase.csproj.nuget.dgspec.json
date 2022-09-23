@@ -5,7 +5,7 @@
   },
   "projects": {
     "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj": {
-      "version": "3.0.0",
+      "version": "3.0.1",
       "restore": {
         "projectUniqueName": "F:\\Projects\\WrapSQL\\.NET\\WrapSQL\\WrapSQLBase\\WrapSQLBase.csproj",
         "projectName": "Endev.WrapSQL.WrapSQLBase",
@@ -58,11 +58,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

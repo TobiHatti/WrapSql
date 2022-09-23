@@ -24,14 +24,14 @@ namespace WrapSql
         /// </summary>
         /// <param name="message">Exception-message</param>
         /// <param name="inner">Inner exception</param>
-        public WrapSqlException(string message, Exception inner) : base(MessageFormat(message), inner) { }
+        public WrapSqlException(string message, Exception inner) : base(MessageFormat(message, inner.Message), inner) { }
 
         /// <summary>
         /// Formats the given message and adds a custom exception-header.
         /// </summary>
         /// <param name="message">Exception-message</param>
         /// <returns>Formated exception message</returns>
-        public static string MessageFormat(string message)
+        public static string MessageFormat(string message, string additionalInfo = null)
         {
             StringBuilder sb = new StringBuilder();
 
@@ -39,7 +39,7 @@ namespace WrapSql
             sb.AppendLine("WrapSql encountered an error. See below for further information:");
             if (string.IsNullOrEmpty(message)) sb.AppendLine("-- No information given. --");
             else sb.AppendLine(message);
-
+            if (!string.IsNullOrEmpty(additionalInfo)) sb.AppendLine($"Inner Exception: {additionalInfo}");
             return sb.ToString();
         }
     }

@@ -17,11 +17,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Base-class for any derivations of WrapSql. \r\nThis package has no use by itself.\r\n" +
     "\r\nWrapSql is a simple, lightweight database-wrapper\r\nfor easier and faster devel" +
     "opment.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("3.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("3.0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.0.1")]
 [assembly: System.Reflection.AssemblyProductAttribute("WrapSql")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WrapSQLBase")]
-[assembly: System.Reflection.AssemblyVersionAttribute("3.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("3.0.1")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/TobiHatti/WrapSQL")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 

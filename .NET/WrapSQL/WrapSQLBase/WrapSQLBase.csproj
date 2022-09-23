@@ -5,7 +5,7 @@
     <RootNamespace>WrapSQL</RootNamespace>
     <ApplicationIcon>EndevLibsLogo.ico</ApplicationIcon>
     <PackageId>Endev.WrapSQL.WrapSQLBase</PackageId>
-    <Version>3.0.0</Version>
+    <Version>3.0.1</Version>
     <Authors>Tobias Hattinger</Authors>
     <Company>Endev</Company>
     <Product>WrapSql</Product>
@@ -21,12 +21,12 @@ for easier and faster development.</Description>
     <PackageIcon>EndevLibsLogo.png</PackageIcon>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <PackageTags>SQL, Wrapper, SQL Wrapper, Wrap, WrapSQL, WrapSQL Base</PackageTags>
-    <PackageReleaseNotes>Changed namespace, bug fixes</PackageReleaseNotes>
+    <PackageReleaseNotes>Improved error reporting</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryType>GitHub</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
-    <AssemblyVersion>3.0.0</AssemblyVersion>
-    <FileVersion>3.0.0</FileVersion>
+    <AssemblyVersion>3.0.1</AssemblyVersion>
+    <FileVersion>3.0.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

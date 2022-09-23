@@ -18,3 +18,4 @@ F:\Projects\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Release\netstandard2.0\WrapSQLB
 F:\Projects\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Release\netstandard2.0\WrapSQLBase.dll
 F:\Projects\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Release\netstandard2.0\WrapSQLBase.pdb
 F:\Projects\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Release\netstandard2.0\WrapSQLBase.xml
+F:\Projects\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Release\netstandard2.0\WrapSQLBase.csproj.AssemblyReference.cache

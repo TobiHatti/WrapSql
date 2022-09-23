@@ -5,10 +5,14 @@
       "Endev.WrapSQL.WrapSQLBase/3.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/WrapSQLBase.dll": {}
+          "lib/netstandard2.0/WrapSQLBase.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/WrapSQLBase.dll": {}
+          "lib/netstandard2.0/WrapSQLBase.dll": {
+            "related": ".xml"
+          }
         },
         "contentFiles": {
           "contentFiles/any/netstandard2.0/EndevLibsLogo.ico": {
@@ -36,10 +40,14 @@
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
-          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "ref/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -66,10 +74,14 @@
       "System.Buffers/4.5.1": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Buffers.dll": {}
+          "ref/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Buffers.dll": {}
+          "lib/netstandard2.0/System.Buffers.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Configuration.ConfigurationManager/6.0.0": {
@@ -79,10 +91,14 @@
           "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
+          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Data.OleDb/6.0.0": {
@@ -95,10 +111,14 @@
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Data.OleDb.dll": {}
+          "lib/netstandard2.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Data.OleDb.dll": {}
+          "lib/netstandard2.0/System.Data.OleDb.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Data.OleDb.dll": {
@@ -110,10 +130,14 @@
       "System.Diagnostics.PerformanceCounter/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {}
+          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {}
+          "lib/netstandard2.0/System.Diagnostics.PerformanceCounter.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Memory/4.5.4": {
@@ -124,28 +148,40 @@
           "System.Runtime.CompilerServices.Unsafe": "4.5.3"
         },
         "compile": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Memory.dll": {}
+          "lib/netstandard2.0/System.Memory.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Numerics.Vectors/4.4.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Numerics.Vectors.dll": {}
+          "ref/netstandard2.0/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+          "lib/netstandard2.0/System.Numerics.Vectors.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.5.3": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -154,10 +190,14 @@
           "System.Security.Principal.Windows": "5.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.AccessControl.dll": {
@@ -172,10 +212,14 @@
           "System.Memory": "4.5.4"
         },
         "compile": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
+          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
@@ -190,19 +234,27 @@
           "System.Security.AccessControl": "6.0.0"
         },
         "compile": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Permissions.dll": {}
+          "lib/netstandard2.0/System.Security.Permissions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Security.Principal.Windows/5.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "ref/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netstandard1.3/System.Security.Principal.Windows.dll": {
@@ -849,11 +901,12 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

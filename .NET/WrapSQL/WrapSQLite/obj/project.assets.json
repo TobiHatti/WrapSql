@@ -5,10 +5,14 @@
       "Endev.WrapSQL.WrapSQLBase/3.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/WrapSQLBase.dll": {}
+          "lib/netstandard2.0/WrapSQLBase.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/WrapSQLBase.dll": {}
+          "lib/netstandard2.0/WrapSQLBase.dll": {
+            "related": ".xml"
+          }
         },
         "contentFiles": {
           "contentFiles/any/netstandard2.0/EndevLibsLogo.ico": {
@@ -45,10 +49,14 @@
       "Stub.System.Data.SQLite.Core.NetStandard/1.0.116": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/System.Data.SQLite.dll": {}
+          "lib/netstandard2.0/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Data.SQLite.dll": {}
+          "lib/netstandard2.0/System.Data.SQLite.dll": {
+            "related": ".dll.altconfig;.xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/linux-x64/native/SQLite.Interop.dll": {
@@ -344,11 +352,12 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
