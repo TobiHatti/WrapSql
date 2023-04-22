@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapSql", "WrapSql\WrapSql.csproj", "{52E5E012-8FA3-47B2-9361-25ECBF34B19F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WrapMySql", "WrapMySql\WrapMySql.csproj", "{45389712-0A94-4C60-AB76-3C391D4DC564}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapSqlite", "WrapSqlite\WrapSqlite.csproj", "{DF976960-DD1C-472D-AF95-4DF8E1C178C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapOleDb", "WrapOleDb\WrapOleDb.csproj", "{1E927B05-EF12-4FEC-A96F-44D2EFC76D14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrapOdbc", "WrapOdbc\WrapOdbc.csproj", "{435BBDFA-1CC5-4550-A026-3B8CC386337D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E5E012-8FA3-47B2-9361-25ECBF34B19F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E5E012-8FA3-47B2-9361-25ECBF34B19F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E5E012-8FA3-47B2-9361-25ECBF34B19F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E5E012-8FA3-47B2-9361-25ECBF34B19F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45389712-0A94-4C60-AB76-3C391D4DC564}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45389712-0A94-4C60-AB76-3C391D4DC564}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45389712-0A94-4C60-AB76-3C391D4DC564}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45389712-0A94-4C60-AB76-3C391D4DC564}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF976960-DD1C-472D-AF95-4DF8E1C178C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF976960-DD1C-472D-AF95-4DF8E1C178C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF976960-DD1C-472D-AF95-4DF8E1C178C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF976960-DD1C-472D-AF95-4DF8E1C178C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E927B05-EF12-4FEC-A96F-44D2EFC76D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E927B05-EF12-4FEC-A96F-44D2EFC76D14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E927B05-EF12-4FEC-A96F-44D2EFC76D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E927B05-EF12-4FEC-A96F-44D2EFC76D14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{435BBDFA-1CC5-4550-A026-3B8CC386337D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{435BBDFA-1CC5-4550-A026-3B8CC386337D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{435BBDFA-1CC5-4550-A026-3B8CC386337D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{435BBDFA-1CC5-4550-A026-3B8CC386337D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8E616BBF-0288-4452-8D67-8057744550DC}
+	EndGlobalSection
+EndGlobal

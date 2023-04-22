@@ -1,5 +1,0 @@
-H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\bin\Debug\netstandard2.0\WrapSQL_ODBC.deps.json
-H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\bin\Debug\netstandard2.0\WrapSQL_ODBC.dll
-H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Debug\netstandard2.0\WrapSQL_ODBC.vbprojAssemblyReference.cache
-H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Debug\netstandard2.0\WrapSQL_ODBC.AssemblyInfoInputs.cache
-H:\Git\SQLWrappers\Development\VB.NET\WrapSQL_ODBC\obj\Debug\netstandard2.0\WrapSQL_ODBC.AssemblyInfo.vb

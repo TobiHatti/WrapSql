@@ -1,9 +1,0 @@
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Debug\netstandard2.0\WrapSQLBase.deps.json
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Debug\netstandard2.0\WrapSQLBase.dll
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\bin\Debug\netstandard2.0\WrapSQLBase.pdb
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.AssemblyInfoInputs.cache
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.AssemblyInfo.cs
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.csproj.CoreCompileInputs.cache
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.dll
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.pdb
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapSQLBase\obj\Debug\netstandard2.0\WrapSQLBase.csprojAssemblyReference.cache

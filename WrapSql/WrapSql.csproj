@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageId>Endev.WrapSQL.$(AssemblyName)</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Tobias Hattinger</Authors>
+    <Company />
+    <Description>Base-class for any derivations of WrapSql. 
+This package has no use by itself.
+
+WrapSql is a simple, lightweight database-wrapper
+for easier and faster development.</Description>
+    <Copyright>2023 Tobias Hattinger</Copyright>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL; Wrapper; SQL Wrapper; Wrap; WrapSQL</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <IncludeSymbols>False</IncludeSymbols>
+    <AssemblyVersion>4.0.0</AssemblyVersion>
+    <FileVersion>4.0.0-pre2</FileVersion>
+    <Title>$(AssemblyName)</Title>
+    <Version>4.0.0-pre2</Version>
+    <DocumentationFile>F:\Desktop\WrapSql\WrapSql\bin\Debug\net6.0\WrapSql.xml</DocumentationFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageOutputPath>..\Builds\$(Version)</PackageOutputPath>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

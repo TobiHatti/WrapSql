@@ -1,5 +1,0 @@
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\Development\C#\WrapSQL\bin\Debug\netstandard2.0\WrapSQL.deps.json
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\Development\C#\WrapSQL\bin\Debug\netstandard2.0\WrapSQL.dll
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\Development\C#\WrapSQL\obj\Debug\netstandard2.0\WrapSQL.AssemblyInfoInputs.cache
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\Development\C#\WrapSQL\obj\Debug\netstandard2.0\WrapSQL.AssemblyInfo.cs
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\Development\C#\WrapSQL\obj\Debug\netstandard2.0\WrapSQL.csprojAssemblyReference.cache

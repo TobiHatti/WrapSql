@@ -1,9 +1,0 @@
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Debug\netstandard2.0\WrapMySQL.deps.json
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Debug\netstandard2.0\WrapMySQL.dll
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.AssemblyInfoInputs.cache
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.AssemblyInfo.cs
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\bin\Debug\netstandard2.0\WrapMySQL.pdb
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.dll
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.pdb
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.csproj.CoreCompileInputs.cache
-U:\(06) Code\(00) Mixed Language Projects\(01) Projects [GIT]\WrapSQL\.NET\WrapSQL\WrapMySQL\obj\Debug\netstandard2.0\WrapMySQL.csprojAssemblyReference.cache

@@ -1,9 +1,0 @@
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\bin\Debug\netstandard2.0\WrapSQL_SQLite.deps.json
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\bin\Debug\netstandard2.0\WrapSQL_SQLite.dll
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.csprojAssemblyReference.cache
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.AssemblyInfoInputs.cache
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.AssemblyInfo.cs
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\bin\Debug\netstandard2.0\WrapSQL_SQLite.pdb
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.csproj.CoreCompileInputs.cache
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.dll
-H:\Git\SQLWrappers\Development\C#\WrapSQL_SQLite\obj\Debug\netstandard2.0\WrapSQL_SQLite.pdb

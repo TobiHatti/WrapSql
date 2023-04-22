@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>F:\Desktop\WrapSql\WrapMySql\bin\Debug\net6.0\WrapMySql.xml</DocumentationFile>
+    <PackageId>Endev.WrapSQL.$(AssemblyName)</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>$(AssemblyName)</Title>
+    <Version>4.0.0-pre2</Version>
+    <Authors>Tobias Hattinger</Authors>
+    <Description>Wrapper-class for MySql for simpler and cleaner code.
+
+WrapSql is a simple, lightweight database-wrapper
+for easier and faster development.</Description>
+    <Copyright>2023 Tobias Hattinger</Copyright>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL; Wrapper; SQL Wrapper; Wrap; WrapSQL; MySql</PackageTags>
+    <PackageOutputPath>..\Builds\$(Version)</PackageOutputPath>
+    <AssemblyVersion>4.0.0</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <RootNamespace>WrapSql</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Tobias\.nuget\packages\endev.wrapsql.wrapsqlbase\4.0.0-pre1\contentFiles\any\net6.0\logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Endev.WrapSQL.WrapSqlBase" Version="4.0.0-pre2" />
+    <PackageReference Include="MySql.Data" Version="8.0.33" />
+  </ItemGroup>
+
+</Project>

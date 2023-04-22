@@ -1,4 +1,0 @@
-H:\Git\SQLWrappers\Development\C#\WrapSQL_OLEDB\bin\Debug\netstandard2.0\WrapSQL_OLEDB.deps.json
-H:\Git\SQLWrappers\Development\C#\WrapSQL_OLEDB\bin\Debug\netstandard2.0\WrapSQL_OLEDB.dll
-H:\Git\SQLWrappers\Development\C#\WrapSQL_OLEDB\obj\Debug\netstandard2.0\WrapSQL_OLEDB.AssemblyInfoInputs.cache
-H:\Git\SQLWrappers\Development\C#\WrapSQL_OLEDB\obj\Debug\netstandard2.0\WrapSQL_OLEDB.AssemblyInfo.cs

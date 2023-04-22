@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>WrapSql</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>F:\Desktop\WrapSql\WrapSqlite\bin\Debug\net6.0\WrapSqlite.xml</DocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Endev.WrapSQL.$(AssemblyName)</PackageId>
+    <Title>$(AssemblyName)</Title>
+    <Version>4.0.0-pre2</Version>
+    <Authors>Tobias Hattinger</Authors>
+    <Description>Wrapper-class for Sqlite for simpler and cleaner code.
+
+WrapSql is a simple, lightweight database-wrapper
+for easier and faster development.</Description>
+    <Copyright>2023 Tobias Hattinger</Copyright>
+    <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>SQL; Wrapper; SQL Wrapper; Wrap; WrapSQL; Sqlite</PackageTags>
+    <PackageOutputPath>..\Builds\$(Version)</PackageOutputPath>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <AssemblyVersion>4.0.0</AssemblyVersion>
+    <FileVersion>$(Version)</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Endev.WrapSQL.WrapSqlBase" Version="4.0.0-pre2" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
+  </ItemGroup>
+
+</Project>
