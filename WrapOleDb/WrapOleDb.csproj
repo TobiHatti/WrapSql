@@ -8,9 +8,9 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <DocumentationFile>F:\Desktop\WrapSql\WrapOleDb\bin\Debug\net6.0\WrapOleDb.xml</DocumentationFile>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageId>Endev.WrapSQL.$(AssemblyName)</PackageId>
+    <PackageId>Endev.WrapSql.$(AssemblyName)</PackageId>
     <Title>$(AssemblyName)</Title>
-    <Version>4.0.0-pre2</Version>
+    <Version>4.0.0-pre1</Version>
     <Authors>Tobias Hattinger</Authors>
     <Description>Wrapper-class for OleDb for simpler and cleaner code.
 
@@ -19,7 +19,7 @@ for easier and faster development.</Description>
     <Copyright>2023 Tobias Hattinger</Copyright>
     <PackageProjectUrl>https://endev.at/p/wrapsql</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>Readme-C#.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/TobiHatti/WrapSQL</RepositoryUrl>
     <RepositoryType>GitHub</RepositoryType>
     <PackageTags>SQL; Wrapper; SQL Wrapper; Wrap; WrapSQL; OleDb</PackageTags>
@@ -36,14 +36,14 @@ for easier and faster development.</Description>
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="..\Docs\Readme-C#.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Endev.WrapSQL.WrapSqlBase" Version="4.0.0-pre2" />
+    <PackageReference Include="Endev.WrapSql" Version="4.0.0-pre1" />
     <PackageReference Include="System.Data.OleDb" Version="7.0.0" />
   </ItemGroup>
 

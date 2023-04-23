@@ -5,7 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <PackageId>Endev.WrapSQL.$(AssemblyName)</PackageId>
+    <PackageId>Endev.WrapSql</PackageId>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>Tobias Hattinger</Authors>
     <Company />
@@ -23,11 +23,11 @@ for easier and faster development.</Description>
     <NeutralLanguage>en</NeutralLanguage>
     <IncludeSymbols>False</IncludeSymbols>
     <AssemblyVersion>4.0.0</AssemblyVersion>
-    <FileVersion>4.0.0-pre2</FileVersion>
-    <Title>$(AssemblyName)</Title>
-    <Version>4.0.0-pre2</Version>
+    <FileVersion>$(Version)</FileVersion>
+    <Title>$(AssemblyName) Base</Title>
+    <Version>4.0.0-pre1</Version>
     <DocumentationFile>F:\Desktop\WrapSql\WrapSql\bin\Debug\net6.0\WrapSql.xml</DocumentationFile>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>Readme-C#.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <PackageOutputPath>..\Builds\$(Version)</PackageOutputPath>
@@ -39,7 +39,7 @@ for easier and faster development.</Description>
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Include="..\README.md">
+    <None Include="..\Docs\Readme-C#.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
